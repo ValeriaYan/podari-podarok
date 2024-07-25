@@ -467,6 +467,32 @@
                                 </div>
                                 <p class="UserGuilde_UserGuideText"></p>
                                 <div class="UserGuilde_popupLink">Заполняете анкету</div>
+                                <div class="popup">
+                                    <div class="react-responsive-modal-root PopUp_popUp" data-testid="root">
+                                        <div class="react-responsive-modal-overlay PopUp_overlay" data-testid="overlay" aria-hidden="true"
+                                            style="animation: 300ms ease 0s 1 normal none running react-responsive-modal-overlay-in;"></div>
+                                        <div class="react-responsive-modal-container react-responsive-modal-containerCenter PopUp_container"
+                                            data-testid="modal-container">
+                                            <div class="react-responsive-modal-modal PopUp_modal" role="dialog" aria-modal="true"
+                                                data-testid="modal" tabindex="-1"
+                                                style="animation: 300ms ease 0s 1 normal none running react-responsive-modal-modal-in; background: var(--white); box-shadow: rgba(0, 0, 0, 0.08) 0px 0px 64px, rgba(0, 0, 0, 0.06) 0px 0px 20px, rgba(0, 0, 0, 0.06) 0px 0px 8px, rgba(0, 0, 0, 0.04) 0px 0px 4px; border-radius: 24px;">
+                                                <div>
+                                                    <p class="PopUp_title"></p>
+                                                    <div class="Header_popUp">
+                                                        <p>Заполните анкету по <a href="https://forms.gle/gUfvCazraSe7eRX66">ссылке</a>. Если у вас
+                                                            возникли вопросы, вы можете задать их, написав нам на почту <a
+                                                                href="volonteer@podaripodarok.org">volonteer@podaripodarok.org</a>.</p>
+                                                    </div>
+                                                </div><button class="react-responsive-modal-closeButton" data-testid="close-button"><svg width="28"
+                                                        height="28" viewBox="0 0 36 36" data-testid="close-icon">
+                                                        <path
+                                                            d="M28.5 9.62L26.38 7.5 18 15.88 9.62 7.5 7.5 9.62 15.88 18 7.5 26.38l2.12 2.12L18 20.12l8.38 8.38 2.12-2.12L20.12 18z">
+                                                        </path>
+                                                    </svg></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <div class="UserGuilde_blockUserGuide">
                                 <div class="UserGuilde_wrapperNumberImg">
@@ -804,53 +830,12 @@
             </div>
         </footer>
     </div>
-    <div class="popup-root" style="display:none">
-        <div class="react-responsive-modal-root PopUp_popUp" data-testid="root">
-            <div class="react-responsive-modal-overlay PopUp_overlay" data-testid="overlay" aria-hidden="true"
-                style="animation: 300ms ease 0s 1 normal none running react-responsive-modal-overlay-in;"></div>
-            <div class="react-responsive-modal-container react-responsive-modal-containerCenter PopUp_container"
-                data-testid="modal-container">
-                <div class="react-responsive-modal-modal PopUp_modal" role="dialog" aria-modal="true"
-                    data-testid="modal" tabindex="-1"
-                    style="animation: 300ms ease 0s 1 normal none running react-responsive-modal-modal-in; background: var(--white); box-shadow: rgba(0, 0, 0, 0.08) 0px 0px 64px, rgba(0, 0, 0, 0.06) 0px 0px 20px, rgba(0, 0, 0, 0.06) 0px 0px 8px, rgba(0, 0, 0, 0.04) 0px 0px 4px; border-radius: 24px;">
-                    <div>
-                        <p class="PopUp_title"></p>
-                        <div class="Header_popUp">
-                            <h2>3 АКЦИИ ЕЖЕГОДНО:</h2>
-                            <ul>
-                                <li>Пасхальный подарок</li>
-                                <li>Подарок к 1 сентября</li>
-                                <li>Рождественская акция</li>
-                            </ul>
-                            <h2>КАК ПОСТРОЕНА АКЦИЯ:</h2>
-                            <ol>
-                                <li>Формирование списка и проверка семей волонтёрами фонда</li>
-                                <li>Размещение их профилей на сайте</li>
-                                <li>Дарители заходят на сайт и выбирают семью, которой хотят помочь, и подарки, которые
-                                    хотят подарить</li>
-                                <li>Доставляют подарки напрямую в семью или на склад</li>
-                                <li>Семьи делятся отзывами и фотографиями с подарками</li>
-                                <li>Чем именно фонд помогает семьям: от продуктов и лекарств до мебели, бытовой техники и
-                                    дорогостоящих средств реабилитации.</li>
-                            </ol>
-                            <p>Дарителем может стать любой: от ребенка до коллективов больших компаний.</p>
-                            <p>Помимо акций, фонд также проводит концерты и благотворительные аукционы для сбора помощи
-                                своим подопечным.</p>
-                        </div>
-                    </div><button class="react-responsive-modal-closeButton" data-testid="close-button"><svg width="28"
-                            height="28" viewBox="0 0 36 36" data-testid="close-icon">
-                            <path
-                                d="M28.5 9.62L26.38 7.5 18 15.88 9.62 7.5 7.5 9.62 15.88 18 7.5 26.38l2.12 2.12L18 20.12l8.38 8.38 2.12-2.12L20.12 18z">
-                            </path>
-                        </svg></button>
-                </div>
-            </div>
-        </div>
-    </div>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="../scripts/slick.min.js"></script>
     <script src="../scripts/slider.js"></script>
     <script src="../scripts/burger.js"></script>
     <script src="../scripts/accordion.js"></script>
+    <script src="../scripts/dialog-button.js"></script>
+    <script src="../scripts/popup.js"></script>
 </body>
 </html>
