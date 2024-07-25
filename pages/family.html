@@ -318,6 +318,46 @@
                                 </div>
                                 <p class="UserGuilde_UserGuideText">Общаетесь с волонтером фонда</p>
                                 <div class="UserGuilde_popupLink">и предоставляете необходимые документы </div>
+                                <div class="popup">
+                                    <div class="react-responsive-modal-root PopUp_popUp" data-testid="root">
+                                        <div class="react-responsive-modal-overlay PopUp_overlay" data-testid="overlay" aria-hidden="true"
+                                            style="animation: 300ms ease 0s 1 normal none running react-responsive-modal-overlay-in;"></div>
+                                        <div class="react-responsive-modal-container react-responsive-modal-containerCenter PopUp_container"
+                                            data-testid="modal-container">
+                                            <div class="react-responsive-modal-modal PopUp_modal" role="dialog" aria-modal="true"
+                                                data-testid="modal" tabindex="-1"
+                                                style="animation: 300ms ease 0s 1 normal none running react-responsive-modal-modal-in; background: var(--white); box-shadow: rgba(0, 0, 0, 0.08) 0px 0px 64px, rgba(0, 0, 0, 0.06) 0px 0px 20px, rgba(0, 0, 0, 0.06) 0px 0px 8px, rgba(0, 0, 0, 0.04) 0px 0px 4px; border-radius: 24px;">
+                                                <div>
+                                                    <p class="PopUp_title"></p>
+                                                    <div class="Header_popUp">
+                                                        <h2>Необходимые документы</h2>
+                                                        <ol>
+                                                            <li>Копия паспорта (главная страница и страница с пропиской) всех членов семьи от 14 лет и
+                                                                старше, копия свидетельства о рождении для детей младше 14 лет</li>
+                                                            <li>Копия справки о доходах всех членов семьи, в том числе пенсии, пособия, субсидии - это
+                                                                может быть 2-НДФЛ, справка из СЗН, ПФР, соцзащиты (в том числе, о статусе малоимущей
+                                                                семьи) и т.п.</li>
+                                                            <li>Фотография семьи</li>
+                                                            <li>Копия свидетельства о разводе, если родители разведены</li>
+                                                            <li>Копия медицинского заключения/эпикриз (срок – не позднее 6-ти месяцев на момент подачи
+                                                                документов) - если в семье есть сложное заболевание, требующее дорогого лечения / не
+                                                                позволяющее взрослому работать</li>
+                                                            <li>Фото рецепта / выписки из медицинских документов, если в запросе на оказание помощи есть
+                                                                лекарства</li>
+                                                            <li>Копия справки об инвалидности – при наличии инвалидности</li>
+                                                            <li>Видео квартиры/дома, где проживает семья (видео-обзор всех помещений)</li>
+                                                        </ol>
+                                                    </div>
+                                                </div><button class="react-responsive-modal-closeButton" data-testid="close-button"><svg width="28"
+                                                        height="28" viewBox="0 0 36 36" data-testid="close-icon">
+                                                        <path
+                                                            d="M28.5 9.62L26.38 7.5 18 15.88 9.62 7.5 7.5 9.62 15.88 18 7.5 26.38l2.12 2.12L18 20.12l8.38 8.38 2.12-2.12L20.12 18z">
+                                                        </path>
+                                                    </svg></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <div class="UserGuilde_blockUserGuide">
                                 <div class="UserGuilde_wrapperNumberImg">
@@ -405,52 +445,10 @@
             </div>
         </footer>
     </div>
-    <div class="popup-root" style="display:none">
-        <div class="react-responsive-modal-root PopUp_popUp" data-testid="root">
-            <div class="react-responsive-modal-overlay PopUp_overlay" data-testid="overlay" aria-hidden="true"
-                style="animation: 300ms ease 0s 1 normal none running react-responsive-modal-overlay-in;"></div>
-            <div class="react-responsive-modal-container react-responsive-modal-containerCenter PopUp_container"
-                data-testid="modal-container">
-                <div class="react-responsive-modal-modal PopUp_modal" role="dialog" aria-modal="true"
-                    data-testid="modal" tabindex="-1"
-                    style="animation: 300ms ease 0s 1 normal none running react-responsive-modal-modal-in; background: var(--white); box-shadow: rgba(0, 0, 0, 0.08) 0px 0px 64px, rgba(0, 0, 0, 0.06) 0px 0px 20px, rgba(0, 0, 0, 0.06) 0px 0px 8px, rgba(0, 0, 0, 0.04) 0px 0px 4px; border-radius: 24px;">
-                    <div>
-                        <p class="PopUp_title"></p>
-                        <div class="Header_popUp">
-                            <h2>3 АКЦИИ ЕЖЕГОДНО:</h2>
-                            <ul>
-                                <li>Пасхальный подарок</li>
-                                <li>Подарок к 1 сентября</li>
-                                <li>Рождественская акция</li>
-                            </ul>
-                            <h2>КАК ПОСТРОЕНА АКЦИЯ:</h2>
-                            <ol>
-                                <li>Формирование списка и проверка семей волонтёрами фонда</li>
-                                <li>Размещение их профилей на сайте</li>
-                                <li>Дарители заходят на сайт и выбирают семью, которой хотят помочь, и подарки, которые
-                                    хотят подарить</li>
-                                <li>Доставляют подарки напрямую в семью или на склад</li>
-                                <li>Семьи делятся отзывами и фотографиями с подарками</li>
-                                <li>Чем именно фонд помогает семьям: от продуктов и лекарств до мебели, бытовой техники и
-                                    дорогостоящих средств реабилитации.</li>
-                            </ol>
-                            <p>Дарителем может стать любой: от ребенка до коллективов больших компаний.</p>
-                            <p>Помимо акций, фонд также проводит концерты и благотворительные аукционы для сбора помощи
-                                своим подопечным.</p>
-                        </div>
-                    </div><button class="react-responsive-modal-closeButton" data-testid="close-button"><svg width="28"
-                            height="28" viewBox="0 0 36 36" data-testid="close-icon">
-                            <path
-                                d="M28.5 9.62L26.38 7.5 18 15.88 9.62 7.5 7.5 9.62 15.88 18 7.5 26.38l2.12 2.12L18 20.12l8.38 8.38 2.12-2.12L20.12 18z">
-                            </path>
-                        </svg></button>
-                </div>
-            </div>
-        </div>
-    </div>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="../scripts/slick.min.js"></script>
     <script src="../scripts/slider.js"></script>
     <script src="../scripts/burger.js"></script>
+    <script src="../scripts/popup.js"></script>
 </body>
 </html>

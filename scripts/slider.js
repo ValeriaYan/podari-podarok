@@ -4,6 +4,7 @@ const multiSliders = document.querySelectorAll('.multi-slider');
 const doubleSliders = document.querySelectorAll('.double-slider');
 const paginationSliders = document.querySelectorAll('.pagination-slider');
 
+$('.your-element').slick('setPosition'); 
 sliders.forEach((item, key) => {
     const prev = item.parentNode.querySelector('.prev');
     const next = item.parentNode.querySelector('.next');

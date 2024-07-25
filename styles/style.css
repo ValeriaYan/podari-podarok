@@ -8178,3 +8178,374 @@
         line-height: 130%
     }
 }
+
+
+[data-tab] {
+    display: none;
+}
+
+[data-tab]._active {
+    display: block;
+}
+
+.UserGuilde_rootUserGuide._active {
+    display: flex;
+}
+
+.About_documentsContainer._active {
+    display: flex;
+}
+
+.Post_root {
+    display: flex;
+    justify-content: space-between
+}
+
+.Post_leftSide {
+    width: 70%;
+    margin-right: 32px;
+    max-width: 985px
+}
+
+.Post_rightSide {
+    padding-top: 96px;
+    width: 20%;
+    min-width: 264px;
+    height: 100%;
+    position: sticky;
+    top: 40px
+}
+
+.Post_rightSide p:first-child {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 160%;
+    color: #292929;
+    margin-bottom: 30px
+}
+
+.Post_title {
+    font-size: 46px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 56px;
+    letter-spacing: 0;
+    text-align: left;
+    color: var(--text-black)
+}
+
+.Post_content {
+    margin-top: 40px
+}
+
+.Post_content p {
+    font-style: normal;
+    line-height: 29px;
+    letter-spacing: 0;
+    text-align: left;
+    margin-bottom: 24px
+}
+
+.Post_content b,.Post_content p b,.Post_content p strong,.Post_content strong {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 29px;
+    letter-spacing: 0;
+    text-align: left
+}
+
+.Post_content img {
+    height: 312px;
+    width: 100%;
+    max-width: 472px;
+    margin-top: 24px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    border-radius: 8px
+}
+
+.Post_content ul {
+    list-style: none;
+    margin-bottom: 15px;
+    margin-left: 20px
+}
+
+.Post_content ul li {
+    position: relative;
+    padding-left: 20px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+    color: var(--text-black)
+}
+
+.Post_content ul li:before {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    content: "";
+    background: var(--primary);
+    width: 8px;
+    height: 8px;
+    border-radius: 50%
+}
+
+.Post_content ol {
+    list-style: none;
+    counter-reset: section;
+    margin-bottom: 25px;
+    margin-left: 20px
+}
+
+.Post_content ol li {
+    position: relative;
+    padding-left: 40px;
+    margin-bottom: 15px
+}
+
+.Post_content ol li,.Post_content p {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+    color: var(--text-black)
+}
+
+.Post_content p {
+    margin-bottom: 16px
+}
+
+.Post_content ol li:before {
+    counter-increment: section;
+    content: "0" counter(section) ".";
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+    color: var(--primary)
+}
+
+.Post_content a {
+    cursor: pointer;
+    position: relative;
+    margin: 0;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 29px;
+    letter-spacing: 0;
+    text-align: left;
+    color: var(--primary);
+    transition: all .3s ease-in-out
+}
+
+.Post_content a:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: var(--primary);
+    transition: width .3s ease 0s,left .3s ease 0s;
+    width: 0
+}
+
+.Post_content a:hover:after {
+    width: 100%;
+    left: 0
+}
+
+.Post_coverImg {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 15px
+}
+
+.Post_date {
+    font-weight: 600;
+    margin: 20px 0 0 0;
+    color: var(--primary)
+}
+
+@media (max-width: 960px) {
+    .Post_rightSide {
+        display:none
+    }
+
+    .Post_leftSide {
+        width: 100%;
+        margin-right: 0
+    }
+}
+
+
+.PostCard_root {
+    cursor: pointer;
+    padding: 30px;
+    background: var(--background-light);
+    border-radius: 18px;
+    transition: all .3s ease-in-out
+}
+
+.PostCard_root p:first-child {
+    margin-bottom: 15px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    color: var(--primary);
+    transition: all .3s ease-in-out
+}
+
+.PostCard_root p:last-child {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 160%;
+    color: var(--text-black);
+    transition: all .3s ease-in-out
+}
+
+.PostCard_root:hover {
+    background: var(--primary)
+}
+
+.PostCard_root:hover p:first-child,.PostCard_root:hover p:last-child {
+    color: var(--white)
+}
+
+.popup {
+    display: none;
+}
+
+.popup._active {
+    display: block;
+}
+
+.Header_popUp {
+    max-width: 800px
+}
+
+.Header_popUp h2 {
+    font-weight   : 600;
+    font-size     : 24px;
+    line-height   : 150%;
+    text-transform: uppercase;
+    color         : var(--text-black);
+    margin-bottom : 10px
+}
+
+.Header_popUp ul {
+    list-style   : none;
+    margin-bottom: 15px
+}
+
+.Header_popUp ul li {
+    position    : relative;
+    padding-left: 20px;
+    font-weight : 600;
+    font-size   : 18px;
+    line-height : 150%;
+    color       : var(--text-black)
+}
+
+.Header_popUp ul li:before {
+    position     : absolute;
+    left         : 0;
+    top          : 50%;
+    transform    : translateY(-50%);
+    content      : "";
+    background   : var(--primary);
+    width        : 8px;
+    height       : 8px;
+    border-radius: 50%
+}
+
+.Header_popUp ol {
+    list-style   : none;
+    counter-reset: section;
+    margin-bottom: 25px
+}
+
+.Header_popUp ol li {
+    position     : relative;
+    padding-left : 40px;
+    margin-bottom: 15px;
+    font-weight  : 600;
+    font-size    : 18px;
+    line-height  : 150%;
+    color        : var(--text-black)
+}
+
+.Header_popUp p {
+    font-weight: 500;
+    text-align: left;
+}
+
+.Header_popUp b,
+.Header_popUp p,
+.Header_popUp strong {
+    font-size    : 18px;
+    line-height  : 150%;
+    color        : var(--text-black);
+    margin-bottom: 16px
+}
+
+.Header_popUp b,
+.Header_popUp strong {
+    font-weight: 600
+}
+
+.Header_popUp p b {
+    margin-bottom: unset
+}
+
+.Header_popUp ol li:before {
+    counter-increment: section;
+    content          : "0"counter(section) ".";
+    position         : absolute;
+    left             : 0;
+    top              : 0;
+    font-weight      : 600;
+    font-size        : 18px;
+    line-height      : 150%;
+    color            : var(--primary)
+}
+
+.Header_popUp a {
+    cursor        : pointer;
+    position      : relative;
+    margin        : 0;
+    font-size     : 18px;
+    font-style    : normal;
+    font-weight   : 600;
+    line-height   : 29px;
+    letter-spacing: 0;
+    text-align    : left;
+    color         : var(--primary);
+    transition    : all .3s ease-in-out
+}
+
+.Header_popUp a:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom    : 0;
+    content   : "";
+    display   : block;
+    height    : 2px;
+    left      : 50%;
+    position  : absolute;
+    background: var(--primary);
+    transition: width .3s ease 0s, left .3s ease 0s;
+    width     : 0
+}
+
+.Header_popUp a:hover:after {
+    width: 100%;
+    left : 0
+}
