@@ -2,7 +2,6 @@ const selectContainers = document.querySelectorAll('.sv-dropdown_select-wrapper'
 let selectedItem = null;
 
 function setActiveOption(option, input) {
-    console.log(option.ariaSelected)
     option.classList.add('sv-list__item--selected');
     option.classList.add('sd-list__item--selected');
     option.ariaSelected = "true";
@@ -14,7 +13,6 @@ function setActiveOption(option, input) {
         selectedItem.dataset.ariaSelected = "false";
     }
     
-    console.log(option.ariaSelected)
     selectedItem = option;
 }
 
