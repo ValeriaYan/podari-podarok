@@ -555,14 +555,65 @@
                                 <div class="Cart_txt">
                                     <p>Количество подарков: </p><b>0</b>
                                 </div>
-                                <div style="margin-bottom: 16px; display: flex; margin-top: 34px;"><span>Способ
+                                <div style="margin-bottom: 16px; display: flex; margin-top: 34px;">
+                                    <span>Способ
                                         доставки</span>
                                     <div style="margin-left: auto; cursor: pointer;"><svg xmlns="http://www.w3.org/2000/svg"
                                             width="24px" height="24px" fill="none" viewBox="0 0 40 40">
                                             <path fill="black"
                                                 d="M20 3.333a16.667 16.667 0 100 33.334 16.667 16.667 0 000-33.334zM20 30a1.667 1.667 0 110-3.334A1.667 1.667 0 0120 30zm1.667-8.6v1.933a1.667 1.667 0 01-3.334 0V20A1.667 1.667 0 0120 18.333a2.5 2.5 0 10-2.5-2.5 1.666 1.666 0 11-3.333 0 5.834 5.834 0 117.5 5.567z">
                                             </path>
-                                        </svg></div>
+                                        </svg>
+                                    </div>
+                                    <div class="popup">
+                                        <div class="react-responsive-modal-root PopUp_popUp" data-testid="root">
+                                            <div class="react-responsive-modal-overlay PopUp_overlay" data-testid="overlay" aria-hidden="true"
+                                                style="animation: 300ms ease 0s 1 normal none running react-responsive-modal-overlay-in;"></div>
+                                            <div class="react-responsive-modal-container react-responsive-modal-containerCenter PopUp_container"
+                                                data-testid="modal-container">
+                                                <div class="react-responsive-modal-modal PopUp_modal" role="dialog" aria-modal="true"
+                                                    data-testid="modal" tabindex="-1"
+                                                    style="animation: 300ms ease 0s 1 normal none running react-responsive-modal-modal-in; background: var(--white); box-shadow: rgba(0, 0, 0, 0.08) 0px 0px 64px, rgba(0, 0, 0, 0.06) 0px 0px 20px, rgba(0, 0, 0, 0.06) 0px 0px 8px, rgba(0, 0, 0, 0.04) 0px 0px 4px; border-radius: 24px;">
+                                                    <div>
+                                                        <p class="PopUp_title"></p>
+                                                        <div class="Header_popUp">
+                                                            <p>Доступны 2 варианта доставки</p>
+                                                            <ul>
+                                                                <li>
+                                                                    <p>1 <strong>Вы можете привезти подарки на склад в Москве</strong>
+                                                                        <strong>Даты работы склада</strong> - суббота 18 мая (11.00 – 18.00), воскресенье 19
+                                                                        мая (10.00 – 13.00)
+                                                                        <strong>Адрес склада:</strong> Протопоповский пер, д.25, стр.1 (5 минут от
+                                                                        м.Проспект мира, вход с колоннами с левой стороны здания)<br>Пожалуйста,
+                                                                        <strong>упакуйте</strong> красиво ваш подарок, а также подпишите на упаковке
+                                                                        <strong>номер семьи</strong>, взяв его с сайта.</p>
+                                                                </li>
+                                                                <li>
+                                                                    <p>2 Вы можете <strong>купить подарки в интернет-магазине и оформить доставку напрямую в
+                                                                            семью</strong>. Свяжитесь с волонтёром семьи, чтобы воспользоваться этой опцией.
+                                                                        Его контакт указан в письме, которое вы получили по окончании процедуры бронирования
+                                                                        подарков.<br><strong>ВНИМАНИЕ!</strong> Для продуктов и бытовой химии для семей из
+                                                                        регионов (т.е. не из Москвы и Московской области) доступен <strong>только этот
+                                                                            вариант доставки</strong></p>
+                                                                </li>
+                                                            </ul>
+                                                            <p><strong>Если Вы живете в Воронеже или Липецке</strong>, есть возможность прямой передачи
+                                                                подарков семьям с кодом ВРН или ЛПЦ. Координатор акции в Воронеже или ЛПЦ - Наталья
+                                                                +79102467060.</p>
+                                                            <p><strong>Если Вы проживаете в г.Краснознаменск</strong>, то до 18 мая (!) передать подписанные
+                                                                кодами семей подарки можно по адресу: г Краснознаменск, ул. Молодежная, д.1. Кафе - бар 413.
+                                                                Координатор акции в Краснознаменске - Лариса 89060713592</p>
+                                                        </div>
+                                                    </div><button class="react-responsive-modal-closeButton" data-testid="close-button"><svg width="28"
+                                                            height="28" viewBox="0 0 36 36" data-testid="close-icon">
+                                                            <path
+                                                                d="M28.5 9.62L26.38 7.5 18 15.88 9.62 7.5 7.5 9.62 15.88 18 7.5 26.38l2.12 2.12L18 20.12l8.38 8.38 2.12-2.12L20.12 18z">
+                                                            </path>
+                                                        </svg></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div>
                                     <div class="react-select-container css-2b097c-container"><span aria-live="polite"
@@ -598,16 +649,69 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="" style="margin: 28px 0px 0px;"><button
+                                <div class="" style="margin: 28px 0px 0px;">
+                                    <button
                                         class="Icon_iconButtonRoot Icon_textButton Icon_small Icon_black "><svg
                                             xmlns="http://www.w3.org/2000/svg" width="28px" height="28px" fill="none"
                                             viewBox="0 0 40 40" class="Icon_iconAsset Icon_left">
                                             <path fill="#FF3351" class="Icon_iconPath"
                                                 d="M20 3.333a16.667 16.667 0 100 33.334 16.667 16.667 0 000-33.334zM20 30a1.667 1.667 0 110-3.334A1.667 1.667 0 0120 30zm1.667-8.6v1.933a1.667 1.667 0 01-3.334 0V20A1.667 1.667 0 0120 18.333a2.5 2.5 0 10-2.5-2.5 1.666 1.666 0 11-3.333 0 5.834 5.834 0 117.5 5.567z">
                                             </path>
-                                        </svg>как работает доставка</button></div><button
+                                        </svg>как работает доставка</button>
+                                    <div class="popup">
+                                        <div class="react-responsive-modal-root PopUp_popUp" data-testid="root">
+                                            <div class="react-responsive-modal-overlay PopUp_overlay" data-testid="overlay" aria-hidden="true"
+                                                style="animation: 300ms ease 0s 1 normal none running react-responsive-modal-overlay-in;"></div>
+                                            <div class="react-responsive-modal-container react-responsive-modal-containerCenter PopUp_container"
+                                                data-testid="modal-container">
+                                                <div class="react-responsive-modal-modal PopUp_modal" role="dialog" aria-modal="true"
+                                                    data-testid="modal" tabindex="-1"
+                                                    style="animation: 300ms ease 0s 1 normal none running react-responsive-modal-modal-in; background: var(--white); box-shadow: rgba(0, 0, 0, 0.08) 0px 0px 64px, rgba(0, 0, 0, 0.06) 0px 0px 20px, rgba(0, 0, 0, 0.06) 0px 0px 8px, rgba(0, 0, 0, 0.04) 0px 0px 4px; border-radius: 24px;">
+                                                    <div>
+                                                        <p class="PopUp_title"></p>
+                                                        <div class="Header_popUp">
+                                                            <p>Доступны 2 варианта доставки</p>
+                                                            <ul>
+                                                                <li>
+                                                                    <p>1 <strong>Вы можете привезти подарки на склад в Москве</strong>
+                                                                        <strong>Даты работы склада</strong> - суббота 18 мая (11.00 – 18.00), воскресенье 19
+                                                                        мая (10.00 – 13.00)
+                                                                        <strong>Адрес склада:</strong> Протопоповский пер, д.25, стр.1 (5 минут от
+                                                                        м.Проспект мира, вход с колоннами с левой стороны здания)<br>Пожалуйста,
+                                                                        <strong>упакуйте</strong> красиво ваш подарок, а также подпишите на упаковке
+                                                                        <strong>номер семьи</strong>, взяв его с сайта.</p>
+                                                                </li>
+                                                                <li>
+                                                                    <p>2 Вы можете <strong>купить подарки в интернет-магазине и оформить доставку напрямую в
+                                                                            семью</strong>. Свяжитесь с волонтёром семьи, чтобы воспользоваться этой опцией.
+                                                                        Его контакт указан в письме, которое вы получили по окончании процедуры бронирования
+                                                                        подарков.<br><strong>ВНИМАНИЕ!</strong> Для продуктов и бытовой химии для семей из
+                                                                        регионов (т.е. не из Москвы и Московской области) доступен <strong>только этот
+                                                                            вариант доставки</strong></p>
+                                                                </li>
+                                                            </ul>
+                                                            <p><strong>Если Вы живете в Воронеже или Липецке</strong>, есть возможность прямой передачи
+                                                                подарков семьям с кодом ВРН или ЛПЦ. Координатор акции в Воронеже или ЛПЦ - Наталья
+                                                                +79102467060.</p>
+                                                            <p><strong>Если Вы проживаете в г.Краснознаменск</strong>, то до 18 мая (!) передать подписанные
+                                                                кодами семей подарки можно по адресу: г Краснознаменск, ул. Молодежная, д.1. Кафе - бар 413.
+                                                                Координатор акции в Краснознаменске - Лариса 89060713592</p>
+                                                        </div>
+                                                    </div><button class="react-responsive-modal-closeButton" data-testid="close-button"><svg width="28"
+                                                            height="28" viewBox="0 0 36 36" data-testid="close-icon">
+                                                            <path
+                                                                d="M28.5 9.62L26.38 7.5 18 15.88 9.62 7.5 7.5 9.62 15.88 18 7.5 26.38l2.12 2.12L18 20.12l8.38 8.38 2.12-2.12L20.12 18z">
+                                                            </path>
+                                                        </svg></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button
                                     class=" Generic_buttonRoot Generic_medium  " disabled=""
-                                    style="margin-top: 22px; width: 100%;">забронировать</button>
+                                    style="margin-top: 22px; width: 100%;">забронировать
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -663,49 +767,7 @@
             </div>
         </footer>
     </div>
-    <div class="popup-root" style="display:none">
-        <div class="react-responsive-modal-root PopUp_popUp" data-testid="root">
-            <div class="react-responsive-modal-overlay PopUp_overlay" data-testid="overlay" aria-hidden="true"
-                style="animation: 300ms ease 0s 1 normal none running react-responsive-modal-overlay-in;"></div>
-            <div class="react-responsive-modal-container react-responsive-modal-containerCenter PopUp_container"
-                data-testid="modal-container">
-                <div class="react-responsive-modal-modal PopUp_modal" role="dialog" aria-modal="true"
-                    data-testid="modal" tabindex="-1"
-                    style="animation: 300ms ease 0s 1 normal none running react-responsive-modal-modal-in; background: var(--white); box-shadow: rgba(0, 0, 0, 0.08) 0px 0px 64px, rgba(0, 0, 0, 0.06) 0px 0px 20px, rgba(0, 0, 0, 0.06) 0px 0px 8px, rgba(0, 0, 0, 0.04) 0px 0px 4px; border-radius: 24px;">
-                    <div>
-                        <p class="PopUp_title"></p>
-                        <div class="Header_popUp">
-                            <h2>3 АКЦИИ ЕЖЕГОДНО:</h2>
-                            <ul>
-                                <li>Пасхальный подарок</li>
-                                <li>Подарок к 1 сентября</li>
-                                <li>Рождественская акция</li>
-                            </ul>
-                            <h2>КАК ПОСТРОЕНА АКЦИЯ:</h2>
-                            <ol>
-                                <li>Формирование списка и проверка семей волонтёрами фонда</li>
-                                <li>Размещение их профилей на сайте</li>
-                                <li>Дарители заходят на сайт и выбирают семью, которой хотят помочь, и подарки, которые
-                                    хотят подарить</li>
-                                <li>Доставляют подарки напрямую в семью или на склад</li>
-                                <li>Семьи делятся отзывами и фотографиями с подарками</li>
-                                <li>Чем именно фонд помогает семьям: от продуктов и лекарств до мебели, бытовой техники и
-                                    дорогостоящих средств реабилитации.</li>
-                            </ol>
-                            <p>Дарителем может стать любой: от ребенка до коллективов больших компаний.</p>
-                            <p>Помимо акций, фонд также проводит концерты и благотворительные аукционы для сбора помощи
-                                своим подопечным.</p>
-                        </div>
-                    </div><button class="react-responsive-modal-closeButton" data-testid="close-button"><svg width="28"
-                            height="28" viewBox="0 0 36 36" data-testid="close-icon">
-                            <path
-                                d="M28.5 9.62L26.38 7.5 18 15.88 9.62 7.5 7.5 9.62 15.88 18 7.5 26.38l2.12 2.12L18 20.12l8.38 8.38 2.12-2.12L20.12 18z">
-                            </path>
-                        </svg></button>
-                </div>
-            </div>
-        </div>
-    </div>
     <script src="../scripts/burger.js"></script>
+    <script src="../scripts/popup.js"></script>
 </body>
 </html>
