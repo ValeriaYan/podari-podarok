@@ -155,7 +155,7 @@
                             </div>
                         </div>
                         <div class="Header_links">
-                            <button class="Header_headerLinkArrowButton " aria-describedby="popup-1">
+                            <button class="Header_headerLinkArrowButton" aria-describedby="popup-1">
                                 <div class="Header_headerLinkArrow">
                                     <a id="17" href="./about.html">о фонде</a>
                                     <svg
@@ -739,10 +739,10 @@
                     <h1 style="margin-bottom: 64px;">Как это работает</h1>
                     <div class="About_hideOnMobile" style="width: 95%; margin: 0px auto; max-width: 1600px;">
                         <div class="Tabs_tabRoot" style="width: 90%; margin: 0px auto 70px; max-width: 1600px;">
-                            <button class="Tabs_tab  Tabs_selected" style="width: calc(25%);">дарителям</button><button
-                                class="Tabs_tab  " style="width: calc(25%);">волонтерам</button><button
-                                class="Tabs_tab  " style="width: calc(25%);">семьям</button><button class="Tabs_tab  "
-                                style="width: calc(25%);">бизнесу</button>
+                            <button class="Tabs_tab Tabs_selected" data-tab-btn="giver" style="width: calc(25%);">дарителям</button>
+                            <button class="Tabs_tab" data-tab-btn="volunteer" style="width: calc(25%);">волонтерам</button>
+                            <button class="Tabs_tab" data-tab-btn="family" style="width: calc(25%);">семьям</button>
+                            <button class="Tabs_tab" data-tab-btn="business" style="width: calc(25%);">бизнесу</button>
                         </div>
                     </div>
                     <div class="About_hideOnDesktop" style="margin: 40px auto 0px; max-width: 90%;">
@@ -769,7 +769,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="UserGuilde_rootUserGuide">
+                    <div class="UserGuilde_rootUserGuide _active" data-tab="giver">
                         <div class="UserGuilde_blockUserGuide">
                             <div class="UserGuilde_wrapperNumberImg">
                                 <p>01.</p><img src="https://storage.yandexcloud.net/pp-prod/stage_ill_3f8101d6f9.svg">
@@ -799,11 +799,105 @@
                             <div class="UserGuilde_popupLink">Улыбаетесь, читая отзывы семей</div>
                         </div>
                     </div>
-                    <a href="./giver.html">
-                        <button class="Simple_simpleButtonRoot Simple_large Simple_outline  Simple_responsive"
-                            style="display: block; margin: 56px auto 42px;">стать дарителем</button>
+                    <div class="UserGuilde_rootUserGuide" data-tab="volunteer">
+                        <div class="UserGuilde_blockUserGuide">
+                            <div class="UserGuilde_wrapperNumberImg">
+                                <p>01.</p><img src="https://storage.yandexcloud.net/pp-prod/type_phone_d1966a0fe1.svg">
+                            </div>
+                            <p class="UserGuilde_UserGuideText"></p>
+                            <div class="UserGuilde_popupLink">Заполняете анкету</div>
+                        </div>
+                        <div class="UserGuilde_blockUserGuide">
+                            <div class="UserGuilde_wrapperNumberImg">
+                                <p>02.</p><img
+                                    src="https://storage.yandexcloud.net/pp-prod/type_communicate_30dfed4443.svg">
+                            </div>
+                            <p class="UserGuilde_UserGuideText">Беседуете с сотрудником фонда</p>
+                        </div>
+                        <div class="UserGuilde_blockUserGuide">
+                            <div class="UserGuilde_wrapperNumberImg">
+                                <p>03.</p><img src="https://storage.yandexcloud.net/pp-prod/type_heart_db8487fa16.svg">
+                            </div>
+                            <p class="UserGuilde_UserGuideText">Делаете добро</p>
+                        </div>
+                        <div class="UserGuilde_blockUserGuide">
+                            <div class="UserGuilde_wrapperNumberImg">
+                                <p>04.</p><img src="https://storage.yandexcloud.net/pp-prod/stage_ill_afbb1de62a.svg">
+                            </div>
+                            <p class="UserGuilde_UserGuideText">Улыбаетесь, читая отзывы семей</p>
+                        </div>
+                    </div>
+                    <div class="UserGuilde_rootUserGuide" data-tab="family">
+                        <div class="UserGuilde_blockUserGuide">
+                            <div class="UserGuilde_wrapperNumberImg">
+                                <p>01.</p><img src="https://storage.yandexcloud.net/pp-prod/type_document_0c0669f4d5.svg">
+                            </div>
+                            <p class="UserGuilde_UserGuideText">Общаетесь с волонтером фонда</p>
+                            <div class="UserGuilde_popupLink">и предоставляете необходимые документы </div>
+                        </div>
+                        <div class="UserGuilde_blockUserGuide">
+                            <div class="UserGuilde_wrapperNumberImg">
+                                <p>02.</p><img src="https://storage.yandexcloud.net/pp-prod/stage_ill_06c3ed00ea.svg">
+                            </div>
+                            <p class="UserGuilde_UserGuideText">История семьи размещается на сайте, дарители читают и бронируют
+                                подарки</p>
+                        </div>
+                        <div class="UserGuilde_blockUserGuide">
+                            <div class="UserGuilde_wrapperNumberImg">
+                                <p>03.</p><img src="https://storage.yandexcloud.net/pp-prod/type_phone_d1966a0fe1.svg">
+                            </div>
+                            <p class="UserGuilde_UserGuideText">Получив подарки, отправляете фото и отзыв</p>
+                        </div>
+                        <div class="UserGuilde_blockUserGuide">
+                            <div class="UserGuilde_wrapperNumberImg">
+                                <p>04.</p><img src="https://storage.yandexcloud.net/pp-prod/stage_ill_afbb1de62a.svg">
+                            </div>
+                            <p class="UserGuilde_UserGuideText">Помогаете другим и улыбаетесь — ведь вы можете менять мир</p>
+                        </div>
+                    </div>
+                    <div class="UserGuilde_rootUserGuide" data-tab="business">
+                        <div class="UserGuilde_blockUserGuide">
+                            <div class="UserGuilde_wrapperNumberImg">
+                                <p>01.</p><img src="https://storage.yandexcloud.net/pp-prod/stage_ill_a2051ea52b.svg">
+                            </div>
+                            <p class="UserGuilde_UserGuideText">Связываетесь с командой фонда</p>
+                        </div>
+                        <div class="UserGuilde_blockUserGuide">
+                            <div class="UserGuilde_wrapperNumberImg">
+                                <p>02.</p><img src="https://storage.yandexcloud.net/pp-prod/stage_ill_f2d7310519.svg">
+                            </div>
+                            <p class="UserGuilde_UserGuideText">Демонстрация форматов сотрудничества</p>
+                        </div>
+                        <div class="UserGuilde_blockUserGuide">
+                            <div class="UserGuilde_wrapperNumberImg">
+                                <p>03.</p><img src="https://storage.yandexcloud.net/pp-prod/stage_ill_54f0814e10.svg">
+                            </div>
+                            <p class="UserGuilde_UserGuideText">Продуктивное взаимодействие </p>
+                        </div>
+                        <div class="UserGuilde_blockUserGuide">
+                            <div class="UserGuilde_wrapperNumberImg">
+                                <p>04.</p><img src="https://storage.yandexcloud.net/pp-prod/type_smile_621ae8f729.svg">
+                            </div>
+                            <p class="UserGuilde_UserGuideText">Улыбаетесь, видя результат своего труда</p>
+                        </div>
+                    </div>
+                    <a class="_active" href="./giver.html" data-tab="giver">
+                        <button class="Simple_simpleButtonRoot  Simple_large Simple_outline  Simple_responsive"
+                         style="display: block; margin: 56px auto 42px;">стать дарителем</button>
                     </a>
-                    <div class="Carousel_carouselRoot ">
+                    <a href="./volunteer.html" data-tab="volunteer">
+                        <button class="Simple_simpleButtonRoot Simple_large Simple_outline  Simple_responsive"
+                         style="display: block; margin: 56px auto 42px;">стать волонтёром</button>
+                    </a>
+                    <a href="./family.html" data-tab="family">
+                        <button class="Simple_simpleButtonRoot Simple_large Simple_outline  Simple_responsive"
+                         style="display: block; margin: 56px auto 42px;">присоедениться к программе</button>
+                    </a>
+                    <a href="./family.html" data-tab="business">
+                        <button class="Simple_simpleButtonRoot Simple_outline  Simple_responsive"
+                    data-tab="business" style="display: block; margin: 56px auto 42px;">сотрудничать</button>
+                    </a>
+                    <div class="Carousel_carouselRoot _active" data-tab="giver">
                         <button
                             class=" Generic_iconRoot Generic_outline Generic_medium Carousel_hideOnMobile prev"
                             style="position: absolute; z-index: 999; top: 50%; left: -20px; transform: translateY(-50%);"><svg
@@ -930,6 +1024,263 @@
                             style="position: absolute; z-index: 999; top: 50%; right: -20px; transform: translateY(-50%);"><svg
                                 xmlns="http://www.w3.org/2000/svg" width="56" height="56" fill="none"
                                 viewBox="0 0 40 40" class="Generic_clrIcon">
+                                <path fill="var(--primary)" class="Generic_iconPath"
+                                    d="M8.333 21.667H28.1l-6.05 7.266a1.668 1.668 0 102.567 2.134l8.333-10c.056-.08.106-.163.15-.25 0-.084.083-.134.117-.217.075-.191.115-.395.116-.6a1.666 1.666 0 00-.116-.6c0-.083-.084-.133-.117-.217a1.996 1.996 0 00-.15-.25l-8.333-10a1.666 1.666 0 00-1.284-.6 1.667 1.667 0 00-1.283 2.734l6.05 7.266H8.333a1.667 1.667 0 100 3.334z">
+                                </path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="Carousel_carouselRoot " data-tab="volunteer">
+                        <button
+                            class=" Generic_iconRoot Generic_outline Generic_medium Carousel_hideOnMobile prev"
+                            style="position: absolute; z-index: 999; top: 50%; left: -20px; transform: translateY(-50%);"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="56" height="56" fill="none" viewBox="0 0 40 40"
+                                class="Generic_clrIcon">
+                                <path fill="var(--primary)" class="Generic_iconPath"
+                                    d="M31.667 18.333H11.9l6.05-7.266a1.669 1.669 0 00-2.567-2.134l-8.333 10c-.056.08-.106.163-.15.25 0 .084 0 .134-.117.217a1.667 1.667 0 00-.116.6c.001.206.04.409.116.6 0 .083 0 .133.117.217.044.087.094.17.15.25l8.333 10a1.667 1.667 0 001.284.6 1.667 1.667 0 001.283-2.734l-6.05-7.266h19.767a1.666 1.666 0 100-3.334z">
+                                </path>
+                            </svg>
+                        </button>
+                        <div class="slider" dir="ltr">
+                            <div data-index="0" class="slider-item" tabindex="-1" aria-hidden="false"
+                                style="outline: none; width: 1096px;">
+                                <div>
+                                    <div class="Review_wrapper" id="9" created_by="2" updated_by="1"
+                                        created_at="2021-03-12T23:00:09.925Z" updated_at="2021-08-04T23:38:15.917Z"
+                                        slug="tatyana-1">
+                                        <div class="Review_blockImg "><img
+                                                src="https://storage.yandexcloud.net/pp-prod/image_2019_10_18_16_54_30_8_fb4414afe3.webp"
+                                                alt="1">
+                                            <div class="Review_titleBlock">
+                                                <p class="Review_title">Татьяна</p>
+                                            </div>
+                                        </div>
+                                        <div class="Review_block">
+                                            <div style="display: flex; align-items: flex-start;"><img src="/assets/quote.svg"
+                                                    alt="quote">
+                                                <p class="Review_text  ">Фонд «Подари подарок» даёт мне возможность очень
+                                                    близко и осязаемо почувствовать, что мои действия / помощь действительно меняют
+                                                    жизнь людей. Это даёт вдохновение оставаться и дальше с фондом, продолжать
+                                                    помогать. А ещё, команда волонтёров фонда – это кладезь замечательных людей, с
+                                                    которыми очень интересно и драйвово</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div data-index="1" class="slider-item" tabindex="-1" aria-hidden="true"
+                                style="outline: none; width: 1096px;">
+                                <div>
+                                    <div class="Review_wrapper" id="10" created_by="2" updated_by="1"
+                                        created_at="2021-03-12T23:00:40.108Z" updated_at="2021-08-04T23:38:05.868Z" slug="lera">
+                                        <div class="Review_blockImg "><img src="" alt="1">
+                                            <div class="Review_titleBlock">
+                                                <p class="Review_title">Лера</p>
+                                            </div>
+                                        </div>
+                                        <div class="Review_block">
+                                            <div style="display: flex; align-items: flex-start;"><img src="../assets/quote.svg"
+                                                    alt="quote">
+                                                <p class="Review_text  ">Мне нравится, когда разные люди собираются вместе,
+                                                    чтобы помочь встать на ноги тем, у кого серьёзные жизненные трудности. Важно не
+                                                    зациклиться на себе, а посмотреть, что творится вокруг, в твоём дворе, в твоём
+                                                    районе, в твоём городе. Не всегда есть время и силы, чтобы помогать другим, но
+                                                    когда собираешься и вникаешь в чужие судьбы, легче становится всем. Эта
+                                                    инициатива даёт такой добрый заряд, формирует позитивную повестку, которой
+                                                    всегда не хватает.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div data-index="2" class="slider-item" tabindex="-1" aria-hidden="true"
+                                style="outline: none; width: 1096px;">
+                                <div>
+                                    <div class="Review_wrapper" id="11" created_by="2" updated_by="1"
+                                        created_at="2021-03-12T23:01:14.074Z" updated_at="2021-08-04T23:37:55.403Z" action="28"
+                                        slug="pyotr" user="79">
+                                        <div class="Review_blockImg "><img
+                                                src="https://storage.yandexcloud.net/pp-prod/image_2019_10_18_16_54_30_11_8e5898e4e0.webp"
+                                                alt="1">
+                                            <div class="Review_titleBlock">
+                                                <p class="Review_title">Пётр</p>
+                                            </div>
+                                        </div>
+                                        <div class="Review_block">
+                                            <div style="display: flex; align-items: flex-start;"><img src="/assets/quote.svg"
+                                                    alt="quote">
+                                                <p class="Review_text  ">Для меня работа в фонде — это возможность выйти за
+                                                    пределы своего окружения, расширить горизонты и взглянуть на мир другими
+                                                    глазами. Только здесь, объединенные общей идеей помощи нуждающимся, встречаются
+                                                    люди разных сословий, профессий, материального положения, религиозных убеждений
+                                                    и философских взглядов. При этом все общаются, радуются и гармонично
+                                                    взаимодействуют, делая мир чуточку лучше.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div data-index="3" class="slider-item" tabindex="-1" aria-hidden="true"
+                                style="outline: none; width: 1096px;">
+                                <div>
+                                    <div class="Review_wrapper" id="12" created_by="2" updated_by="1"
+                                        created_at="2021-03-12T23:01:39.471Z" updated_at="2021-08-04T23:37:47.129Z" slug="sofya"
+                                        action="5" user="3913">
+                                        <div class="Review_blockImg "><img
+                                                src="https://storage.yandexcloud.net/pp-prod/image_2019_10_18_16_54_30_9_6eadc93442.webp"
+                                                alt="1">
+                                            <div class="Review_titleBlock">
+                                                <p class="Review_title">Софья</p>
+                                            </div>
+                                        </div>
+                                        <div class="Review_block">
+                                            <div style="display: flex; align-items: flex-start;"><img src="/assets/quote.svg"
+                                                    alt="quote">
+                                                <p class="Review_text  ">Я общаюсь с семьями, координирую работу других
+                                                    волонтёров. Почему это делаю? Думаю потому, что ощущаю себя частью огромного
+                                                    процесса, результатом которого является насущная, очень нужная именно сейчас,
+                                                    помощь конкретным семьям. Конкретными вещами и делами. Но что важнее —
+                                                    возможность запустить круг добра, когда те, кто нуждался, начинают помогать
+                                                    сами. Чтобы, в результате, каждому далось и приумножилось.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button
+                            class=" Generic_iconRoot Generic_outline Generic_medium Carousel_hideOnMobile next"
+                            style="position: absolute; z-index: 999; top: 50%; right: -20px; transform: translateY(-50%);"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="56" height="56" fill="none" viewBox="0 0 40 40"
+                                class="Generic_clrIcon">
+                                <path fill="var(--primary)" class="Generic_iconPath"
+                                    d="M8.333 21.667H28.1l-6.05 7.266a1.668 1.668 0 102.567 2.134l8.333-10c.056-.08.106-.163.15-.25 0-.084.083-.134.117-.217.075-.191.115-.395.116-.6a1.666 1.666 0 00-.116-.6c0-.083-.084-.133-.117-.217a1.996 1.996 0 00-.15-.25l-8.333-10a1.666 1.666 0 00-1.284-.6 1.667 1.667 0 00-1.283 2.734l6.05 7.266H8.333a1.667 1.667 0 100 3.334z">
+                                </path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="Carousel_carouselRoot" data-tab="family">
+                        <button
+                            class=" Generic_iconRoot Generic_outline Generic_medium Carousel_hideOnMobile prev"
+                            style="position: absolute; z-index: 999; top: 50%; left: -20px; transform: translateY(-50%);"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="56" height="56" fill="none" viewBox="0 0 40 40"
+                                class="Generic_clrIcon">
+                                <path fill="var(--primary)" class="Generic_iconPath"
+                                    d="M31.667 18.333H11.9l6.05-7.266a1.669 1.669 0 00-2.567-2.134l-8.333 10c-.056.08-.106.163-.15.25 0 .084 0 .134-.117.217a1.667 1.667 0 00-.116.6c.001.206.04.409.116.6 0 .083 0 .133.117.217.044.087.094.17.15.25l8.333 10a1.667 1.667 0 001.284.6 1.667 1.667 0 001.283-2.734l-6.05-7.266h19.767a1.666 1.666 0 100-3.334z">
+                                </path>
+                            </svg>
+                        </button>
+                        <div class="slider" dir="ltr">
+                            <div data-index="0" class="slick-slide slick-active slick-current" tabindex="-1" aria-hidden="false"
+                                style="outline: none; width: 1096px;">
+                                <div>
+                                    <div class="Review_wrapper" id="5" created_by="2" updated_by="1"
+                                        created_at="2021-03-12T22:49:23.427Z" updated_at="2021-08-04T23:38:43.983Z" slug="darya-1">
+                                        <div class="Review_blockImg "><img
+                                                src="https://storage.yandexcloud.net/pp-prod/image_2019_10_18_16_54_30_4_dc90a50785.webp"
+                                                alt="1">
+                                            <div class="Review_titleBlock">
+                                                <p class="Review_title">Дарья</p>
+                                            </div>
+                                        </div>
+                                        <div class="Review_block">
+                                            <div style="display: flex; align-items: flex-start;"><img src="/assets/quote.svg"
+                                                    alt="quote">
+                                                <p class="Review_text  ">Ваша помощь особенно в такое непростое время очень
+                                                    нужна и важна. Я благодарна вообще всем участникам проекта, всем дарителям, всем
+                                                    волонтёрам. Я хочу пожелать здоровья вам и вашим близким, чтобы Господь
+                                                    поддерживал вас и ваших близких в трудную минуту, и чтобы такой трудной минуты в
+                                                    вашей жизни не было</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div data-index="1" class="slick-slide" tabindex="-1" aria-hidden="true"
+                                style="outline: none; width: 1096px;">
+                                <div>
+                                    <div class="Review_wrapper" id="6" created_by="2" updated_by="1"
+                                        created_at="2021-03-12T22:49:51.340Z" updated_at="2021-08-04T23:38:38.403Z"
+                                        slug="lidiya-ivanovna" family="47" action="1">
+                                        <div class="Review_blockImg "><img
+                                                src="https://storage.yandexcloud.net/pp-prod/image_2019_10_18_16_54_30_5_5ef33220c1.webp"
+                                                alt="1">
+                                            <div class="Review_titleBlock">
+                                                <p class="Review_title">Лидия Ивановна</p>
+                                            </div>
+                                        </div>
+                                        <div class="Review_block">
+                                            <div style="display: flex; align-items: flex-start;"><img src="/assets/quote.svg"
+                                                    alt="quote">
+                                                <p class="Review_text  ">Благодарим за вашу поддержку всех наших дарителей!
+                                                    Учитывая наш возраст и состояние здоровья на данный момент, ваша помощь
+                                                    неоценима. Мне 83 года, как и многие люди моего поколения я ностольгирую по
+                                                    временам СССР, мне казалось, что тогда народ был более внимательным друг к
+                                                    другу, дружным и отзывчивым. Теперь я вижу, что ошибалась. И в настоящее время
+                                                    есть прекрасные отзывчивые, глубоко сочувствующие, внимательные к старикам и
+                                                    больным молодые люди, какими являются сотрудники и друзья вашего Фонда. Ваше
+                                                    чуткое отношение к нам, оказавшимся в трудной жизненной ситуации, судьба вас
+                                                    отблагодарит, я в этом не сомневаюсь. Будьте счастливы и здоровы</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div data-index="2" class="slick-slide" tabindex="-1" aria-hidden="true"
+                                style="outline: none; width: 1096px;">
+                                <div>
+                                    <div class="Review_wrapper" id="7" created_by="2" updated_by="1"
+                                        created_at="2021-03-12T22:50:17.643Z" updated_at="2021-08-04T23:38:29.837Z" action="28"
+                                        slug="vitalij-1" family="85">
+                                        <div class="Review_blockImg "><img
+                                                src="https://storage.yandexcloud.net/pp-prod/image_2019_10_18_16_54_30_6_6c7f34f8a8.webp"
+                                                alt="1">
+                                            <div class="Review_titleBlock">
+                                                <p class="Review_title">Виталий</p>
+                                            </div>
+                                        </div>
+                                        <div class="Review_block">
+                                            <div style="display: flex; align-items: flex-start;"><img src="/assets/quote.svg"
+                                                    alt="quote">
+                                                <p class="Review_text  ">Хочу выразить огромную благодарность фонду «Подари
+                                                    подарок» и всем тем, кто поучаствовал в покупке жизненно важных для меня
+                                                    препаратов Меронем и Завицефта, которые помогут мне выйти из обострения (и
+                                                    дожить до операции по пересадке лёгких)</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div data-index="3" class="slick-slide" tabindex="-1" aria-hidden="true"
+                                style="outline: none; width: 1096px;">
+                                <div>
+                                    <div class="Review_wrapper" id="8" created_by="2" updated_by="1"
+                                        created_at="2021-03-12T22:50:46.517Z" updated_at="2021-08-04T23:38:21.414Z"
+                                        slug="natalya-1">
+                                        <div class="Review_blockImg "><img
+                                                src="https://storage.yandexcloud.net/pp-prod/image_2019_10_18_16_54_30_7_c346fc0f3b.webp"
+                                                alt="1">
+                                            <div class="Review_titleBlock">
+                                                <p class="Review_title">Наталья</p>
+                                            </div>
+                                        </div>
+                                        <div class="Review_block">
+                                            <div style="display: flex; align-items: flex-start;"><img src="/assets/quote.svg"
+                                                    alt="quote">
+                                                <p class="Review_text  ">Спасибо за такую прекрасную акцию. У моего ребёнка
+                                                    это первый ноутбук, который очень поможет ей в учёбе. Спасибо фонду и дарителю
+                                                    Сергею, вы очень помогли нашей семье</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button
+                            class=" Generic_iconRoot Generic_outline Generic_medium Carousel_hideOnMobile next"
+                            style="position: absolute; z-index: 999; top: 50%; right: -20px; transform: translateY(-50%);"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="56" height="56" fill="none" viewBox="0 0 40 40"
+                                class="Generic_clrIcon">
                                 <path fill="var(--primary)" class="Generic_iconPath"
                                     d="M8.333 21.667H28.1l-6.05 7.266a1.668 1.668 0 102.567 2.134l8.333-10c.056-.08.106-.163.15-.25 0-.084.083-.134.117-.217.075-.191.115-.395.116-.6a1.666 1.666 0 00-.116-.6c0-.083-.084-.133-.117-.217a1.996 1.996 0 00-.15-.25l-8.333-10a1.666 1.666 0 00-1.284-.6 1.667 1.667 0 00-1.283 2.734l6.05 7.266H8.333a1.667 1.667 0 100 3.334z">
                                 </path>
@@ -2293,11 +2644,11 @@
                     style="padding-top: 80px; padding-bottom: 40px; background-color: var(--white);">
                     <div class="About_documentsHeader">
                         <h1 class="About_documentsTitle">Документы</h1>
-                        <div class="About_documentTabs"><button class="Tabs_tab  Tabs_selected"
-                                style="width: calc(50%);">учредительные документы</button><button class="Tabs_tab  "
+                        <div class="About_documentTabs Tabs_tabRoot"><button class="Tabs_tab  Tabs_selected" data-tab-btn="constituent"
+                                style="width: calc(50%);">учредительные документы</button><button class="Tabs_tab  " data-tab-btn="activity"
                                 style="width: calc(50%);">деятельность фонда</button></div>
                     </div>
-                    <div class="About_documentsContainer">
+                    <div class="About_documentsContainer _active" data-tab="constituent">
                         <div class="DocumentCard_card">
                             <div class="DocumentCard_header"><span
                                     class="DocumentCard_chip DocumentCard_chipTertiary">2019</span></div>
@@ -2328,6 +2679,30 @@
                             <div class="DocumentCard_previewWrap"><img
                                     src="https://storage.yandexcloud.net/pp-prod/Rekvizity_BF_Podari_podarok_4f074759f3.webp"
                                     alt=""></div>
+                        </div>
+                    </div>
+                    <div class="About_documentsContainer" data-tab="activity">
+                        <div class="DocumentCard_card">
+                            <div class="DocumentCard_header"><span
+                                    class="DocumentCard_chip DocumentCard_chipTertiary">2019</span></div>
+                            <h4 class="DocumentCard_title">Публичная оферта</h4>
+                            <div class="DocumentCard_previewWrap"><img
+                                    src="https://storage.yandexcloud.net/pp-prod/dogovor_oferta_f46d0468fa.webp" alt=""></div>
+                        </div>
+                        <div class="DocumentCard_card">
+                            <div class="DocumentCard_header"><span
+                                    class="DocumentCard_chip DocumentCard_chipTertiary">2020</span></div>
+                            <h4 class="DocumentCard_title">Благотвори­тель­ная программа </h4>
+                            <div class="DocumentCard_previewWrap"><img
+                                    src="https://storage.yandexcloud.net/pp-prod/Blag_programma_c6815d48db.webp" alt=""></div>
+                        </div>
+                        <div class="DocumentCard_card">
+                            <div class="DocumentCard_header"><span
+                                    class="DocumentCard_chip DocumentCard_chipTertiary">2024</span></div>
+                            <h4 class="DocumentCard_title">Договор об участии в конкурсе рисунков</h4>
+                            <div class="DocumentCard_previewWrap"><img
+                                    src="https://storage.yandexcloud.net/pp-prod/dogovor_ob_uchastii_v_konkurse_723d05f75e.webp" alt="">
+                            </div>
                         </div>
                     </div>
                     <div class="About_documentsFooter">
@@ -2564,6 +2939,7 @@
     <script src="../scripts/slider.js"></script>
     <script src="../scripts/burger.js"></script>
     <script src="../scripts/dialog-button.js"></script>
+    <script src="../scripts/tabs.js"></script>
 </body>
 
 </html>

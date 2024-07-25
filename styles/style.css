@@ -8135,3 +8135,20 @@
         line-height: 130%
     }
 }
+
+
+[data-tab] {
+    display: none;
+}
+
+[data-tab]._active {
+    display: block;
+}
+
+.UserGuilde_rootUserGuide._active {
+    display: flex;
+}
+
+.About_documentsContainer._active {
+    display: flex;
+}

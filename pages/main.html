@@ -164,7 +164,7 @@
                             </div>
                         </div>
                         <div class="Header_links">
-                            <button class="Header_headerLinkArrowButton Header_active" aria-describedby="popup-1">
+                            <button class="Header_headerLinkArrowButton" aria-describedby="popup-1">
                                 <div class="Header_headerLinkArrow">
                                     <a id="17" href="./about.html">о фонде</a>
                                     <svg
@@ -1071,9 +1071,9 @@
                     <h1 style="margin-bottom:64px">Партнёры и друзья</h1>
                     <div class="IndexPage_hideOnMobile" style="width:95%;margin:0 auto;max-width:1600px">
                         <div class="Tabs_tabRoot" style="margin-bottom:104px"><button
-                                class="Tabs_tab  Tabs_selected"
-                                style="width:calc(100% / 3)">партнеры</button><button class="Tabs_tab  "
-                                style="width:calc(100% / 3)">друзья</button><button class="Tabs_tab  "
+                                class="Tabs_tab  Tabs_selected" data-tab-btn="partners"
+                                style="width:calc(100% / 3)">партнеры</button><button class="Tabs_tab  " data-tab-btn="friends"
+                                style="width:calc(100% / 3)">друзья</button><button class="Tabs_tab  " data-tab-btn="special"
                                 style="width:calc(100% / 3)">спецпредложения</button></div>
                     </div>
                     <div class="IndexPage_hideOnDesktop" style="margin:40px auto 0 auto;max-width:90%">
@@ -1098,8 +1098,9 @@
                             </div>
                         </div>
                     </div>
-                    <div >
-                        <div class="IndexPage_partners"><img
+                    <div class="_active" data-tab="partners">
+                        <div class="IndexPage_partners">
+                            <img
                                 src="https://storage.yandexcloud.net/pp-prod/pgrants_logo_gp_1_c95c142cb5.webp"
                                 alt="Фонд президентских грантов" class="IndexPage_partnerImage"><img
                                 src="https://storage.yandexcloud.net/pp-prod/Frame_640_07e9c974e1.webp" alt="Gorodissky"
@@ -1115,237 +1116,121 @@
                             class="Simple_simpleButtonRoot Simple_large Simple_outline  Simple_responsive"
                             style="display:block;margin:56px auto 0 auto" href="./about.html#partners">все партнеры</a>
                     </div>
-                    <div style="display:none">
+                    <div class data-tab="friends">
                         <div class="Carousel_carouselRoot " style="max-width: 1600px; margin: 64px auto 0px;">
-                            <div class="slick-slider slick-initialized" dir="ltr"><button
-                                    class=" Generic_iconRoot Generic_white Generic_medium Carousel_hideOnMobile"
-                                    style="position: absolute; z-index: 999; top: 50%; left: 0px; transform: translateY(-50%);"><svg
-                                        xmlns="http://www.w3.org/2000/svg" width="56" height="56" fill="none"
-                                        viewBox="0 0 40 40" class="Generic_clrIcon">
-                                        <path fill="var(--primary)" class="Generic_iconPath"
-                                            d="M31.667 18.333H11.9l6.05-7.266a1.669 1.669 0 00-2.567-2.134l-8.333 10c-.056.08-.106.163-.15.25 0 .084 0 .134-.117.217a1.667 1.667 0 00-.116.6c.001.206.04.409.116.6 0 .083 0 .133.117.217.044.087.094.17.15.25l8.333 10a1.667 1.667 0 001.284.6 1.667 1.667 0 001.283-2.734l-6.05-7.266h19.767a1.666 1.666 0 100-3.334z">
-                                        </path>
-                                    </svg></button>
-                                <div class="slick-list">
-                                    <div class="slick-track" style="opacity: 1; transform: translate3d(0px, 0px, 0px);">
-                                        <div data-index="-3" tabindex="-1" class="slick-slide slick-cloned" aria-hidden="true"
-                                            style="width: 400px">
-                                            <div>
-                                                <div class="Friend_friendRoot Friend_second"><img
-                                                        src="https://storage.yandexcloud.net/pp-prod/Mask_Group_18_57a36cf274.webp"
-                                                        class="Friend_image">
-                                                    <div class="Friend_content">
-                                                        <p class="Friend_name">Татьяна Рогозина</p>
-                                                        <p class="Friend_description">поэт и автор песен, супруга и
-                                                            хранитель творчества композитора Романа Майорова</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div data-index="-2" tabindex="-1" class="slick-slide slick-cloned" aria-hidden="true"
-                                            style="width: 400px">
-                                            <div>
-                                                <div class="Friend_friendRoot Friend_last"><img
-                                                        src="https://storage.yandexcloud.net/pp-prod/Mask_Group_19_1d33b1fb35.webp"
-                                                        class="Friend_image">
-                                                    <div class="Friend_content">
-                                                        <p class="Friend_name">Алина Байбанова</p>
-                                                        <p class="Friend_description">психолог федеральных телеканалов,
-                                                            автор мюзикла «Декабристы» в Большом театре</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div data-index="-1" tabindex="-1" class="slick-slide slick-cloned" aria-hidden="true"
-                                            style="width: 400px">
-                                            <div>
-                                                <div class="Friend_friendRoot Friend_second"><img
-                                                        src="https://storage.yandexcloud.net/pp-prod/Vinokurova_Natalya_1_removebg_08bfa0f827.webp"
-                                                        class="Friend_image">
-                                                    <div class="Friend_content">
-                                                        <p class="Friend_name">Наталья Винокурова</p>
-                                                        <p class="Friend_description">актриса театра им. Вахтангова,
-                                                            музыкант, композитор, певица проекта WineSmoke</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div data-index="0" class="slick-slide slick-active slick-current" tabindex="-1"
-                                            aria-hidden="false" style="outline: none; width: 400px">
-                                            <div>
-                                                <div class="Friend_friendRoot Friend_second"><img
-                                                        src="https://storage.yandexcloud.net/pp-prod/person_201_c022319e9b.webp"
-                                                        class="Friend_image">
-                                                    <div class="Friend_content">
-                                                        <p class="Friend_name">Олег Сидоров</p>
-                                                        <p class="Friend_description">финалист шоу «Голос», «Главная
-                                                            сцена», конкурса «Новая волна»</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div data-index="1" class="slick-slide slick-active" tabindex="-1" aria-hidden="false"
-                                            style="outline: none; width: 400px">
-                                            <div>
-                                                <div class="Friend_friendRoot "><img
-                                                        src="https://storage.yandexcloud.net/pp-prod/Mask_Group_4_2_14b3960860.webp"
-                                                        class="Friend_image">
-                                                    <div class="Friend_content">
-                                                        <p class="Friend_name">Юрий Бабичев</p>
-                                                        <p class="Friend_description">партнёр международной юридической
-                                                            фирмы Bryan Cave Leighton Paisner, магистр права Колумбийского
-                                                            университета в Нью-Йорке</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div data-index="2" class="slick-slide slick-active" tabindex="-1" aria-hidden="false"
-                                            style="outline: none; width: 400px">
-                                            <div>
-                                                <div class="Friend_friendRoot Friend_second"><img
-                                                        src="https://storage.yandexcloud.net/pp-prod/Mask_Group_18_57a36cf274.webp"
-                                                        class="Friend_image">
-                                                    <div class="Friend_content">
-                                                        <p class="Friend_name">Татьяна Рогозина</p>
-                                                        <p class="Friend_description">поэт и автор песен, супруга и
-                                                            хранитель творчества композитора Романа Майорова</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div data-index="3" class="slick-slide" tabindex="-1" aria-hidden="true"
-                                            style="outline: none; width: 400px">
-                                            <div>
-                                                <div class="Friend_friendRoot Friend_last"><img
-                                                        src="https://storage.yandexcloud.net/pp-prod/Mask_Group_19_1d33b1fb35.webp"
-                                                        class="Friend_image">
-                                                    <div class="Friend_content">
-                                                        <p class="Friend_name">Алина Байбанова</p>
-                                                        <p class="Friend_description">психолог федеральных телеканалов,
-                                                            автор мюзикла «Декабристы» в Большом театре</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div data-index="4" class="slick-slide" tabindex="-1" aria-hidden="true"
-                                            style="outline: none; width: 400px">
-                                            <div>
-                                                <div class="Friend_friendRoot Friend_second"><img
-                                                        src="https://storage.yandexcloud.net/pp-prod/Vinokurova_Natalya_1_removebg_08bfa0f827.webp"
-                                                        class="Friend_image">
-                                                    <div class="Friend_content">
-                                                        <p class="Friend_name">Наталья Винокурова</p>
-                                                        <p class="Friend_description">актриса театра им. Вахтангова,
-                                                            музыкант, композитор, певица проекта WineSmoke</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div data-index="5" tabindex="-1" class="slick-slide slick-cloned" aria-hidden="true"
-                                            style="width: 400px">
-                                            <div>
-                                                <div class="Friend_friendRoot Friend_second"><img
-                                                        src="https://storage.yandexcloud.net/pp-prod/person_201_c022319e9b.webp"
-                                                        class="Friend_image">
-                                                    <div class="Friend_content">
-                                                        <p class="Friend_name">Олег Сидоров</p>
-                                                        <p class="Friend_description">финалист шоу «Голос», «Главная
-                                                            сцена», конкурса «Новая волна»</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div data-index="6" tabindex="-1" class="slick-slide slick-cloned" aria-hidden="true"
-                                            style="width: 400px">
-                                            <div>
-                                                <div class="Friend_friendRoot "><img
-                                                        src="https://storage.yandexcloud.net/pp-prod/Mask_Group_4_2_14b3960860.webp"
-                                                        class="Friend_image">
-                                                    <div class="Friend_content">
-                                                        <p class="Friend_name">Юрий Бабичев</p>
-                                                        <p class="Friend_description">партнёр международной юридической
-                                                            фирмы Bryan Cave Leighton Paisner, магистр права Колумбийского
-                                                            университета в Нью-Йорке</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div data-index="7" tabindex="-1" class="slick-slide slick-cloned" aria-hidden="true"
-                                            style="width: 400px">
-                                            <div>
-                                                <div class="Friend_friendRoot Friend_second"><img
-                                                        src="https://storage.yandexcloud.net/pp-prod/Mask_Group_18_57a36cf274.webp"
-                                                        class="Friend_image">
-                                                    <div class="Friend_content">
-                                                        <p class="Friend_name">Татьяна Рогозина</p>
-                                                        <p class="Friend_description">поэт и автор песен, супруга и
-                                                            хранитель творчества композитора Романа Майорова</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div data-index="8" tabindex="-1" class="slick-slide slick-cloned" aria-hidden="true"
-                                            style="width: 400px">
-                                            <div>
-                                                <div class="Friend_friendRoot Friend_last"><img
-                                                        src="https://storage.yandexcloud.net/pp-prod/Mask_Group_19_1d33b1fb35.webp"
-                                                        class="Friend_image">
-                                                    <div class="Friend_content">
-                                                        <p class="Friend_name">Алина Байбанова</p>
-                                                        <p class="Friend_description">психолог федеральных телеканалов,
-                                                            автор мюзикла «Декабристы» в Большом театре</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div data-index="9" tabindex="-1" class="slick-slide slick-cloned" aria-hidden="true"
-                                            style="width: 400px">
-                                            <div>
-                                                <div class="Friend_friendRoot Friend_second"><img
-                                                        src="https://storage.yandexcloud.net/pp-prod/Vinokurova_Natalya_1_removebg_08bfa0f827.webp"
-                                                        class="Friend_image">
-                                                    <div class="Friend_content">
-                                                        <p class="Friend_name">Наталья Винокурова</p>
-                                                        <p class="Friend_description">актриса театра им. Вахтангова,
-                                                            музыкант, композитор, певица проекта WineSmoke</p>
-                                                    </div>
-                                                </div>
+                            <button
+                                class=" Generic_iconRoot Generic_white Generic_medium Carousel_hideOnMobile double-prev"
+                                style="position: absolute; z-index: 999; top: 50%; left: 0px; transform: translateY(-50%);"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="56" height="56" fill="none"
+                                    viewBox="0 0 40 40" class="Generic_clrIcon">
+                                    <path fill="var(--primary)" class="Generic_iconPath"
+                                        d="M31.667 18.333H11.9l6.05-7.266a1.669 1.669 0 00-2.567-2.134l-8.333 10c-.056.08-.106.163-.15.25 0 .084 0 .134-.117.217a1.667 1.667 0 00-.116.6c.001.206.04.409.116.6 0 .083 0 .133.117.217.044.087.094.17.15.25l8.333 10a1.667 1.667 0 001.284.6 1.667 1.667 0 001.283-2.734l-6.05-7.266h19.767a1.666 1.666 0 100-3.334z">
+                                    </path>
+                                </svg>
+                            </button>
+                            <div class="double-slider" dir="ltr">
+                                <div data-index="0" class="slider-item" tabindex="-1"
+                                    aria-hidden="false" style="outline: none; width: 400px">
+                                    <div>
+                                        <div class="Friend_friendRoot Friend_second"><img
+                                                src="https://storage.yandexcloud.net/pp-prod/person_201_c022319e9b.webp"
+                                                class="Friend_image">
+                                            <div class="Friend_content">
+                                                <p class="Friend_name">Олег Сидоров</p>
+                                                <p class="Friend_description">финалист шоу «Голос», «Главная
+                                                    сцена», конкурса «Новая волна»</p>
                                             </div>
                                         </div>
                                     </div>
-                                </div><button
-                                    class=" Generic_iconRoot Generic_white Generic_medium Carousel_hideOnMobile"
+                                </div>
+                                <div data-index="1" class="slider-item" tabindex="-1" aria-hidden="false"
+                                    style="outline: none; width: 400px">
+                                    <div>
+                                        <div class="Friend_friendRoot "><img
+                                                src="https://storage.yandexcloud.net/pp-prod/Mask_Group_4_2_14b3960860.webp"
+                                                class="Friend_image">
+                                            <div class="Friend_content">
+                                                <p class="Friend_name">Юрий Бабичев</p>
+                                                <p class="Friend_description">партнёр международной юридической
+                                                    фирмы Bryan Cave Leighton Paisner, магистр права Колумбийского
+                                                    университета в Нью-Йорке</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div data-index="2" class="slider-item" tabindex="-1" aria-hidden="false"
+                                    style="outline: none; width: 400px">
+                                    <div>
+                                        <div class="Friend_friendRoot Friend_second"><img
+                                                src="https://storage.yandexcloud.net/pp-prod/Mask_Group_18_57a36cf274.webp"
+                                                class="Friend_image">
+                                            <div class="Friend_content">
+                                                <p class="Friend_name">Татьяна Рогозина</p>
+                                                <p class="Friend_description">поэт и автор песен, супруга и
+                                                    хранитель творчества композитора Романа Майорова</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div data-index="3" class="slider-item" tabindex="-1" aria-hidden="true"
+                                    style="outline: none; width: 400px">
+                                    <div>
+                                        <div class="Friend_friendRoot Friend_last"><img
+                                                src="https://storage.yandexcloud.net/pp-prod/Mask_Group_19_1d33b1fb35.webp"
+                                                class="Friend_image">
+                                            <div class="Friend_content">
+                                                <p class="Friend_name">Алина Байбанова</p>
+                                                <p class="Friend_description">психолог федеральных телеканалов,
+                                                    автор мюзикла «Декабристы» в Большом театре</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div data-index="4" class="slider-item" tabindex="-1" aria-hidden="true"
+                                    style="outline: none; width: 400px">
+                                    <div>
+                                        <div class="Friend_friendRoot Friend_second"><img
+                                                src="https://storage.yandexcloud.net/pp-prod/Vinokurova_Natalya_1_removebg_08bfa0f827.webp"
+                                                class="Friend_image">
+                                            <div class="Friend_content">
+                                                <p class="Friend_name">Наталья Винокурова</p>
+                                                <p class="Friend_description">актриса театра им. Вахтангова,
+                                                    музыкант, композитор, певица проекта WineSmoke</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button
+                                    class=" Generic_iconRoot Generic_white Generic_medium Carousel_hideOnMobile double-next"
                                     style="position: absolute; z-index: 999; top: 50%; right: 0px; transform: translateY(-50%);"><svg
                                         xmlns="http://www.w3.org/2000/svg" width="56" height="56" fill="none"
                                         viewBox="0 0 40 40" class="Generic_clrIcon">
                                         <path fill="var(--primary)" class="Generic_iconPath"
                                             d="M8.333 21.667H28.1l-6.05 7.266a1.668 1.668 0 102.567 2.134l8.333-10c.056-.08.106-.163.15-.25 0-.084.083-.134.117-.217.075-.191.115-.395.116-.6a1.666 1.666 0 00-.116-.6c0-.083-.084-.133-.117-.217a1.996 1.996 0 00-.15-.25l-8.333-10a1.666 1.666 0 00-1.284-.6 1.667 1.667 0 00-1.283 2.734l6.05 7.266H8.333a1.667 1.667 0 100 3.334z">
                                         </path>
-                                    </svg></button>
-                            </div>
-                        </div><a
+                                    </svg>
+                            </button>
+                        </div>
+                    <a
                             class="Simple_simpleButtonRoot Simple_large Simple_outline  Simple_responsive"
                             style="display:block;margin:56px auto 0 auto" href="./about.html#friends">все друзья</a>
                     </div>
-                    <div style="display:none">
+                    <div class data-tab="special">
                         <div class="Carousel_carouselRoot " style="max-width: 1600px; margin: 64px auto 0px;">
-                            <div class="slick-slider slick-initialized">
-                                <div class="slick-list">
-                                    <div class="slick-track" style="opacity: 1; transform: translate3d(0px, 0px, 0px);">
-                                        <div data-index="0" class="slick-slide slick-active slick-current" tabindex="-1"
-                                            aria-hidden="false" style="outline: none; width: 0px;">
-                                            <div>
-                                                <div class="ImgCard_cardRoot"><img
-                                                        src="https://storage.yandexcloud.net/pp-prod/boemi_3cebae3310.webp"
-                                                        class="ImgCard_image">
-                                                    <div class="ImgCard_content">
-                                                        <p class="ImgCard_title">Ресторан „БоЭми“</p>
-                                                        <div class="ImgCard_description">
-                                                            <p>При <a href="https://boemirestoran.ru/">заказе</a> набора готовых
-                                                                обедов на неделю по промокоду «подари подарок» 10% пойдет на
-                                                                поддержку нуждающихся.</p>
-                                                        </div>
-                                                    </div>
+                            <div class="slider">
+                                <div data-index="0" class="slider-item" tabindex="-1"
+                                    aria-hidden="false" style="outline: none; width: 0px;">
+                                    <div>
+                                        <div class="ImgCard_cardRoot"><img
+                                                src="https://storage.yandexcloud.net/pp-prod/boemi_3cebae3310.webp"
+                                                class="ImgCard_image">
+                                            <div class="ImgCard_content">
+                                                <p class="ImgCard_title">Ресторан „БоЭми“</p>
+                                                <div class="ImgCard_description">
+                                                    <p>При <a href="https://boemirestoran.ru/">заказе</a> набора готовых
+                                                        обедов на неделю по промокоду «подари подарок» 10% пойдет на
+                                                        поддержку нуждающихся.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -1896,6 +1781,7 @@
     <script src="../scripts/slider.js"></script>
     <script src="../scripts/burger.js"></script>
     <script src="../scripts/dialog-button.js"></script>
+    <script src="../scripts/tabs.js"></script>
 </body>
 
 </html>
