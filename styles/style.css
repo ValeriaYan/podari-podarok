@@ -793,7 +793,7 @@
 
 .Generic_buttonRoot:hover:not([disabled]) {
     color     : var(--primary);
-    background: transparent
+    background: var(--text-white);
 }
 
 .Generic_buttonRoot:active:not([disabled]) {
@@ -1313,6 +1313,10 @@
     padding-bottom: 146px
 }
 
+.Default_defaultContainer_inner {
+    padding: 50px  0 50px 0;
+}
+
 @media screen and (max-width:1850px) {
     .Default_defaultContainer {
         padding-left : 100px;
@@ -1350,6 +1354,14 @@
     .Default_column {
         padding-top   : 40px;
         padding-bottom: 146px
+    }
+}
+
+@media (max-width: 585px) {
+    
+
+    .Default_defaultContainer_inner {
+        padding: 40px  0 30px 0;
     }
 }
 
@@ -1464,7 +1476,8 @@
     background-size: contain;
     display        : flex;
     flex-wrap      : wrap;
-    transition     : all .3s ease
+    transition     : all .3s ease;
+    margin-top: 80px;
 }
 
 .Bent_bentItem {
@@ -1546,7 +1559,8 @@
         background     : url(../assets/BentArrowRotated.svg) 50% no-repeat;
         background-size: contain;
         flex-direction : column;
-        flex-wrap      : nowrap
+        flex-wrap      : nowrap;
+        margin-top: 20px;
     }
 
     .Bent_bentItem {
@@ -1903,6 +1917,13 @@
 
 .Helps_block {
     padding-left: 32px
+}
+
+@media (max-width: 590px) {
+    .Helps_block {
+        padding-left: 0
+
+    }
 }
 
 .Helps_header {
@@ -3036,6 +3057,12 @@
 .About_section {
     padding: 40px 0 30px
 }
+@media (max-width:585px) {
+
+    .About_section {
+        padding-top: 0;
+    }
+}
 
 .About_flex {
     display        : flex;
@@ -4019,6 +4046,10 @@
 }
 
 @media screen and (max-width:928px) {
+    .IndexPage_section {
+
+        padding: 40px 0 60px;
+    }
     .IndexPage_section h1 {
         font-size    : 45px;
         line-height  : 40px;
@@ -4064,6 +4095,10 @@
 }
 
 @media screen and (max-width:550px) {
+    .IndexPage_section {
+
+        padding: 30px 0 40px;
+    }
     .IndexPage_section h1 {
         line-height: 36px
     }
@@ -7550,6 +7585,10 @@
     }
 }
 
+.form_qr.hide {
+    display: none;
+}
+
 
 .Sberbank_row {
     display     : -moz-flex;
@@ -7573,7 +7612,11 @@
     display       : -o-flex;
     display       : flex;
     flex-wrap     : wrap;
-    margin        : 0 -10px
+    margin        : 0 -10px;
+    display: none;
+}
+.Sberbank_sberbank.show {
+    display: flex;
 }
 
 .Sberbank_sberbank .Sberbank_sberbank_steps {
@@ -7730,7 +7773,7 @@
 }
 
 .Sberbank_petal_left_bottom {
-    border-radius: 50% 50% 50% 0
+    /* border-radius: 50% 50% 50% 0 */
 }
 
 .Sberbank_petal_left_bottom,
