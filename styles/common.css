@@ -109,7 +109,7 @@
     transition    : all .3s ease-in-out;
     display       : block;
     width         : 100%;
-    margin-top    : 20px;
+    margin-top    : 10px;
     text-align: left;
 }
 
@@ -123,8 +123,17 @@
 
 .Header_headerLinkArrowButton .popup-content,
 .Header_headerLinkArrowButton [role=tooltip].popup-content {
-    width     : 180px;
+    width     : 240px;
+    padding: 20px 30px !important;
+    border: 2px solid #E2EBF0 !important;
+    box-shadow: none !important;
 }
+.Header_headerLinkArrowButton .popup-content .popup-arrow,
+.Header_headerLinkArrowButton [role=tooltip].popup-content .popup-arrow {
+    stroke: #E2EBF0 !important;
+
+}
+
 
 .popup-content {
     display: none;
@@ -153,7 +162,7 @@
 }
 
 .popup-arrow {
-    filter           : drop-shadow(0 -3px 3px rgba(0, 0, 0, .16));
+    /* filter           : drop-shadow(0 -3px 2px rgba(0, 0, 0, .16)); */
     color            : #fff;
     stroke-width     : 2px;
     stroke           : #d7d7d7;
@@ -282,6 +291,9 @@
     user-select        : none;
     padding            : 10px 18px
 }
+.Header_headerLinkArrowButton.Header_active svg path {
+    stroke: var(--text-white) !important;
+}
 
 .Header_headerLinkArrow a,
 .Header_headerLink {
@@ -339,7 +351,7 @@
     cursor: pointer
 }
 
-.Header_headerLinkArrow.Header_active a {
+.Header_headerLinkArrowButton.Header_active .Header_headerLinkArrow > a,.Header_headerLinkArrow.Header_active .Header_headerLinkArrow > a {
     color: var(--text-white)
 }
 
@@ -1656,11 +1668,18 @@
 }
 
 .Family_mini .Family_cardHeading {
-    justify-content: left;
-    margin-bottom  : 20px
+    /* justify-content: left; */
+    margin-bottom  : 20px;
+    display: block;
 }
 
-.Family_mini .Family_cardHeading p:first-child,
+.Family_mini .Family_cardHeading p:first-child {
+    font-size  : 16.Toggle_togglepx;
+    font-weight: 700;
+    line-height: 130%;
+    white-space: nowrap
+
+}
 .Family_mini .Family_cardHeading p:last-child {
     font-size  : 20px;
     font-weight: 700;
@@ -1670,7 +1689,7 @@
 
 .Family_mini .Family_cardHeading p:last-child {
     -webkit-mask-image: -webkit-radial-gradient(#fff, #000);
-    margin-left       : 16px;
+    /* margin-left       : 16px; */
     text-overflow     : ellipsis;
     overflow          : hidden
 }
@@ -2819,17 +2838,17 @@
 .Dialog_dialogBloop {
     display      : block;
     position     : relative;
-    width        : calc(100% - 40px);
+    width        : calc(100% - 80px);
     height       : -moz-max-content;
     height       : max-content;
     z-index      : 10;
     background   : var(--white);
     border       : 2px solid var(--gray-40);
-    border-radius: 96px 96px 24px 96px;
+    border-radius: 48px 48px 24px 48px;
     opacity      : .96;
-    margin       : 0 40px 40px 0;
+    margin       : 0 40px 40px 40px;
     transition   : all .3s ease-in-out;
-    padding      : 53px 50px 53px 96px
+    padding      : 25px 25px 60px 30px
 }
 
 .Dialog_mini .Dialog_dialogBloop {
@@ -2857,7 +2876,7 @@
 .Dialog_dialogBloop p {
     font-size  : 18px;
     font-weight: 600;
-    line-height: 29px
+    line-height: 125%;
 }
 
 .Dialog_miniText .Dialog_dialogBloop p {
@@ -2872,7 +2891,7 @@
 .Dialog_button {
     position  : absolute;
     bottom    : 0;
-    left      : 55%;
+    left      : 50%;
     z-index   : 11;
     transition: all .3s ease-in-out;
     transform : translate(-50%, 50%)
@@ -2882,11 +2901,11 @@
     opacity: 0
 }
 
-@media (max-width:768px) {
+@media (max-width:920px) {
     .Dialog_dialogBloop {
-        width  : calc(100% - 15px);
-        padding: 53px 50px 43px 96px;
-        margin : 0 15px 25px 0
+        width  : calc(100% - 100px);
+        padding: 25px 30px 40px 48px;
+        margin : 0 50px 25px 50px
     }
 
     .Dialog_mini .Dialog_dialogBloop {
@@ -2900,7 +2919,9 @@
     }
 
     .Dialog_dialogBloop {
-        padding: 43px 40px 43px 66px
+        width  : calc(100% - 10px);
+        padding: 25px 30px 50px 48px;
+        margin : 0 10px 25px 00px
     }
 
     .Dialog_dialogBloop p {
@@ -3213,6 +3234,14 @@
     outline        : none;
     cursor         : pointer;
     transition     : all .3s ease-in-out
+}
+
+@media (max-width: 585px) {
+    .CardTabs_tab {
+        width          : calc(50% - 10px);
+        max-width      : calc(50% - 10px);
+
+    }
 }
 
 .CardTabs_title {
@@ -3534,12 +3563,12 @@
     }
 }
 
-@media(max-width:558px) {
+/* @media(max-width:558px) {
     .Toggle_toggle {
         font-size  : 6px;
         line-height: 10px
     }
-}
+} */
 
 
 .Error_root {

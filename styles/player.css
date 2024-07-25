@@ -1671,7 +1671,7 @@ a.plyr__control:before {
 }
 
 .slick-loading .slick-list {
-    background: #fff url(/_next/static/media/ajax-loader.0b80f665.gif) 50% no-repeat
+    /* background: #fff url(/_next/static/media/ajax-loader.0b80f665.gif) 50% no-repeat */
 }
 
 @font-face {
