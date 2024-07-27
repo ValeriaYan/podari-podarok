@@ -45,6 +45,7 @@
     <link rel="stylesheet" href="../../styles/common.css">
     <link rel="stylesheet" href="../../styles/player.css">
     <link rel="stylesheet" href="../../styles/style.css">
+    <link rel="stylesheet" href="../../styles/account.css">
 </head>
 <body>
     <div id="__next">
@@ -256,62 +257,240 @@
             href="../donate.html">
             <div class="Mobile_helpBtnContent">помочь</div>
         </a>
-        <div class="Page_root Page_white ">
-            <div class="Default_defaultContainer "
-                style="padding-top: 80px; height: unset; padding-bottom: 104px; position: relative;">
-                <div class="GiverAccount_root">
-                    <h1>Личный профиль</h1>
-                    <div class="GiverAccount_header">
-                        <div class="GiverAccount_logo"></div>
-                        <div class="GiverAccount_headerContent">
-                            <div class="GiverAccount_name">
-                                <p>Иван Иванов</p>
-                                <p></p>
-                                <div class="GiverAccount_role">Даритель</div>
+        <div class="Page_root">
+            <div class="Default_defaultContainer Account_container"
+                style="height: unset;  position: relative; background-color: #e4e8eb;">
+                <div class="GiverAccount_root Account_root">
+                    <div class="Account_main">
+                        <div class="Account_controls Account_header">
+                            <button aria-disabled="false"
+                            class="Account_control _active"><svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.796763 8.72388H6.24148L6.12147 15.7996H0.796763V8.72388Z" fill="black"/>
+                                <path d="M8.84375 8.72388H14.3263V15.7996H8.84375V8.72388Z" fill="black"/>
+                                <path d="M4.5187 0.455391C4.14032 0.218494 3.69297 0.144042 3.25844 0.24382C2.82395 0.344256 2.45474 0.607788 2.2183 0.98593C1.73032 1.76627 1.9683 2.79836 2.74886 3.28632C3.2648 3.60881 5.14992 3.74396 6.64901 3.75466C5.96956 2.38742 5.03617 0.778517 4.5187 0.455391Z" fill="black"/>
+                                <path d="M11.7417 0.243915C11.6162 0.215094 11.4895 0.200684 11.3633 0.200684C11.0542 0.200684 10.7504 0.287147 10.4819 0.455266C9.96419 0.778845 9.03034 2.38754 8.35156 3.75477C9.84344 3.75674 11.7467 3.60237 12.2517 3.28644C13.0321 2.79845 13.2703 1.76639 12.7823 0.986046C12.5456 0.608104 12.1764 0.344545 11.7417 0.243935L11.7417 0.243915Z" fill="black"/>
+                                <path d="M0 4.83423H6V7.64466H0V4.83423Z" fill="black"/>
+                                <path d="M9 4.83423H15V7.64466H9V4.83423Z" fill="black"/>
+                                </svg>
+                                
+                            <div class="Account_controlText">Подарки</div>
+                        </button>
+                        <button aria-disabled="false" class="Account_control"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_522_26869)">
+                            <path d="M22 9.24L14.81 8.62L12 2L9.19 8.63L2 9.24L7.46 13.97L5.82 21L12 17.27L18.18 21L16.55 13.97L22 9.24ZM12 15.4L8.24 17.67L9.24 13.39L5.92 10.51L10.3 10.13L12 6.1L13.71 10.14L18.09 10.52L14.77 13.4L15.77 17.68L12 15.4Z" fill="#999B9F"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_522_26869">
+                            <rect width="24" height="24" fill="white"/>
+                            </clipPath>
+                            </defs>
+                            </svg>
+                            
+                            <div class="Account_controlText">Избранные семьи</div>
+                        </button></div>
+                        <div class="Account_body Gifts">
+                            <div class="Gifts_giftCard Gift">
+                                <div class="Gift_top">
+                                    <div class="Gift_code">7-ВРН-ПД22 Воронеж</div>
+                                    <div class="Gift_status"></div>
+                                </div>
+                                <div class="Gift_family">Клим, София и мама Юлия</div>
+                                <div class="Gift_product">
+                                    <div class="Gift_productName">Туфли</div>
+                                    <a href="#" class="Gift_example">
+                                        <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M12 1L1 12" stroke="#999B9F" stroke-width="1.5"/>
+                                            <path d="M5.58203 0.994629L11.9985 1V6.95296" stroke="#999B9F" stroke-width="1.5"/>
+                                            </svg>
+                                        <p>Пример</p>
+                                    </a>
+                                </div>
+                                <div class="Gift_buttons">
+                                    <button class="Gift_button Gift_question">Вопрос волонтеру</button>
+                                    <button class="Gift_button Gift_cancle">Отменить заказ</button>
+                                </div>
                             </div>
-                            <div class="GiverAccount_block"><span>Подарки</span>
-                                <p>0 подарков</p>
-                                <p>0 семьям</p>
+                            <div class="Gifts_giftCard Gift">
+                                <div class="Gift_top">
+                                    <div class="Gift_code">7-ВРН-ПД22 Воронеж</div>
+                                    <div class="Gift_status"></div>
+                                </div>
+                                <div class="Gift_family">Клим, София и мама Юлия</div>
+                                <div class="Gift_product">
+                                    <div class="Gift_productName">Туфли</div>
+                                    <a href="#" class="Gift_example">
+                                        <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M12 1L1 12" stroke="#999B9F" stroke-width="1.5"/>
+                                            <path d="M5.58203 0.994629L11.9985 1V6.95296" stroke="#999B9F" stroke-width="1.5"/>
+                                            </svg>
+                                        <p>Пример</p>
+                                    </a>
+                                </div>
+                                <div class="Gift_buttons">
+                                    <button class="Gift_button Gift_question">Вопрос волонтеру</button>
+                                    <button class="Gift_button Gift_cancle">Отменить заказ</button>
+                                </div>
                             </div>
-                            <div class="GiverAccount_block"><span>Контакты</span>
-                                <p>ivan.ivanov@gmail.com</p>
-                                <p>+7 (923) 690-27-58</p>
+                            <div class="Gifts_giftCard Gift">
+                                <div class="Gift_top">
+                                    <div class="Gift_code">7-ВРН-ПД22 Воронеж</div>
+                                    <div class="Gift_status"></div>
+                                </div>
+                                <div class="Gift_family">Клим, София и мама Юлия</div>
+                                <div class="Gift_product">
+                                    <div class="Gift_productName">Туфли</div>
+                                    <a href="#" class="Gift_example">
+                                        <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M12 1L1 12" stroke="#999B9F" stroke-width="1.5"/>
+                                            <path d="M5.58203 0.994629L11.9985 1V6.95296" stroke="#999B9F" stroke-width="1.5"/>
+                                            </svg>
+                                        <p>Пример</p>
+                                    </a>
+                                </div>
+                                <div class="Gift_buttons">
+                                    <button class="Gift_button Gift_question">Вопрос волонтеру</button>
+                                    <button class="Gift_button Gift_cancle">Отменить заказ</button>
+                                </div>
                             </div>
-                            <div class="GiverAccount_menu"><button
-                                    class=" Generic_iconRoot Generic_black undefined "><svg
-                                        xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none"
-                                        viewBox="0 0 24 24" class="Generic_icon"
-                                        pathClassName="Generic_iconPath">
-                                        <path
-                                            d="M15 7.99951V3.99951C15 2.89494 14.1046 1.99951 13 1.99951H4C2.89543 1.99951 2 2.89494 2 3.99951L2 19.9995C2 21.1041 2.89543 21.9995 4 21.9995H13C14.1046 21.9995 15 21.1041 15 19.9995V15.9995"
-                                            stroke="var(--primary)" stroke-width="2" stroke-linecap="round"></path>
-                                        <path
-                                            d="M19 15L21.2929 12.7071C21.6834 12.3166 21.6834 11.6834 21.2929 11.2929L19 9"
-                                            stroke="var(--primary)" stroke-width="2" stroke-linecap="round"></path>
-                                        <path d="M21 12L9 12" stroke="var(--primary)" stroke-width="2"
-                                            stroke-linecap="round"></path>
-                                    </svg>
-                                    <p style="text-transform: unset; margin-left: 8px;">Выйти</p>
-                                </button></div>
+                            <div class="Gifts_giftCard Gift">
+                                <div class="Gift_top">
+                                    <div class="Gift_code">7-ВРН-ПД22 Воронеж</div>
+                                    <div class="Gift_status"></div>
+                                </div>
+                                <div class="Gift_family">Клим, София и мама Юлия</div>
+                                <div class="Gift_product">
+                                    <div class="Gift_productName">Туфли</div>
+                                    <a href="#" class="Gift_example">
+                                        <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M12 1L1 12" stroke="#999B9F" stroke-width="1.5"/>
+                                            <path d="M5.58203 0.994629L11.9985 1V6.95296" stroke="#999B9F" stroke-width="1.5"/>
+                                            </svg>
+                                        <p>Пример</p>
+                                    </a>
+                                </div>
+                                <div class="Gift_buttons">
+                                    <button class="Gift_button Gift_question">Вопрос волонтеру</button>
+                                    <button class="Gift_button Gift_cancle">Отменить заказ</button>
+                                </div>
+                            </div>
+                            <div class="Gifts_giftCard Gift">
+                                <div class="Gift_top">
+                                    <div class="Gift_code">7-ВРН-ПД22 Воронеж</div>
+                                    <div class="Gift_status"></div>
+                                </div>
+                                <div class="Gift_family">Клим, София и мама Юлия</div>
+                                <div class="Gift_product">
+                                    <div class="Gift_productName">Туфли</div>
+                                    <a href="#" class="Gift_example">
+                                        <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M12 1L1 12" stroke="#999B9F" stroke-width="1.5"/>
+                                            <path d="M5.58203 0.994629L11.9985 1V6.95296" stroke="#999B9F" stroke-width="1.5"/>
+                                            </svg>
+                                        <p>Пример</p>
+                                    </a>
+                                </div>
+                                <div class="Gift_buttons">
+                                    <button class="Gift_button Gift_question">Вопрос волонтеру</button>
+                                    <button class="Gift_button Gift_cancle">Отменить заказ</button>
+                                </div>
+                            </div>
+                            <div class="Gifts_giftCard Gift">
+                                <div class="Gift_top">
+                                    <div class="Gift_code">7-ВРН-ПД22 Воронеж</div>
+                                    <div class="Gift_status"></div>
+                                </div>
+                                <div class="Gift_family">Клим, София и мама Юлия</div>
+                                <div class="Gift_product">
+                                    <div class="Gift_productName">Туфли</div>
+                                    <a href="#" class="Gift_example">
+                                        <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M12 1L1 12" stroke="#999B9F" stroke-width="1.5"/>
+                                            <path d="M5.58203 0.994629L11.9985 1V6.95296" stroke="#999B9F" stroke-width="1.5"/>
+                                            </svg>
+                                        <p>Пример</p>
+                                    </a>
+                                </div>
+                                <div class="Gift_buttons">
+                                    <button class="Gift_button Gift_question">Вопрос волонтеру</button>
+                                    <button class="Gift_button Gift_cancle">Отменить заказ</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="GiverAccount_sidebar Account_sidebar">
+                            <div class="InfoBlock_block">
+                                <div class="InfoBlock_row" style="margin-bottom: 25px; align-items: flex-end;">
+                                    <div class="InfoBlock_group InfoBlock_photo">
+                                        <div class="InfoBlock_plus">
+                                            <svg fill="#ffffff" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="10px" height="10px" viewBox="0 0 45.402 45.402" xml:space="preserve" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <path d="M41.267,18.557H26.832V4.134C26.832,1.851,24.99,0,22.707,0c-2.283,0-4.124,1.851-4.124,4.135v14.432H4.141 c-2.283,0-4.139,1.851-4.138,4.135c-0.001,1.141,0.46,2.187,1.207,2.934c0.748,0.749,1.78,1.222,2.92,1.222h14.453V41.27 c0,1.142,0.453,2.176,1.201,2.922c0.748,0.748,1.777,1.211,2.919,1.211c2.282,0,4.129-1.851,4.129-4.133V26.857h14.435 c2.283,0,4.134-1.867,4.133-4.15C45.399,20.425,43.548,18.557,41.267,18.557z"></path> </g> </g></svg>
+                                        </div>
+                                        <div class="InfoBlock_img">
+                                            <img src="../../assets/images/photo.jpg" alt="">
+                                        </div>
+                                        <div class="InfoBlock_label">Даритель</div>
+                                    </div>
+                                    <div class="InfoBlock_group InfoBlock_top">
+                                        <div class="InfoBlock_group">
+                                            <div class="InfoBlock_rowControl InfoBlock_rowName">
+                                                <div class="InfoBlock_group">
+                                                    <p class="InfoBlock_name">Анастасия <br>Фомичева</p>
+                                                </div>
+                                            </div>
+                                            <div class="InfoBlock_rowControl InfoBlock_rowCity">
+                                                <div class="InfoBlock_group">
+                                                    <p class="InfoBlock_city">Москва</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="InfoBlock_more">
+                                            <svg width="16" height="9" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1 1L8 7L15 1" stroke="#FF3351" stroke-width="2" stroke-linecap="round"/>
+                                                </svg>                                                
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="InfoBlock_separator"></div>
+                                <div class="InfoBlock_rowControl InfoBlock_rowEmail">
+                                    <div class="InfoBlock_group">
+                                        <p class="InfoBlock_email">anastasia_f_2022@gmail.com</p>
+                                    </div>
+                                    <div class="InfoBlock_controls">
+                                        <button class="InfoBlock_btn"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 14 14">
+                                                <path d="M8.58976 2.70459L0.453762 10.8376L0 14.0001L3.16368 13.5465L11.2997 5.41351L8.58976 2.70459Z" fill="#999B9F"></path>
+                                                <path d="M11.7479 0.443872L13.5557 2.25092C13.6755 2.37071 13.8754 2.57725 13.9986 2.71073C13.8651 2.84421 13.6755 3.03459 13.5557 3.15449L12.1999 4.50975L9.48828 1.79913L10.844 0.443872C10.9639 0.32408 11.1945 0.112947 11.3075 0C11.4615 0.154019 11.6281 0.32408 11.7479 0.443872Z" fill="#999B9F"></path>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="InfoBlock_rowControl InfoBlock_rowPhone">
+                                    <div class="InfoBlock_group">
+                                        <p class="InfoBlock_phone">+7 (123) 456-78-90</p>
+                                    </div>
+                                    <div class="InfoBlock_controls">
+                                        <button class="InfoBlock_btn"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 14 14">
+                                                <path d="M8.58976 2.70459L0.453762 10.8376L0 14.0001L3.16368 13.5465L11.2997 5.41351L8.58976 2.70459Z" fill="#999B9F"></path>
+                                                <path d="M11.7479 0.443872L13.5557 2.25092C13.6755 2.37071 13.8754 2.57725 13.9986 2.71073C13.8651 2.84421 13.6755 3.03459 13.5557 3.15449L12.1999 4.50975L9.48828 1.79913L10.844 0.443872C10.9639 0.32408 11.1945 0.112947 11.3075 0C11.4615 0.154019 11.6281 0.32408 11.7479 0.443872Z" fill="#999B9F"></path>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="InfoBlock_separator"></div>
+                                <div class="InfoBlock_gifts">
+                                    <p>Подарки</p>
+                                </div>
+                                <div class="InfoBlock_giftList">
+                                    <p class="InfoBlock_text">1 Подарок</p>
+                                    <p class="InfoBlock_text">1 Семья</p>
+                                </div>
+                                <button class="InfoBlock_logout"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                        <path d="M15 7.99951V3.99951C15 2.89494 14.1046 1.99951 13 1.99951H4C2.89543 1.99951 2 2.89494 2 3.99951L2 19.9995C2 21.1041 2.89543 21.9995 4 21.9995H13C14.1046 21.9995 15 21.1041 15 19.9995V15.9995" stroke="#FF3351" stroke-width="2" stroke-linecap="round"></path>
+                                        <path d="M19 15L21.2929 12.7071C21.6834 12.3166 21.6834 11.6834 21.2929 11.2929L19 9" stroke="#FF3351" stroke-width="2" stroke-linecap="round"></path>
+                                        <path d="M21 12L9 12" stroke="#FF3351" stroke-width="2" stroke-linecap="round">
+                                        </path>
+                                    </svg>Выйти
+                                </button>
+                            </div>
                         </div>
                     </div>
-                    <div class="_2Geb0" style="margin-top: 65px;"><button aria-disabled="false"
-                            class="_1GJni _3nzwe _1_B68"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path fill="var(--primary)" class="_zl_7f"
-                                    d="M19.2002 6.99999H18.8102C18.93 6.67992 18.9943 6.34172 19.0002 5.99999C18.9792 5.18658 18.6372 4.41452 18.0489 3.85242C17.4606 3.29033 16.6737 2.98387 15.8602 2.99999C15.0607 3.01726 14.2806 3.24915 13.6015 3.67138C12.9224 4.09361 12.3694 4.69065 12.0002 5.39999C11.631 4.69065 11.078 4.09361 10.3989 3.67138C9.71979 3.24915 8.93967 3.01726 8.1402 2.99999C7.32668 2.98387 6.53983 3.29033 5.9515 3.85242C5.36318 4.41452 5.02118 5.18658 5.0002 5.99999C5.00611 6.34172 5.07037 6.67992 5.1902 6.99999H4.8002C4.53706 7.02498 4.28148 7.10188 4.04824 7.22625C3.815 7.35062 3.60873 7.51999 3.44134 7.72456C3.27396 7.92914 3.14879 8.16487 3.07307 8.41812C2.99735 8.67137 2.97259 8.93711 3.0002 9.19999V12.8C2.95349 13.2842 3.07798 13.7695 3.35204 14.1715C3.62609 14.5734 4.03237 14.8666 4.5002 15V19.37C4.53107 19.8236 4.73725 20.2473 5.07508 20.5516C5.41291 20.8558 5.85588 21.0166 6.3102 21H17.6902C18.1511 21.0163 18.5997 20.85 18.9387 20.5373C19.2776 20.2245 19.4794 19.7907 19.5002 19.33V15C19.968 14.8666 20.3743 14.5734 20.6484 14.1715C20.9224 13.7695 21.0469 13.2842 21.0002 12.8V9.19999C21.0278 8.93711 21.0031 8.67137 20.9273 8.41812C20.8516 8.16487 20.7264 7.92914 20.5591 7.72456C20.3917 7.51999 20.1854 7.35062 19.9522 7.22625C19.7189 7.10188 19.4633 7.02498 19.2002 6.99999ZM19.0002 9.19999V12.8C19.0122 12.8661 19.0122 12.9339 19.0002 13H13.0002V8.99999H19.0002C19.0122 9.06612 19.0122 9.13387 19.0002 9.19999ZM15.8602 4.99999C16.1435 4.98349 16.4219 5.07914 16.6352 5.26627C16.8486 5.4534 16.9797 5.71697 17.0002 5.99999C16.9797 6.28302 16.8486 6.54659 16.6352 6.73372C16.4219 6.92085 16.1435 7.0165 15.8602 6.99999H13.4002C13.5752 6.46577 13.9001 5.99315 14.3363 5.63853C14.7725 5.2839 15.3015 5.06225 15.8602 4.99999ZM7.0002 5.99999C7.02074 5.71697 7.15185 5.4534 7.36518 5.26627C7.57851 5.07914 7.85691 4.98349 8.1402 4.99999C8.69712 5.06406 9.22396 5.28654 9.65823 5.64104C10.0925 5.99554 10.4159 6.46718 10.5902 6.99999H8.1402C7.85691 7.0165 7.57851 6.92085 7.36518 6.73372C7.15185 6.54659 7.02074 6.28302 7.0002 5.99999ZM5.0002 9.19999C4.9882 9.13387 4.9882 9.06612 5.0002 8.99999H11.0002V13H5.0002C4.9882 12.9339 4.9882 12.8661 5.0002 12.8V9.19999ZM6.5002 15H11.0002V19H6.5002V15ZM13.0002 19V15H17.5002V19H13.0002Z">
-                                </path>
-                            </svg>
-                            <div class="_1CxKy">подарки</div>
-                        </button><button aria-disabled="false" class="_1GJni"><svg width="24" height="24"
-                                viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path fill="var(--primary)" class="_zl_7f"
-                                    d="M17.5598 21C17.3998 21.0006 17.2421 20.9629 17.0998 20.89L11.9998 18.22L6.89976 20.89C6.73416 20.977 6.54744 21.0159 6.36084 21.0022C6.17424 20.9884 5.99524 20.9226 5.84419 20.8122C5.69314 20.7017 5.5761 20.5512 5.50638 20.3775C5.43665 20.2039 5.41704 20.0142 5.44976 19.83L6.44976 14.2L2.32976 10.2C2.20122 10.0717 2.11003 9.91083 2.06599 9.73466C2.02195 9.55848 2.02671 9.37364 2.07976 9.19996C2.13772 9.02224 2.24434 8.86431 2.38751 8.74412C2.53069 8.62392 2.70469 8.54627 2.88976 8.51996L8.58976 7.68996L11.0998 2.55996C11.1816 2.39089 11.3095 2.2483 11.4687 2.14853C11.6278 2.04876 11.8119 1.99585 11.9998 1.99585C12.1876 1.99585 12.3717 2.04876 12.5309 2.14853C12.69 2.2483 12.8179 2.39089 12.8998 2.55996L15.4398 7.67996L21.1398 8.50996C21.3248 8.53627 21.4988 8.61392 21.642 8.73412C21.7852 8.85432 21.8918 9.01224 21.9498 9.18996C22.0028 9.36364 22.0076 9.54848 21.9635 9.72466C21.9195 9.90083 21.8283 10.0617 21.6998 10.19L17.5798 14.19L18.5798 19.82C18.6155 20.0074 18.5968 20.2012 18.5259 20.3784C18.455 20.5556 18.3349 20.7088 18.1798 20.82C17.9987 20.9469 17.7806 21.0102 17.5598 21ZM11.9998 16.1C12.1601 16.0959 12.3186 16.1338 12.4598 16.21L16.2298 18.21L15.5098 14C15.4818 13.8392 15.4936 13.6741 15.5442 13.5189C15.5947 13.3638 15.6825 13.2234 15.7998 13.11L18.7998 10.18L14.5998 9.55996C14.4457 9.52895 14.3012 9.46209 14.1778 9.3648C14.0545 9.2675 13.9558 9.14252 13.8898 8.99996L11.9998 5.24996L10.1098 8.99996C10.0374 9.14367 9.93145 9.26779 9.80089 9.3618C9.67032 9.45581 9.51899 9.51693 9.35976 9.53996L5.15976 10.16L8.15976 13.09C8.27704 13.2034 8.36478 13.3438 8.41533 13.4989C8.46588 13.6541 8.4777 13.8192 8.44976 13.98L7.72976 18.14L11.4998 16.14C11.6595 16.0806 11.8326 16.0667 11.9998 16.1Z">
-                                </path>
-                            </svg>
-                            <div class="_1CxKy">избранные семьи</div>
-                        </button></div>
-                    <p class="GiverAccount_nope">Пока вы не оформили ни одного подарка</p>
                 </div>
             </div>
         </div>
@@ -366,6 +545,7 @@
     </div>
     <script src="../../scripts/burger.js"></script>
     <script src="../../scripts/dropdown.js"></script>
+    <script src="../../scripts/account-sidebar.js"></script>
 </body>
 </html>
 

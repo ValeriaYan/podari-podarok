@@ -1,0 +1,626 @@
+.Account_container {
+    padding-top: 50px;
+    padding-bottom: 70px;
+}
+
+.Account_sidebar {
+    width      : 270px;
+    border-radius : 18px;
+    grid-area: 2 / 2 / 3 / 3;
+    background: linear-gradient(156.35deg, rgba(175, 182, 186, 0.12) 0%, rgba(175, 182, 186, 0.21) 100%);
+    border: 1px solid;
+    border-image-source: linear-gradient(156.35deg, rgba(175, 182, 186, 0.5) 0%, rgba(175, 182, 186, 0) 67.19%);
+}
+
+.Account_controls {
+    display: flex;
+    margin-bottom: 17px;
+    margin-top: 0;
+}
+
+.Account_header {
+    width: 100%;
+    grid-area: 1 / 1 / 2 / 3;
+}
+
+.FamilyLk_info {
+    margin-bottom: 20px
+}
+
+.Account_main {
+    display: grid;
+    grid-template-columns: 1fr 270px;
+    grid-template-rows: auto auto auto auto;
+}
+
+.Account_body {
+    margin-right: 20px;
+    grid-area: 2 / 1 / 5 / 2;
+}
+
+.InfoBlock_block {
+    padding       : 20px 20px 23px;
+    line-height   : 1.2;
+    color         : #333a4a;
+    font-weight   : 500;
+    min-height    : 340px;
+}
+
+.InfoBlock_label {
+    display      : inline-flex;
+    align-items  : center;
+    padding      : 2px 7px;
+    background   : #2147aa;
+    border-radius: 40px 60px 12px 40px;
+    font-size    : 11px;
+    line-height  : 13px;
+    color        : #fff;
+    margin-bottom: 9px
+}
+
+.GiverAccount_sidebar .InfoBlock_label {
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: var(--primary);
+}
+
+.InfoBlock_plus {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: var(--primary);
+    border-radius: 999px;
+}
+
+.InfoBlock_plus svg{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.InfoBlock_name {
+    font-weight: 600;
+    font-size  : 18px
+}
+
+.InfoBlock_city,
+.InfoBlock_gifts {
+    font-size: 12px;
+    color    : #999b9f
+}
+
+.InfoBlock_gifts {
+    margin-bottom: 5px;
+}
+
+.InfoBlock_giftList {
+    display: flex;
+    margin-bottom: 24px;
+    justify-content: space-between;
+}
+
+.InfoBlock_separator {
+    background   : #afb6ba;
+    opacity      : .3;
+    border-radius: 10px;
+    height       : 1px;
+    margin-bottom: 20px;
+    width        : 100%
+}
+
+.InfoBlock_email,
+.InfoBlock_phone,
+.InfoBlock_text {
+    font-weight: 600;
+    font-size  : 14px
+}
+
+.InfoBlock_email {
+    margin-bottom: 15px
+}
+
+.InfoBlock_row {
+    width          : 100%;
+    display        : flex;
+    align-items    : center;
+    justify-content: space-between;
+    margin-bottom  : 5px
+}
+
+.InfoBlock_logout {
+    width          : 100%;
+    border         : none;
+    border-radius  : 32px;
+    padding        : 12px 5px;
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+    gap            : 6px;
+    background     : var(--white);
+    font-weight    : 500;
+    font-size      : 14px;
+    line-height    : 120%;
+    color          : #333a4a;
+    cursor         : pointer
+}
+
+.InfoBlock_rowControl {
+    width      : 100%;
+    display    : flex;
+    gap        : 5px;
+    font-weight: 600;
+}
+
+.InfoBlock_group {
+    flex-grow: 1
+}
+
+.InfoBlock_top {
+    display: flex;
+}
+
+.InfoBlock_more {
+    display: none;
+    align-self: flex-start;
+}
+
+.InfoBlock_controls {
+    flex-shrink: 0
+}
+
+.InfoBlock_rowName {
+    margin-bottom: 10px
+}
+
+.InfoBlock_btn {
+    padding   : 0;
+    border    : none;
+    background: none;
+    cursor    : pointer
+}
+
+
+.InfoBlock_rowPhone {
+    margin-bottom: 20px
+}
+
+.InfoBlock_photo {
+    position: relative;
+    margin-right: 15px;
+    max-height: 80px;
+    max-width: 80px;
+}
+
+.InfoBlock_img img {
+    border-radius: 999px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.SwitchTabs_block {
+    padding      : 28px 20px 20px;
+    background   : linear-gradient(156.35deg, hsla(202, 7%, 71%, .12), hsla(202, 7%, 71%, .21));
+    border-radius: 18px;
+    grid-area: 3 / 2 / 4 / 3;
+    width: 270px;
+}
+
+.SwitchTabs_newAction {
+    width        : 100%;
+    display      : block;
+    text-align   : center;
+    background   : var(--primary);
+    padding      : 12px 5px;
+    border: none;
+    border-radius: 32px;
+    font-weight  : 600;
+    font-size    : 14px;
+    line-height  : 120%;
+    color        : var(--white)
+}
+
+
+.Account_controlText {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 20px;
+    color: var(--text-gray);
+}
+
+.Account_control._active .Account_controlText {
+    color: black;
+}
+
+.Account_control {
+    display: flex;
+    align-items: center;
+    background: transparent;
+    padding: 8px 16px;
+    gap: 8px;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    transition: all .3s ease;
+}
+
+.Gifts {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.Gift {
+    position: relative;
+    background-color: var(--white);
+    border-radius: 10px;
+    padding: 20px;
+    color: #333A4A;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+
+.Gift_top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.Gift_status {
+    width: 12px;
+    height: 12px;
+    background-color: #009048;
+    border-radius: 999px;
+}
+
+.Gift_family {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.Gift_product {
+    display: flex;
+    color: #999B9F;
+    margin-bottom: 30px;
+}
+
+.Gift_productName {
+    margin-right: 20px;
+}
+
+.Gift_example {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: #999B9F;
+}
+
+.Gift_example svg {
+    margin-right: 5px;
+}
+
+.Gift_buttons {
+    display: flex;
+}
+
+.Gift_button {
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+}
+
+.Gift_question {
+    margin-right: 30px;
+}
+
+.Gift_cancle {
+    color: #FF3351;
+}
+
+@media (max-width: 1280px) {
+    .Gifts {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 992px) {
+    .Gifts {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 700px) {
+
+    .Account_main {
+        grid-template-columns: 1fr;
+    }
+
+    .Account_header {
+        grid-area: 2 / 1 / 3 / 2;
+    }
+
+    .Default_defaultContainer.Account_container {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .Account_sidebar {
+        height: 134px;
+        margin-bottom: 30px;
+        grid-area: 1 / 1 / 2 / 2;
+        width: 100%;
+    }
+
+    .Account_controls {
+        justify-content: space-between;
+    }
+
+    .Account_control {
+        padding: 8px 0;
+    }
+
+    .Account_body {
+        margin-right: 0;
+        grid-area: 3 / 1 / 4 / 2;
+    }
+
+    .SwitchTabs_block {
+        width: 100%;
+        grid-area: 4 / 1 / 5 / 2;
+    }
+
+    .InfoBlock_more {
+        display: block;
+    }
+
+    .InfoBlock_separator,
+    .InfoBlock_rowEmail,
+    .InfoBlock_rowPhone,
+    .InfoBlock_gifts,
+    .InfoBlock_giftList,
+    .InfoBlock_logout {
+        display: none;
+    }
+
+    .Gift_buttons {
+        justify-content: space-between;
+    }
+}
+
+.Account_sidebar._full .InfoBlock_separator,
+.Account_sidebar._full .InfoBlock_rowEmail,
+.Account_sidebar._full .InfoBlock_rowPhone,
+.Account_sidebar._full .InfoBlock_gifts,
+.Account_sidebar._full .InfoBlock_giftList,
+.Account_sidebar._full .InfoBlock_logout{
+    display: flex;
+}
+
+.Account_sidebar._full {
+    height: auto;
+}
+
+
+.CurrentNeeds_header {
+    display      : flex;
+    align-items  : center;
+    margin-bottom: 18px
+}
+
+.CurrentNeeds_title {
+    margin-left : 7px;
+    margin-right: 30px;
+    font-weight : 600;
+    font-size   : 18px;
+    color       : #333a4a
+}
+
+.CurrentNeeds_title > span {
+    margin-left: 30px;
+    color: #999B9F;
+}
+
+.CurrentNeeds_subtitle {
+    font-weight: 600;
+    font-size  : 18px;
+    color      : #999b9f
+}
+
+.CurrentNeeds_card {
+    background   : #fff;
+    border-radius: 10px
+}
+
+.Need_product {
+    min-height   : 64px;
+    padding      : 16px 16px 16px 20px;
+    width        : calc((100% - 1 * 10px) / 2);
+    background   : #edf1f3;
+    border-radius: 10px;
+    display      : flex;
+    align-items  : center;
+    color        : #292929
+}
+
+.Need_product .Need_title {
+    font-weight : 500;
+    font-size   : 14px;
+    margin-right: auto
+}
+
+.Need_statusNull {
+    color: #afb6ba
+}
+
+.Need_btnTip {
+    background  : none;
+    border      : none;
+    line-height : 0;
+    margin-right: 10px
+}
+
+.Need_tip {
+    font-weight   : 600;
+    font-size     : 13px;
+    line-height   : 110%;
+    text-align    : center;
+    letter-spacing: -.01em;
+    color         : #292929
+}
+
+.Need_modalBlock {
+    padding       : 26px 58px;
+    display       : flex;
+    flex-direction: column;
+    align-items   : center
+}
+
+.Need_modalTitle {
+    text-align   : center;
+    font-weight  : 600;
+    font-size    : 22px;
+    line-height  : 120%;
+    color        : #292929;
+    margin-bottom: 30px
+}
+
+.Need_btnConfirm {
+    background: transparent;
+    color     : #009048;
+    padding      : 5px 9px;
+    display      : block;
+    border       : 1px solid #009048;
+    border-radius: 7px;
+    cursor       : pointer;
+    font-weight  : 700;
+    font-size    : 12px;
+    line-height  : 120%;
+    transition   : all .2s ease-in-out;
+    margin-right : 14px
+}
+
+.Need_btnConfirm:hover {
+    background   : #009048;
+    color        : #fff;
+}
+
+.Need_btnProblem {
+    padding   : 0;
+    background: none;
+    border    : none;
+    cursor    : pointer
+}
+
+.Need_btnProblem:hover svg {
+    fill: var(--primary)
+}
+
+.Need_textDone {
+    font-weight: 700;
+    font-size  : 12px;
+    line-height: 120%;
+    color      : #009048;
+    margin     : 0;
+}
+
+.Need_textConfirmed,
+.Need_textNull {
+    font-weight: 700;
+    font-size  : 12px;
+    line-height: 120%;
+    color      : #afb6ba;
+    margin     : 0
+}
+
+.Need_textarea {
+    margin-bottom: 50px
+}
+
+.Need_textareaTitle {
+    width         : 100%;
+    padding-bottom: 10px;
+    font-size     : 13px;
+    display       : block;
+    color         : #999b9f
+}
+
+.NeedsCard_subtitle {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.NeedsCard_photo {
+    margin-right: 10px;
+    width: 36px;
+    height: 36px;
+}
+
+.NeedsCard_photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 999px;
+}
+
+.NeedsCard_products {
+    display    : flex;
+    gap        : 10px;
+    align-items: flex-start;
+    flex-wrap  : wrap;
+    margin-bottom: 10px;
+}
+
+.NeedsCard_btn {
+    text-align: center; 
+    display: block; 
+    border: none; 
+    padding: 15px 55px; 
+    border-radius: 30px; 
+    color: var(--text-white); 
+    background: var(--primary); 
+    font-weight: 600; 
+    font-size: 14px;
+}
+
+.NeedsCard_content {
+    margin-bottom: 50px;
+}
+
+.NeedsCard_content:last-child {
+    margin-bottom: 0;
+}
+
+.NeedsCard_footer .Simple_simpleButtonRoot {
+    text-transform:none;
+}
+
+@media screen and (max-width:991px) {
+    .Need_product {
+        width: 100%
+    }
+
+    .Need_modalBlock {
+        padding: 0
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .CurrentNeeds_title span span{
+        display: none;
+    }
+}
