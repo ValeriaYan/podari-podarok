@@ -12,6 +12,10 @@
     border-image-source: linear-gradient(156.35deg, rgba(175, 182, 186, 0.5) 0%, rgba(175, 182, 186, 0) 67.19%);
 }
 
+.FamilyLk_sidebar {
+    margin-bottom: 20px;
+}
+
 .Account_controls {
     display: flex;
     margin-bottom: 17px;
@@ -166,6 +170,7 @@
 .InfoBlock_more {
     display: none;
     align-self: flex-start;
+    transition: all ease 0.3s;
 }
 
 .InfoBlock_controls {
@@ -406,6 +411,11 @@
 .Account_sidebar._full .InfoBlock_giftList,
 .Account_sidebar._full .InfoBlock_logout{
     display: flex;
+}
+
+.Account_sidebar._full .InfoBlock_more {
+    transition: all ease 0.3s ;
+    transform: rotate(180deg);
 }
 
 .Account_sidebar._full {
