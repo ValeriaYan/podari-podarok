@@ -1,5 +1,6 @@
 .Page_root {
-    background-color: var(--background-light)
+    background-color: var(--background-light);
+    overflow: hidden;
 }
 
 .Page_white {
@@ -4584,6 +4585,7 @@
     width         : 100%;
     height        : 100vh;
     display       : flex;
+    justify-content: center;
     z-index       : 22;
     background    : var(--background-light);
     flex-direction: column;
@@ -4593,7 +4595,7 @@
 .LoginTemplate_logoBlock {
     text-align   : center;
     display      : block;
-    margin-bottom: auto
+    margin-bottom: 50px;
 }
 
 .LoginTemplate_logoBlock .LoginTemplate_logo {
@@ -4601,14 +4603,14 @@
     max-height: 126px;
     width     : 100%;
     height    : 100%;
-    margin    : 0 auto 43px
+    margin    : 0 auto 30px
 }
 
 .LoginTemplate_logoBlock p {
-    font-size     : 24px;
+    font-size     : 22px;
     font-style    : normal;
     font-weight   : 700;
-    line-height   : 36px;
+    line-height   : 26px;
     letter-spacing: 0;
     text-align    : center;
     color         : var(--text-black)
@@ -4616,7 +4618,11 @@
 
 .LoginTemplate_body,
 .LoginTemplate_buttons {
-    margin-bottom: auto
+    margin-bottom: 30px;
+}
+
+.Input_inputBlock.LoginPage_input:last-child {
+    margin-bottom: 0 !important
 }
 
 @media(max-width:1920px) {
@@ -4668,26 +4674,37 @@
 
 .LoginPage_input {
     max-width : 440px !important;
-    margin    : 0 auto 20px !important;
-    text-align: center !important
+    margin    : 0 auto 40px !important;
 }
 
 .LoginPage_input input {
+    padding: 10px 25px;
     border        : none !important;
     text-transform: none !important;
-    text-align    : center
+    font-size: 14px;
+    line-height: 20px;
+    height: 58px;
+}
+
+.LoginPage_input input::placeholder {
+    font-weight: 400;
 }
 
 .LoginPage_input label {
-    left     : 50% !important;
-    transform: translateX(-50%)
+    top: -50px;
+    left: -30px;
+    background-color: transparent;
+    text-transform:capitalize;
+    color: #999B9F;
+    font-weight: 400;
+    font-size: 12px;
 }
 
 .LoginPage_botLinks {
     max-width     : 440px;
     width         : 100%;
     display       : flex;
-    margin        : 36px auto 0;
+    margin        : 30px auto 0;
     font-size     : 18px;
     font-style    : normal;
     font-weight   : 500;
@@ -4698,7 +4715,9 @@
 .LoginPage_loginButton {
     width    : 100% !important;
     max-width: 440px !important;
-    margin   : 0 auto !important
+    margin   : 0 auto !important;
+    padding: 21px 0;
+    font-size: 14px;
 }
 
 .LoginPage_loader {
@@ -4721,13 +4740,17 @@
     color         : var(--white)
 }
 
+.LoginPage_link {
+    text-transform: none;
+}
+
 .LoginPage_link:nth-child(2) {
     margin-left: auto
 }
 
 .LoginPage_checkbox {
     max-width     : 325px;
-    margin        : 0 auto 20px;
+    margin        : 20px auto 0;
     display       : flex;
     align-items   : center;
     flex-direction: row !important
@@ -7819,7 +7842,7 @@
 }
 
 .FamilyForm_sidebar {
-    padding-top: 130px;
+    padding-top: 80px;
     width: 350px;
     flex-shrink: 0
 }
