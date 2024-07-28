@@ -1896,7 +1896,7 @@ button.sv-action-bar-item {
 .sd-title.sd-element__title {
     font-family: var(--sjs-font-questiontitle-family,var(--sjs-font-family,var(--font-family,var(--sjs-default-font-family))));
     font-weight: var(--sjs-font-questiontitle-weight,600);
-    color: var(--sjs-font-questiontitle-color,var(--sjs-general-forecolor,var(--foreground,#161616)))
+    color: #999B9F;
 }
 
 .sd-element__header .sv-string-editor {
@@ -1929,7 +1929,7 @@ button.sv-action-bar-item {
 }
 
 .sd-element__title .sv-string-viewer {
-    white-space: normal
+    white-space: normal;
 }
 
 .sd-element__num {
