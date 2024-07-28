@@ -223,6 +223,15 @@
     --font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif
 }
 
+.sv_custom_header {
+    padding: 40px 40px 24px;
+}
+
+.sv_custom_header p{
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
 .sv-action-bar {
     display: flex;
     box-sizing: content-box;
@@ -1896,7 +1905,16 @@ button.sv-action-bar-item {
 .sd-title.sd-element__title {
     font-family: var(--sjs-font-questiontitle-family,var(--sjs-font-family,var(--font-family,var(--sjs-default-font-family))));
     font-weight: var(--sjs-font-questiontitle-weight,600);
-    color: var(--sjs-font-questiontitle-color,var(--sjs-general-forecolor,var(--foreground,#161616)))
+    font-size: 13px;
+    padding-bottom: 10px;
+    color: #999B9F;
+}
+
+.sd-title.sd-element__title.sd-element__main-title .sv-string-viewer {
+    font-size: 18px;
+    font-weight: 600;
+    color: #343A3E;
+    padding-bottom: 30px;
 }
 
 .sd-element__header .sv-string-editor {
@@ -1918,8 +1936,9 @@ button.sv-action-bar-item {
 }
 
 .sd-element__title span {
-    font-size: var(--sjs-font-questiontitle-size,var(--sjs-font-size,16px));
-    line-height: calc(1.5*(var(--sjs-font-questiontitle-size, var(--sjs-font-size, 16px))))
+    font-size: 13px;
+    line-height: calc(1.5*(var(--sjs-font-questiontitle-size, var(--sjs-font-size, 16px))));
+    margin-bottom: 10px;
 }
 
 .sd-element__title .sv-title-actions__title {
@@ -1929,7 +1948,7 @@ button.sv-action-bar-item {
 }
 
 .sd-element__title .sv-string-viewer {
-    white-space: normal
+    white-space: normal;
 }
 
 .sd-element__num {
@@ -2062,10 +2081,6 @@ button.sv-action-bar-item {
 
 .sd-question__header {
     width: 100%
-}
-
-.sd-question__header--location-top {
-    padding-bottom: calc(.5*var(--sd-base-vertical-padding))
 }
 
 .sd-question__header--location--bottom {
@@ -2234,10 +2249,10 @@ button.sv-action-bar-item {
     bottom: 0
 }
 
-.sd-element--complex.sd-element--with-frame>.sd-element__header {
+/* .sd-element--complex.sd-element--with-frame>.sd-element__header {
     padding-top: var(--sd-base-vertical-padding);
     padding-bottom: var(--sd-base-vertical-padding)
-}
+} */
 
 .sd-element--collapsed.sd-element--complex>.sd-element__header {
     padding-top: calc(2*(var(--sjs-base-unit, var(--base-unit, 8px))));
@@ -2316,7 +2331,7 @@ button.sv-action-bar-item {
     font-family: var(--sjs-font-editorfont-family,var(--sjs-font-family,var(--font-family,var(--sjs-default-font-family))));
     font-weight: var(--sjs-font-editorfont-weight,400);
     color: var(--sjs-font-editorfont-color,var(--sjs-general-forecolor,rgba(0,0,0,.91)));
-    font-size: var(--sjs-internal-font-editorfont-size);
+    font-size: 14px;
     background-color: #F0F2F5;
     border: none;
     border-radius: 10px;
@@ -2567,7 +2582,7 @@ input.sd-input:disabled:not(.sd-input--disabled),textarea.sd-input:disabled:not(
 }
 
 .sd-panel__content {
-    padding-top: var(--sd-base-padding)
+    padding-top: 0;
 }
 
 .sd-panel.sd-element--nested>.sd-panel__content {
@@ -2854,6 +2869,10 @@ input.sd-input:disabled:not(.sd-input--disabled),textarea.sd-input:disabled:not(
 .sd-table__cell--error-bottom {
     vertical-align: top;
     padding-bottom: var(--sjs-base-unit,var(--base-unit,8px))
+}
+
+.sd-selectbase .sd-dropdown__value input::placeholder {
+    font-size: 14px;
 }
 
 .sd-table__cell--item .sd-selectbase__item {
@@ -3178,7 +3197,7 @@ input.sd-input:disabled:not(.sd-input--disabled),textarea.sd-input:disabled:not(
 }
 
 .sd-row.sd-page__row {
-    margin-top: calc(2*(var(--sjs-base-unit, var(--base-unit, 8px))))
+    margin-top: 30px;
 }
 
 .sd-page__row.sd-row--compact {
@@ -3198,7 +3217,7 @@ input.sd-input:disabled:not(.sd-input--disabled),textarea.sd-input:disabled:not(
 }
 
 .sd-row.sd-page__row:not(.sd-row--compact)~.sd-row.sd-page__row:not(.sd-row--compact) {
-    margin-top: calc(2*(var(--sjs-base-unit, var(--base-unit, 8px))))
+    margin-top: 30px;
 }
 
 .sd-row--multiple {
@@ -3359,7 +3378,7 @@ input.sd-input:disabled:not(.sd-input--disabled),textarea.sd-input:disabled:not(
     font-family: var(--sjs-font-questiondescription-family,var(--sjs-font-family,var(--font-family,var(--sjs-default-font-family))));
     font-weight: var(--sjs-font-questiondescription-weight,400);
     color: var(--sjs-font-questiondescription-color,var(--sjs-general-forecolor-light,rgba(0,0,0,.45)));
-    font-size: var(--sjs-font-questiondescription-size,var(--sjs-font-size,16px));
+    font-size: 13px;
     line-height: calc(1.5*(var(--sjs-font-questiondescription-size, var(--sjs-font-size, 16px))));
     white-space: normal
 }
@@ -3369,7 +3388,8 @@ input.sd-input:disabled:not(.sd-input--disabled),textarea.sd-input:disabled:not(
 }
 
 .sd-element__header .sd-description {
-    margin-top: calc(.25*var(--sd-base-vertical-padding) - .5*var(--sjs-base-unit, var(--base-unit, 8px)))
+    margin-top: calc(.25*var(--sd-base-vertical-padding) - .5*var(--sjs-base-unit, var(--base-unit, 8px)));
+    padding-bottom: 8px;
 }
 
 .sd-item {
@@ -3448,9 +3468,9 @@ input.sd-input:disabled:not(.sd-input--disabled),textarea.sd-input:disabled:not(
 .sd-selectbase {
     border: none;
     margin: 0;
-    padding: 0;
+    padding-left: 25px;
     min-inline-size: 0;
-    min-width: 0
+    min-width: 0;
 }
 
 .sd-selectbase--row {
@@ -4995,8 +5015,12 @@ legend+.sd-rating__item-smiley,legend+sv-ng-rating-item+.sd-rating__item-smiley 
 }
 
 .sd-paneldynamic__footer .sd-paneldynamic__add-btn,.sd-paneldynamic__footer .sd-paneldynamic__progress--bottom,.sd-paneldynamic__footer .sd-paneldynamic__progress-text {
-    display: inline;
-    display: initial
+    display: block;
+    width: 100%;
+    border: 1px solid #FF3351;
+    border-radius: 10px;
+    font-size: 16px;
+    padding: 20px;
 }
 
 .sd-paneldynamic__buttons-container {
@@ -7280,4 +7304,132 @@ body {
 .sv-popup .sv-popup__scrolling-content ::-webkit-scrollbar-thumb:hover,.sv-popup .sv-popup__scrolling-content::-webkit-scrollbar-thumb:hover {
     border: 2px solid transparent;
     background-color: var(--sjs-general-forecolor-light,var(--foreground-light,#909090))
+}
+
+
+.FamilyForm_section .NavigationBottom_block {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.sd-title.sd-element__title.sd-element__header-title .sv-string-viewer.sv-string-viewer--multiline{
+    font-size: 22px;
+}
+
+.add-btn_plus {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    background-color: var(--primary);
+    border-radius: 999px;
+}
+
+.sd-body.sd-body--responsive {
+    padding-top: 0;
+}
+
+.FamilyForm_documentsColBtn {
+    font-size: 12px;
+}
+
+.documentsList {
+    padding: 0;
+}
+
+.documentTitle {
+    font-size: 14px;
+    color: #333A4A;
+    font-weight: 600;
+}
+
+.ps-text {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.ps-text ~ ul {
+    margin-left: 12px;
+    list-style: circle inside;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.ps-text ~ ul li::marker {
+    content: '•  '
+}
+
+.ps-text ~ ul li {
+    margin-bottom: 10px;
+}
+
+.delete-btn {
+    background-color: transparent;
+    color: var(--primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.delete-btn svg {
+    margin-left: 5px;
+}
+
+.delete-btn_wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+.sd-paneldynamic__panel-wrapper {
+    padding-bottom: 0;
+}
+
+.sd-paneldynamic {
+    padding-bottom: 30px;
+}
+
+.FamilyForm_section {
+    position: relative;
+}
+
+.FamilyForm_section::before {
+    content: '';
+    position: absolute;
+    background-image: url(../assets/heart1.png);
+    width: 300px;
+    height: 300px;
+    top: 20%;
+    left: -300px;
+}
+
+.FamilyForm_section::after {
+    content: '';
+    position: absolute;
+    background-image: url(../assets/heart2.png);
+    width: 700px;
+    height: 300px;
+    top: 70%;
+    right: -700px;
+}
+
+.FamilyForm_section.without-background::after {
+    content: '';
+    background-image: none;
+}
+
+
+.Sidebar-img {
+    margin-top: 30px;
+}
+
+.Sidebar-img img{
+    border-radius: 10px;
 }

@@ -3409,16 +3409,31 @@ li.slick-active {
 
 .custom-sd-deleting-files:after {
     content: "Удаление файлов..."}.custom-sd-loading-files:after
-    {content:"Загрузка файлов..."}.documentsList{padding-left:20px}.documentsList
-li {
-        margin-bottom: 22px
+    {content:"Загрузка файлов..."}.documentsList{padding-left:20px}
+
+    .documentsList li {
+        margin-bottom: 22px;
     }
 
     .documentsList .documentTitle {
-        font-weight: 500;
+        font-weight: 600;
         font-size  : 14px;
         line-height: 150%;
         color      : #333a4a
+    }
+
+    .documentsList .documentDesc {
+        padding-left: 20px;
+        font-size: 13px;
+    }
+
+    .documentsList .documentDesc li {
+        padding-bottom: 8px;
+        font-size: 13px;
+    }
+    
+    .documentsList .documentDesc li::marker {
+        content: '• ';
     }
 
     .documentsList .documentTitle span {

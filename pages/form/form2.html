@@ -590,11 +590,26 @@
                         </svg>
                         <div class="sd-root-modern__wrapper">
                             <form>
-                                <div class="sv_custom_header"></div>
+                                <div class="sv_custom_header" style="padding-top: 0;">
+                                    <h5 class="sd-title sd-element__title sd-element__main-title sd-element__header-title sd-question__title sd-question__title--answer"
+                                                                        id="sq_250_ariaTitle"
+                                                                        aria-label="Состав семьи - взрослые"><span
+                                                                            class="sv-string-viewer sv-string-viewer--multiline">Состав
+                                                                            семьи - взрослые</span></h5>
+                                                                    <div id="sq_250_ariaDescription"
+                                                                        class="sd-description sd-question__description">
+                                                                        <span
+                                                                            class="sv-string-viewer sv-string-viewer--multiline" style="color: #292929; font-size: 14px">Укажите
+                                                                            данные членов семьи от 18 лет, кому нужна
+                                                                            помощь. Заполните поля по количеству
+                                                                            взрослых, лишние поля можно
+                                                                            пропустить.</span>
+                                                                        </div>
+                                </div>
                                 <div class="sd-container-modern">
                                     <div class="sv-components-row">
                                         <div class="sv-components-column sv-components-column--expandable">
-                                            <div id="sp_119" class="sd-body sd-body--responsive">
+                                            <div id="sp_119" class="sd-body sd-body--responsive" style="padding-top: 0;">
                                                 <div class="sd-page sd-body__page custom-sd-page sd-page__empty-header">
                                                     <div class="sd-row sd-clearfix sd-page__row">
                                                         <div data-key="question300"
@@ -605,34 +620,21 @@
                                                                 aria-invalid="false" aria-labelledby="sq_250_ariaTitle"
                                                                 aria-describedby="sq_250_ariaDescription"
                                                                 data-rendered="r" data-name="question30">
-                                                                <div
-                                                                    class="sd-paneldynamic__header sd-element__header sd-question__header--location-top sd-element__header--location-top">
-                                                                    <h5 class="sd-title sd-element__title sd-question__title sd-question__title--answer"
-                                                                        id="sq_250_ariaTitle"
-                                                                        aria-label="Состав семьи - взрослые"><span
-                                                                            class="sv-string-viewer sv-string-viewer--multiline">Состав
-                                                                            семьи - взрослые</span></h5>
-                                                                    <div id="sq_250_ariaDescription"
-                                                                        class="sd-description sd-question__description">
-                                                                        <span
-                                                                            class="sv-string-viewer sv-string-viewer--multiline">Укажите
-                                                                            данные членов семьи от 18 лет, кому нужна
-                                                                            помощь. Заполните поля по количеству
-                                                                            взрослых, лишние поля можно
-                                                                            пропустить.</span></div>
-                                                                </div>
                                                                 <div class="sd-question__content" role="presentation">
                                                                     <div class="sd-paneldynamic">
                                                                         <div class="sd-paneldynamic__panel-wrapper">
                                                                             <div class="sd-element sd-element--complex sd-panel sd-row__panel custom-sd-panel"
                                                                                 id="sp_131">
                                                                                 <div
-                                                                                    class="sd-panel__header sd-element__header sd-element__header--location-top custom-sd-panel__header">
-                                                                                    <h4 class="sd-title sd-element__title sd-panel__title"
+                                                                                    class="sd-panel__header sd-element__header sd-element__header--location-top custom-sd-panel__header" style="padding-top: 0;">
+                                                                                    <h4 class="sd-title sd-element__title sd-element__main-title sd-panel__title"
                                                                                         aria-label="Взрослый 1 (заявитель)">
                                                                                         <span
                                                                                             class="sv-string-viewer sv-string-viewer--multiline">Взрослый
-                                                                                            1 (заявитель)</span></h4>
+                                                                                            1 (заявитель)</span><span
+                                                                                            data-key="req-text"
+                                                                                            class="sd-question__required-text"
+                                                                                            aria-hidden="true">*</span></h4>
                                                                                 </div>
                                                                                 <div class="sd-panel__content"
                                                                                     id="sp_131_content">
@@ -648,7 +650,7 @@
                                                                                                     <h5 class="sd-title sd-element__title sd-question__title sd-question__title--required sd-question__title--answer"
                                                                                                         id="sq_323_ariaTitle">
                                                                                                         <span
-                                                                                                            class="sv-string-viewer sv-string-viewer--multiline">Фамилия</span><span
+                                                                                                            class="sv-string-viewer sv-string-viewer--multiline">ФИО полностью</span><span
                                                                                                             data-key="req-sp">&nbsp;</span><span
                                                                                                             data-key="req-text"
                                                                                                             class="sd-question__required-text"
@@ -660,7 +662,7 @@
                                                                                                     <input id="sq_323i"
                                                                                                         class="sd-input sd-text"
                                                                                                         type="text"
-                                                                                                        placeholder=""
+                                                                                                        placeholder="Напишите ваше ФИО"
                                                                                                         aria-required="true"
                                                                                                         aria-label="Фамилия"
                                                                                                         aria-invalid="false"
@@ -669,7 +671,7 @@
                                                                                             </div>
                                                                                         </div>
                                                                                     </div>
-                                                                                    <div class="sd-row sd-clearfix">
+                                                                                    <!-- <div class="sd-row sd-clearfix">
                                                                                         <div data-key="question320"
                                                                                             style="flex: 1 1 100%; min-width: min(100%, 300px); max-width: 100%;">
                                                                                             <div id="sq_324"
@@ -693,7 +695,7 @@
                                                                                                     <input id="sq_324i"
                                                                                                         class="sd-input sd-text"
                                                                                                         type="text"
-                                                                                                        placeholder=""
+                                                                                                        placeholder="Напишите ваш ответ"
                                                                                                         aria-required="true"
                                                                                                         aria-label="Имя"
                                                                                                         aria-invalid="false"
@@ -722,7 +724,7 @@
                                                                                                     <input id="sq_325i"
                                                                                                         class="sd-input sd-text"
                                                                                                         type="text"
-                                                                                                        placeholder=""
+                                                                                                        placeholder="Напишите ваш ответ"
                                                                                                         aria-required="false"
                                                                                                         aria-label="Отчество"
                                                                                                         aria-invalid="false"
@@ -730,7 +732,7 @@
                                                                                                 </div>
                                                                                             </div>
                                                                                         </div>
-                                                                                    </div>
+                                                                                    </div> -->
                                                                                     <div
                                                                                         class="sd-row sd-clearfix sd-row--multiple">
                                                                                         <div data-key="question340"
@@ -758,7 +760,7 @@
                                                                                                         class="sd-input sd-text"
                                                                                                         type="date"
                                                                                                         max="2999-12-31"
-                                                                                                        placeholder=""
+                                                                                                        placeholder="Напишите ваш ответ"
                                                                                                         aria-required="true"
                                                                                                         aria-label="Дата рождения"
                                                                                                         aria-invalid="false"
@@ -767,7 +769,7 @@
                                                                                             </div>
                                                                                         </div>
                                                                                         <div data-key="question35-1"
-                                                                                            style="flex: 1 1 50%; min-width: min(100%, 300px); max-width: 100%;">
+                                                                                            style="flex: 1 1 50%; min-width: min(100%, 300px); max-width: 100%; padding-left: 10px;">
                                                                                             <div id="sq_327"
                                                                                                 class="sd-element--nested sd-element sd-question sd-row__question sd-question--title-top sd-row__question--small"
                                                                                                 data-rendered="r"
@@ -799,7 +801,7 @@
                                                                                             </div>
                                                                                         </div>
                                                                                     </div>
-                                                                                    <div class="sd-row sd-clearfix">
+                                                                                    <!-- <div class="sd-row sd-clearfix">
                                                                                         <div data-key="question360"
                                                                                             style="flex: 1 1 100%; min-width: min(100%, 300px); max-width: 100%;">
                                                                                             <div id="sq_328"
@@ -825,7 +827,7 @@
                                                                                                     <input id="sq_328i"
                                                                                                         class="sd-input sd-text"
                                                                                                         type="text"
-                                                                                                        placeholder=""
+                                                                                                        placeholder="Напишите ваш ответ"
                                                                                                         aria-required="true"
                                                                                                         aria-label="Количество полных лет"
                                                                                                         aria-invalid="false"
@@ -833,7 +835,7 @@
                                                                                                 </div>
                                                                                             </div>
                                                                                         </div>
-                                                                                    </div>
+                                                                                    </div> -->
                                                                                     <div class="sd-row sd-clearfix">
                                                                                         <div data-key="question370"
                                                                                             style="flex: 1 1 100%; min-width: min(100%, 300px); max-width: 100%;">
@@ -852,21 +854,13 @@
                                                                                                             class="sd-question__required-text"
                                                                                                             aria-hidden="true">*</span>
                                                                                                     </h5>
-                                                                                                    <div id="sq_329_ariaDescription"
-                                                                                                        class="sd-description sd-question__description">
-                                                                                                        <span
-                                                                                                            class="sv-string-viewer sv-string-viewer--multiline">Высшее,
-                                                                                                            среднее,
-                                                                                                            неполное
-                                                                                                            среднее</span>
-                                                                                                    </div>
                                                                                                 </div>
                                                                                                 <div class="sd-text__content sd-question__content"
                                                                                                     role="presentation">
                                                                                                     <input id="sq_329i"
                                                                                                         class="sd-input sd-text"
                                                                                                         type="text"
-                                                                                                        placeholder=""
+                                                                                                        placeholder="Высшее, среднее, полное"
                                                                                                         aria-required="true"
                                                                                                         aria-label="Образование"
                                                                                                         aria-invalid="false"
@@ -980,14 +974,9 @@
                                                                                                         id="sq_333_ariaTitle">
                                                                                                         <span
                                                                                                             class="sv-string-viewer sv-string-viewer--multiline">Хронические
-                                                                                                            заболевания</span>
-                                                                                                    </h5>
-                                                                                                    <div id="sq_333_ariaDescription"
-                                                                                                        class="sd-description sd-question__description">
-                                                                                                        <span
-                                                                                                            class="sv-string-viewer sv-string-viewer--multiline">При
+                                                                                                            заболевания при
                                                                                                             наличии</span>
-                                                                                                    </div>
+                                                                                                    </h5>
                                                                                                 </div>
                                                                                                 <div class="sd-text__content sd-question__content"
                                                                                                     role="presentation">
@@ -1016,14 +1005,9 @@
                                                                                                         id="sq_334_ariaTitle">
                                                                                                         <span
                                                                                                             class="sv-string-viewer sv-string-viewer--multiline">Группа
-                                                                                                            инвалидности</span>
+                                                                                                            инвалидности при наличии</span>
                                                                                                     </h5>
-                                                                                                    <div id="sq_334_ariaDescription"
-                                                                                                        class="sd-description sd-question__description">
-                                                                                                        <span
-                                                                                                            class="sv-string-viewer sv-string-viewer--multiline">При
-                                                                                                            наличии</span>
-                                                                                                    </div>
+                                                                                    
                                                                                                 </div>
                                                                                                 <div class="sd-text__content sd-question__content"
                                                                                                     role="presentation">
@@ -1039,7 +1023,7 @@
                                                                                             </div>
                                                                                         </div>
                                                                                     </div>
-                                                                                    <div class="sd-row sd-clearfix">
+                                                                                    <!-- <div class="sd-row sd-clearfix">
                                                                                         <div data-key="question430"
                                                                                             style="flex: 1 1 100%; min-width: min(100%, 300px); max-width: 100%;">
                                                                                             <div id="sq_335"
@@ -1060,7 +1044,7 @@
                                                                                                     <input id="sq_335i"
                                                                                                         class="sd-input sd-text"
                                                                                                         type="text"
-                                                                                                        placeholder=""
+                                                                                                        placeholder="Напишите ваш ответ"
                                                                                                         aria-required="false"
                                                                                                         aria-label="Размер обуви"
                                                                                                         aria-invalid="false"
@@ -1090,7 +1074,7 @@
                                                                                                     <input id="sq_336i"
                                                                                                         class="sd-input sd-text"
                                                                                                         type="text"
-                                                                                                        placeholder=""
+                                                                                                        placeholder="Напишите ваш ответ"
                                                                                                         aria-required="false"
                                                                                                         aria-label="Размер одежды"
                                                                                                         aria-invalid="false"
@@ -1098,7 +1082,7 @@
                                                                                                 </div>
                                                                                             </div>
                                                                                         </div>
-                                                                                    </div>
+                                                                                    </div> -->
                                                                                     <div class="sd-row sd-clearfix">
                                                                                         <div data-key="question450"
                                                                                             style="flex: 1 1 100%; min-width: min(100%, 300px); max-width: 100%;">
@@ -1120,7 +1104,7 @@
                                                                                                     <textarea
                                                                                                         id="sq_337i"
                                                                                                         class="sd-input sd-comment"
-                                                                                                        placeholder=""
+                                                                                                        placeholder="Ваш ответ"
                                                                                                         cols="50"
                                                                                                         rows="4"
                                                                                                         aria-required="false"
@@ -1215,73 +1199,21 @@
                                                                             <hr class="sd-paneldynamic__separator">
                                                                             <div
                                                                                 class="sd-paneldynamic__buttons-container">
-                                                                                <div class="sd-action-bar">
-                                                                                    <div class="sv-action sv-action--hidden"
-                                                                                        id="sv-pd-prev-btn">
-                                                                                        <div class="sv-action__content">
-                                                                                            <button class="sd-action"
-                                                                                                type="button"
-                                                                                                title="Назад"
-                                                                                                tabindex="0"
-                                                                                                role="button"><span
-                                                                                                    class="sd-action__title">Назад</span></button>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                    <div class="sv-action sv-action--hidden"
-                                                                                        id="sv-pd-next-btn">
-                                                                                        <div class="sv-action__content">
-                                                                                            <button class="sd-action"
-                                                                                                type="button"
-                                                                                                title="Далее"
-                                                                                                tabindex="0"
-                                                                                                role="button"><span
-                                                                                                    class="sd-action__title">Далее</span></button>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                    <div class="sv-action"
-                                                                                        id="sv-pd-add-btn">
-                                                                                        <div class="sv-action__content">
-                                                                                            <button type="button"
-                                                                                                class="sd-action sd-paneldynamic__btn sd-paneldynamic__add-btn sd-paneldynamic__add-btn--list-mode"><span><span
-                                                                                                        class="sv-string-viewer">Добавить
-                                                                                                        новую</span></span></button>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                    <div class="sv-action sv-action--hidden"
-                                                                                        id="sv-prev-btn-icon">
-                                                                                        <div class="sv-action__content">
-                                                                                            <div title="Назад"
-                                                                                                class="sd-paneldynamic__prev-btn sd-action--icon sd-action sd-action--disabled">
-                                                                                                <svg class="sv-svg-icon"
-                                                                                                    role="img">
-                                                                                                    <use
-                                                                                                        xlink:href="#icon-progressbuttonv2">
-                                                                                                    </use>
-                                                                                                </svg></div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                    <div class="sv-action sv-action--space sv-action--hidden"
-                                                                                        id="sv-pd-progress-text">
-                                                                                        <div class="sv-action__content">
-                                                                                            <div
-                                                                                                class="sd-paneldynamic__progress-text">
-                                                                                                Запись 0 из 1</div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                    <div class="sv-action sv-action--hidden"
-                                                                                        id="sv-pd-next-btn-icon">
-                                                                                        <div class="sv-action__content">
-                                                                                            <div title="Далее"
-                                                                                                class="sd-paneldynamic__next-btn sd-action--icon sd-action sd-action--disabled">
-                                                                                                <svg class="sv-svg-icon"
-                                                                                                    role="img">
-                                                                                                    <use
-                                                                                                        xlink:href="#icon-progressbuttonv2">
-                                                                                                    </use>
-                                                                                                </svg></div>
-                                                                                        </div>
+                                                                                <div class="sv-action" style="width: 100%; "
+                                                                                    id="sv-pd-add-btn">
+                                                                                    <div class="sv-action__content">
+                                                                                        
+                                                                                        <button type="button"
+                                                                                            class="sd-action sd-paneldynamic__btn sd-paneldynamic__add-btn sd-paneldynamic__add-btn--list-mode" style="display: flex; justify-content: center;">
+                                                                                    
+                                                                                                    <div class="add-btn_plus">
+                                                                                                        <svg fill="#ffffff" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="10px" height="10px" viewBox="0 0 45.402 45.402" xml:space="preserve" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <path d="M41.267,18.557H26.832V4.134C26.832,1.851,24.99,0,22.707,0c-2.283,0-4.124,1.851-4.124,4.135v14.432H4.141 c-2.283,0-4.139,1.851-4.138,4.135c-0.001,1.141,0.46,2.187,1.207,2.934c0.748,0.749,1.78,1.222,2.92,1.222h14.453V41.27 c0,1.142,0.453,2.176,1.201,2.922c0.748,0.748,1.777,1.211,2.919,1.211c2.282,0,4.129-1.851,4.129-4.133V26.857h14.435 c2.283,0,4.134-1.867,4.133-4.15C45.399,20.425,43.548,18.557,41.267,18.557z"></path> </g> </g></svg>
+                                                                                                    </div>
+                                                                                                    Добавить
+                                                                                                    взрослого</button>
                                                                                     </div>
                                                                                 </div>
+                                                                                
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -1297,13 +1229,13 @@
                                                                 data-rendered="r" data-name="question46">
                                                                 <div
                                                                     class="sd-question__header sd-element__header sd-question__header--location-top sd-element__header--location-top">
-                                                                    <h5 class="sd-title sd-element__title sd-question__title sd-question__title--required"
+                                                                    <h5 class="sd-title sd-element__title sd-element__main-title sd-question__title sd-question__title--required"
                                                                         id="sq_266_ariaTitle">
                                                                         <div class="sv-title-actions"><span
                                                                                 class="sv-title-actions__title"><span
                                                                                     class="sv-string-viewer sv-string-viewer--multiline">У
                                                                                     вас есть дети, которым нужна
-                                                                                    помошь?</span><span
+                                                                                    помощь?</span><span
                                                                                     data-key="req-sp">&nbsp;</span><span
                                                                                     data-key="req-text"
                                                                                     class="sd-question__required-text"
