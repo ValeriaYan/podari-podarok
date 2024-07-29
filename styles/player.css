@@ -2974,6 +2974,24 @@ li.slick-active {
     min-height: max-content !important
 }
 
+.css-7pg0cj-a11yText {
+    z-index: 9999;
+    border: 0px;
+    clip: rect(1px, 1px, 1px, 1px);
+    height: 1px;
+    width: 1px;
+    position: absolute;
+    overflow: hidden;
+    padding: 0px;
+    white-space: nowrap;
+}
+
+.react-select-container-red {
+    cursor: pointer;
+    position: relative;
+    box-sizing: border-box;
+}
+
 .react-select__control {
     cursor: pointer;
     display: flex;
@@ -3133,6 +3151,7 @@ li.slick-active {
 }
 
 .react-select-red__control {
+    display: flex;
     padding      : 8px 16px 8px 24px !important;
     background   : var(--primary) !important;
     border-radius: 16px !important;
@@ -3187,6 +3206,25 @@ li.slick-active {
     box-sizing: border-box;
 }
 
+.css-1wa3eu0-placeholder {
+    color: rgb(128, 128, 128);
+    margin-left: 2px;
+    margin-right: 2px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    box-sizing: border-box;
+}
+
+.css-1wy0on6 {
+    -webkit-box-align: center;
+    align-items: center;
+    align-self: stretch;
+    display: flex;
+    flex-shrink: 0;
+    box-sizing: border-box;
+}
+
 .react-select-red__placeholder,
 .react-select-red__single-value,
 .react-select-red__value-container {
@@ -3227,13 +3265,37 @@ li.slick-active {
     color         : var(--white);
     text-transform: uppercase
 }
+.react-select-red__menu-list {
+    max-height: 300px;
+    overflow-y: auto;
+    padding-bottom: 4px;
+    padding-top: 4px;
+    position: relative;
+    box-sizing: border-box;
+ }
+
 
 .react-select-red__menu {
+    display: none;
+    top: 100%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 0px 1px, rgba(0, 0, 0, 0.1) 0px 4px 11px;
+    margin-bottom: 8px;
+    margin-top: 8px;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    box-sizing: border-box;
     margin-top   : 4px !important;
     margin-bottom: 0 !important;
     padding      : 0 4px !important;
     background   : var(--primary) !important;
     box-shadow   : 0 40px 64px rgba(0, 0, 0, .06), 0 20px 24px rgba(0, 0, 0, .04), 0 12px 16px rgba(0, 0, 0, .04), 0 8px 8px rgba(0, 0, 0, .04), 0 4px 4px rgba(0, 0, 0, .04), 0 2px 2px rgba(0, 0, 0, .02) !important
+}
+
+.react-select-red__menu._active {
+    display: block;
 }
 
 .react-select-red__menu,
@@ -3243,6 +3305,15 @@ li.slick-active {
 }
 
 .react-select-red__option {
+    color: inherit;
+    cursor: default;
+    display: block;
+    font-size: inherit;
+    padding: 8px 12px;
+    width: 100%;
+    user-select: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    box-sizing: border-box;
     font-size     : 14px;
     font-style    : normal;
     font-weight   : 700;
@@ -3250,7 +3321,7 @@ li.slick-active {
     letter-spacing: 0;
     text-align    : left;
     color         : var(--white) !important;
-    text-transform: uppercase
+    text-transform: uppercase;
 }
 
 .react-select-red__option--is-focused,

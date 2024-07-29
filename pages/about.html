@@ -828,24 +828,34 @@
                     </div>
                     <div class="About_hideOnDesktop" style="margin: 40px auto 0px; max-width: 90%;">
                         <div>
-                            <div class="react-select-container-red css-2b097c-container"><span aria-live="polite"
+                            <div class="Tabs_tabRoot Tabs_tabRoot_red react-select-container-red css-2b097c-container"><span aria-live="polite"
                                     aria-atomic="false" aria-relevant="additions text"
                                     class="css-7pg0cj-a11yText"></span>
                                 <div class="react-select-red__control css-yk16xz-control">
                                     <div class="react-select-red__value-container css-1hwfws3">
-                                        <div class="react-select-red__placeholder css-1wa3eu0-placeholder">дарителям
-                                        </div>
-                                        <input id="react-select-102-input" readonly="" tabindex="0"
-                                            aria-autocomplete="list" class="css-62g3xt-dummyInput" value="">
+                                        <div class="Tabs_placeholder react-select-red__placeholder css-1wa3eu0-placeholder">дарителям</div><input
+                                            id="react-select-3-input" readonly="" tabindex="0" aria-autocomplete="list"
+                                            class="css-62g3xt-dummyInput" value="">
                                     </div>
                                     <div class="react-select-red__indicators css-1wy0on6"><span
                                             class="react-select-red__indicator-separator css-1okebmr-indicatorSeparator"></span><svg
-                                            xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="none"
-                                            viewBox="0 0 40 40">
+                                            xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="none" viewBox="0 0 40 40">
                                             <path fill="var(--white)"
                                                 d="M21.75 18.333H6.583c-.874 0-1.583.71-1.583 1.584v.166c0 .875.709 1.584 1.583 1.584H21.75c.874 0 1.583-.71 1.583-1.584v-.166c0-.875-.709-1.584-1.583-1.584zM26.75 26.667H6.583C5.71 26.667 5 27.376 5 28.25v.167C5 29.29 5.709 30 6.583 30H26.75c.874 0 1.583-.709 1.583-1.583v-.167c0-.874-.709-1.583-1.583-1.583zM33.417 10H6.583C5.71 10 5 10.709 5 11.583v.167c0 .874.709 1.583 1.583 1.583h26.834c.874 0 1.583-.709 1.583-1.583v-.167C35 10.71 34.291 10 33.417 10z">
                                             </path>
                                         </svg></div>
+                                </div>
+                                <div class="react-select-red__menu css-26l3qy-menu">
+                                    <div class="react-select-red__menu-list css-11unzgr">
+                                        <div class="Tabs_tab Tabs_selected react-select-red__option  css-1n7v3ny-option"
+                                            id="react-select-3-option-0" tabindex="-1" data-tab-btn="giver">дарителям</div>
+                                        <div class="Tabs_tab react-select-red__option css-yt9ioa-option" id="react-select-3-option-1" tabindex="-1" data-tab-btn="volunteer">
+                                            волонтерам</div>
+                                        <div class="Tabs_tab react-select-red__option css-yt9ioa-option" id="react-select-3-option-2" tabindex="-1" data-tab-btn="family">
+                                            семьям</div>
+                                        <div class="Tabs_tab react-select-red__option css-yt9ioa-option" id="react-select-3-option-3" tabindex="-1" data-tab-btn="business">
+                                            бизнесу</div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -1205,7 +1215,7 @@
                          style="display: block; margin: 56px auto 42px;">присоедениться к программе</button>
                     </a>
                     <a href="./family.html" data-tab="business">
-                        <button class="Simple_simpleButtonRoot Simple_outline  Simple_responsive"
+                        <button class="Simple_simpleButtonRoot Simple_large Simple_outline  Simple_responsive"
                     data-tab="business" style="display: block; margin: 56px auto 42px;">сотрудничать</button>
                     </a>
                     <div class="Carousel_carouselRoot _active" data-tab="giver">
@@ -2962,12 +2972,65 @@
                     </div>
                     <div class="About_documentsContainer _active" data-tab="constituent">
                         <div class="DocumentCard_card">
-                            <div class="DocumentCard_header"><span
-                                    class="DocumentCard_chip DocumentCard_chipTertiary">2019</span></div>
-                            <h4 class="DocumentCard_title">Устав фонда</h4>
-                            <div class="DocumentCard_previewWrap"><img
-                                    src="https://storage.yandexcloud.net/pp-prod/Ustav_fff9b4cb14.webp" alt=""></div>
+                            <div>
+                                <div class="DocumentCard_header"><span
+                                        class="DocumentCard_chip DocumentCard_chipTertiary">2019</span>
+                                    </div>
+                                <h4 class="DocumentCard_title">Устав фонда</h4>
+                                <div class="DocumentCard_previewWrap"><img
+                                        src="https://storage.yandexcloud.net/pp-prod/Ustav_fff9b4cb14.webp" alt=""></div>
+                            </div>
+                            <div class="popup">
+                                <div class="react-responsive-modal-root" data-testid="root">
+                                    <div class="react-responsive-modal-overlay PopUpFull_overlay PopUp_container" data-testid="overlay" aria-hidden="true"
+                                        style="animation: 300ms ease 0s 1 normal none running react-responsive-modal-overlay-in;"></div>
+                                    <div class="react-responsive-modal-container react-responsive-modal-containerCenter"
+                                        data-testid="modal-container">
+                                        <div class="react-responsive-modal-modal PopUpFull_modal PopUp_modal" role="dialog" aria-modal="true"
+                                            data-testid="modal" tabindex="-1"
+                                            style="animation: 300ms ease 0s 1 normal none running react-responsive-modal-modal-in;">
+                                            <div class="Reports_viewerHeader">
+                                                <button class="Reports_btn Reports_btnDisabled"><svg xmlns="http://www.w3.org/2000/svg"
+                                                        width="11" height="20" fill="none" viewBox="0 0 11 18">
+                                                        <path d="M9 2L2 9L9 16" stroke="#000000" stroke-width="3" stroke-linecap="round"
+                                                            stroke-linejoin="round"></path>
+                                                    </svg></button><button class="Reports_btn"><svg xmlns="http://www.w3.org/2000/svg"
+                                                        width="11" height="20" fill="none" viewBox="0 0 11 18">
+                                                        <path d="M2 2L9 9L2 16" stroke="#000000" stroke-width="3" stroke-linecap="round"
+                                                            stroke-linejoin="round"></path>
+                                                    </svg></button><button class="Reports_btnClose react-responsive-modal-closeButton"><svg xmlns="http://www.w3.org/2000/svg"
+                                                        width="30" height="30" fill="none" viewBox="0 0 28 28">
+                                                        <path fill="#000000"
+                                                            d="M15.645 14l5.017-5.004a1.171 1.171 0 10-1.657-1.657L14 12.356 8.995 7.339a1.171 1.171 0 10-1.657 1.657L12.355 14l-5.017 5.005a1.167 1.167 0 000 1.657 1.166 1.166 0 001.657 0L14 15.646l5.005 5.017a1.166 1.166 0 001.657 0 1.169 1.169 0 000-1.657L15.645 14z">
+                                                        </path>
+                                                    </svg></button>
+                                            </div>
+                                            <div class="Reports_viewerWrap">
+                                                <div class="rpv-core__viewer rpv-core__viewer--light" data-testid="core__viewer"
+                                                    style="height: 100%; width: 100%;">
+                                                    <div data-testid="core__inner-container" style="height: 100%;">
+                                                        <div data-testid="core__inner-pages"
+                                                            class="rpv-core__inner-pages rpv-core__inner-pages--vertical"
+                                                            style="height: 100%; overflow: auto; position: relative;">
+                                                            <div style="position: relative; display: flex; flex-direction: column;">
+                                                                <img src="../../assets/report.jpg" alt="">
+                                                                <img src="../../assets/report.jpg" alt="">
+                                                                <img src="../../assets/report.jpg" alt="">
+                                                                <img src="../../assets/report.jpg" alt="">
+                                                                <img src="../../assets/report.jpg" alt="">
+                                                                <img src="../../assets/report.jpg" alt="">
+                                                                <img src="../../assets/report.jpg" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                             </div>
                         </div>
+                        
                         <div class="DocumentCard_card">
                             <div class="DocumentCard_header"><span
                                     class="DocumentCard_chip DocumentCard_chipTertiary">2019</span></div>
