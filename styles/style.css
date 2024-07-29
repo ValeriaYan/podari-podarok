@@ -1855,6 +1855,10 @@
     width: 100% !important;
 }
 
+.Tabs_tabRoot.Tabs_tabRoot_red {
+    display: block;
+}
+
 
 .Tabs_tab {
     display        : flex;
@@ -1875,6 +1879,12 @@
     border-left    : none;
     color          : var(--gray-100);
     transition     : all .3s ease-in-out
+}
+
+.Tabs_tabRoot_red .Tabs_tab {
+    justify-content: flex-start;
+    height: auto;
+    color: var(--text-white);
 }
 
 .Tabs_tab:first-child {
@@ -1906,7 +1916,7 @@
     border-color: var(--gray-40);
     background  : transparent
 }
-
+/* 
 @media screen and (max-width:768px) {
     .Tabs_tab {
         height     : 64px;
@@ -1914,7 +1924,7 @@
         line-height: 21px;
         color      : var(--gray-100)
     }
-}
+} */
 
 .Helps_helps {
     height : -moz-max-content;
