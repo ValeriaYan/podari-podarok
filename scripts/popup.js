@@ -7,7 +7,6 @@ popups.forEach((popup) => {
     });
     const closeBtn = popup.querySelector('.react-responsive-modal-closeButton');
     const overlay = popup.querySelector('.PopUp_container');
-    console.log(overlay)
     closeBtn.addEventListener('click', () => {
         popup.classList.remove('_active');
     })
