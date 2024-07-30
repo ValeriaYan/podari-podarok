@@ -235,9 +235,10 @@
                             <div class="CreditCard_header">
                                 <p class="CreditCard_headerText">Оплата банковской картой</p>
                             </div>
-                            <div class="Input_inputBlock  " value="500"
-                                style="margin-bottom: 24px;"><label for="input_ikipl">сумма пожертвования</label><input
-                                    id="input_ikipl" class="Input_input">
+                            <div class="Input_inputBlock Input_selected Input_inputSum" value="500"
+                                style="margin-bottom: 24px;">
+                                <label for="input_ikipl">сумма пожертвования</label><input
+                                    id="input_ikipl" class="Input_input" value="500">
                                     <svg xmlns="http://www.w3.org/2000/svg"
                                     width="40" height="40" fill="none" viewBox="0 0 40 40" class="Input_icon Input_icon-success">
                                     <path fill="var(--state-success)"
@@ -500,12 +501,26 @@
                         </div>
                     </div>
                     <div class="Donate_rightSide">
-                        <div class="Flower_sacrifice" style="margin: 0px auto;"><label class="">100 ₽<input
-                                    type="radio"></label><label class="Flower_checked">500 ₽<input
-                                    type="radio"></label><label class="">1000 ₽<input type="radio"></label><label
-                                class="">2000 ₽<input type="radio"></label><label class="">5000 ₽<input
-                                    type="radio"></label><label class="Flower_sacrifice_sum_other ">Другая
-                                <br>сумма<input type="radio"></label></div>
+                        <div class="Flower_sacrifice" style="margin: 0px auto;">
+                            <label class="">100 ₽
+                                <input type="radio" name="donate-sum" value="100">
+                            </label>
+                            <label class="Flower_checked">500 ₽
+                                <input type="radio" name="donate-sum" value="500"></label>
+                            <label class="">1000 ₽
+                                <input type="radio" name="donate-sum" value="1000">
+                            </label>
+                            <label class="">2000 ₽
+                                <input type="radio" name="donate-sum" value="2000">
+                            </label>
+                            <label class="">5000 ₽
+                                <input type="radio" name="donate-sum" value="5000">
+                            </label>
+                            <label class="Flower_sacrifice_sum_other ">Другая
+                                <br>сумма
+                                <input type="radio" name="donate-sum" value="0">
+                            </label>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -567,6 +582,7 @@
     <script src="../scripts/toggle-btns.js"></script>
     <script src="../scripts/checkbox.js"></script>
     <script src="../scripts/header.js"></script>
+    <script src="../scripts/sum-donate.js"></script>
 </body>
 
 </html>
