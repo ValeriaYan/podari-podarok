@@ -6466,7 +6466,6 @@
 .ReportCard_previewWrap {
     margin-top: auto;
     height    : 170px;
-    position  : relative
 }
 
 .ReportCard_previewWrap img {
@@ -6542,6 +6541,20 @@
     line-height  : 19px;
     color        : var(--text-black);
     margin-bottom: 10px
+}
+
+.question-btn {
+    position: relative;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.question-btn .popup-content {
+    top: 30px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 260px;
+    z-index: 99;
 }
 
 .Filters_mb {

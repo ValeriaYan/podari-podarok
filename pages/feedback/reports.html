@@ -379,14 +379,26 @@
                             <div class="Filters_mb">
                                 <div class="Filters_auditorWrap">
                                     <p class="Filters_filterTitle">Аудиторские заключения</p>
-                                    <div><button aria-describedby="popup-295"
+                                    <div class="question-btn dropdown-button"><button aria-describedby="popup-295"
                                             style="background: none; border: none;"><svg
                                                 xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="none"
                                                 viewBox="0 0 19 19">
                                                 <path fill="#FF3351"
                                                     d="M9.5 19C4.25315 19 0 14.7469 0 9.5C0 4.25315 4.25315 0 9.5 0C14.7469 0 19 4.25315 19 9.5C19 14.7469 14.7469 19 9.5 19ZM9.5 17.1C11.5156 17.1 13.4487 16.2993 14.874 14.874C16.2993 13.4487 17.1 11.5156 17.1 9.5C17.1 7.48435 16.2993 5.55126 14.874 4.12599C13.4487 2.70071 11.5156 1.9 9.5 1.9C7.48435 1.9 5.55126 2.70071 4.12599 4.12599C2.70071 5.55126 1.9 7.48435 1.9 9.5C1.9 11.5156 2.70071 13.4487 4.12599 14.874C5.55126 16.2993 7.48435 17.1 9.5 17.1ZM8.55 12.35H10.45V14.25H8.55V12.35ZM10.45 10.7872V11.4H8.55V9.975C8.55 9.72304 8.65009 9.48141 8.82825 9.30325C9.00641 9.12509 9.24804 9.025 9.5 9.025C9.76987 9.02498 10.0342 8.94833 10.2622 8.80396C10.4902 8.65959 10.6726 8.45345 10.788 8.2095C10.9034 7.96556 10.9472 7.69386 10.9142 7.426C10.8813 7.15815 10.773 6.90516 10.6018 6.69647C10.4307 6.48778 10.2039 6.33197 9.94766 6.24717C9.69145 6.16237 9.41643 6.15207 9.1546 6.21747C8.89277 6.28287 8.65489 6.42127 8.46865 6.61658C8.2824 6.81188 8.15545 7.05606 8.10255 7.3207L6.23865 6.94735C6.3542 6.36983 6.62103 5.83335 7.01187 5.39276C7.40271 4.95216 7.90354 4.62325 8.46316 4.43965C9.02278 4.25605 9.62111 4.22435 10.197 4.34778C10.7729 4.47122 11.3057 4.74536 11.7409 5.14218C12.1761 5.53901 12.4981 6.04429 12.6741 6.60636C12.85 7.16843 12.8735 7.76715 12.7422 8.34129C12.6109 8.91544 12.3295 9.44442 11.9268 9.87417C11.5241 10.3039 11.0144 10.619 10.45 10.7872Z">
                                                 </path>
-                                            </svg></button></div>
+                                            </svg>
+                                        </button>
+                                        <div id="popup-root">
+                                            <div class="popup-content " role="tooltip" id="popup-350">
+                                                <div
+                                                    style="height: 8px; width: 16px; position: absolute; background: transparent; color: rgb(255, 255, 255); z-index: -1; transform: rotate(0deg) translateY(-100%) translateX(-50%); top: 0%; left: 50%;">
+                                                    <svg data-testid="arrow" class="popup-arrow " viewBox="0 0 32 16" style="position: absolute;">
+                                                        <path d="M16 0l16 16H0z" fill="currentcolor"></path>
+                                                    </svg></div>
+                                                <p style="font-weight: 600; text-align: center; font-size: 13px;">свидетельство надежности Фонда</p>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div>
                                     <div class="Filters_type">
@@ -665,6 +677,7 @@
         <script src="../../scripts/select.js"></script>
         <script src="../../scripts/popup.js"></script>
         <script src="../../scripts/header.js"></script>
+        <script src="../../scripts/dropdown.js"></script>
 </body>
 
 </html>
