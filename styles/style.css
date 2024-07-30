@@ -2096,7 +2096,7 @@
     }
 
     .Geography_miniFacts {
-        margin: 0 auto
+        max-width: none;
     }
 }
 
@@ -3110,6 +3110,9 @@
 .About_section {
     padding: 40px 0 30px
 }
+.About_hideOnMobile {
+    width: 100% !important;
+}
 @media (max-width:585px) {
 
     .About_section {
@@ -3232,6 +3235,13 @@
 .About_geo {
     max-width    : 884px;
     padding-right: 40px
+}
+
+@media (max-width: 1539px) {
+    
+.About_geo {
+    max-width    : 684px;
+}
 }
 
 .About_benefitText {
@@ -3389,6 +3399,11 @@
 
     .About_geo {
         margin: 60px auto
+    }
+
+
+    .About_geo {
+        padding-right: 0;
     }
 }
 
@@ -4158,10 +4173,14 @@
 }
 
 @media (max-width:458px) {
+    .About_topCarousel .slick-slide, .IndexPage_topCarousel .slick-slide {
+        padding-bottom: 0;
+    }
     .IndexPage_bg {
-        height: 480px;
+        height: 420px;
         top   : 60px;
-        bottom: unset
+        bottom: unset;
+        border-radius: 46px;
     }
 }
 
