@@ -2448,7 +2448,12 @@ filter: brightness(0) invert(1);
 .ImageTextLink_slideRoot {
     position: relative;
     height  : 780px;
-    width   : 100%
+    width   : 100%;
+
+}
+
+.About_topCarousel .slick-slide,.IndexPage_topCarousel .slick-slide {
+    padding-bottom: 30px;
 }
 
 .ImageTextLink_image {
@@ -2797,9 +2802,17 @@ filter: brightness(0) invert(1);
     border       : 2px solid var(--gray-40);
     border-radius: 48px 48px 24px 48px;
     opacity      : .96;
-    margin       : 0 40px 40px 40px;
+    margin       : 0 40px 10px 40px;
     transition   : all .3s ease-in-out;
     padding      : 25px 25px 60px 30px
+}
+
+.About_topCarousel 
+.Dialog_dialogBloop {
+    top:50px;
+}
+.About_topCarousel  .slick-list {
+    padding-bottom: 50px;
 }
 
 .Dialog_mini .Dialog_dialogBloop {
