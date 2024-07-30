@@ -765,13 +765,16 @@
 }
 
 .headroom {
-    position: fixed; 
+    position: relative; 
     top: 0px; 
     left: 0px; 
     right: 0px; 
     z-index: 1000; 
-    transform: translate3d(0px, 0px, 0px);
-    transition: all 0.2s ease-in-out 0s;;
+    transition: all 0.2s ease-in-out 0s;
+}
+
+.headroom--disabled-animation {
+    transition: none;
 }
 
 .Generic_buttonRoot {
