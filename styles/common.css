@@ -158,7 +158,7 @@
 
 .popup-content {
     display: none;
-    position: relative;
+    position: absolute;
     margin    : auto;
     background: #fff;
     padding   : 5px;

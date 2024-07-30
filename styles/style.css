@@ -764,6 +764,19 @@
     }
 }
 
+.headroom {
+    position: relative; 
+    top: 0px; 
+    left: 0px; 
+    right: 0px; 
+    z-index: 1000; 
+    transition: all 0.2s ease-in-out 0s;
+}
+
+.headroom--disabled-animation {
+    transition: none;
+}
+
 .Generic_buttonRoot {
     display        : block;
     justify-content: center;
@@ -1307,6 +1320,23 @@
     font-size           : 18px;
     line-height         : 18px;
     border-radius       : 99999px
+}
+
+.Filters_buttonWrap .Generic_resetBtn {
+    margin: 0;
+}
+
+.Generic_resetBtn {
+    margin-top: 50px;
+    margin-left: 64px;
+}
+
+.Generic_resetBtn p{
+    text-transform: none; 
+    margin-left: 8px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
 }
 
 .Default_defaultContainer {
@@ -6407,7 +6437,19 @@
     height             : 380px;
     display            : flex;
     flex-direction     : column;
-    cursor             : pointer
+    cursor             : pointer;
+}
+
+.ReportCard_card.bg-0 {
+    background-image: url('../assets/bg_grid_0.png');
+}
+
+.ReportCard_card.bg-1 {
+    background-image: url('../assets/bg_grid_1.png');
+}
+
+.ReportCard_card.bg-2 {
+    background-image: url('../assets/bg_grid_2.png');
 }
 
 .ReportCard_card .ReportCard_header {
@@ -6453,7 +6495,6 @@
 .ReportCard_previewWrap {
     margin-top: auto;
     height    : 170px;
-    position  : relative
 }
 
 .ReportCard_previewWrap img {
@@ -6529,6 +6570,20 @@
     line-height  : 19px;
     color        : var(--text-black);
     margin-bottom: 10px
+}
+
+.question-btn {
+    position: relative;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.question-btn .popup-content {
+    top: 30px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 260px;
+    z-index: 99;
 }
 
 .Filters_mb {

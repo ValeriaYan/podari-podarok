@@ -56,9 +56,8 @@
 
 <body>
     <div id="__next">
-        <div class="headroom-wrapper">
-            <div class="headroom headroom--unfixed headroom-disable-animation"
-                style="position: relative; top: 0px; left: 0px; right: 0px; z-index: 1000; transform: translate3d(0px, 0px, 0px);">
+        <div class="headroom-wrapper" style="height: 110px">
+            <div class="headroom headroom--disabled-animation">
                 <header class="Header_root " style="color: var(--white);">
                     <div class="Header_headerRoot">
                         <div style="display: flex; width: min-content;">
@@ -216,15 +215,20 @@
                                     </div>
                                     <div class="react-select__menu">
                                         <div class="react-select__menu-list">
-                                            <div class="react-select__option" id="react-select-3-option-0" tabindex="-1">За весь период
+                                            <div class="react-select__option react-select__option--is-selected" id="react-select-3-option-0" tabindex="-1">За весь период
                                             </div>
-                                            <div class="react-select__option"
-                                                id="react-select-3-option-1" tabindex="-1">2019</div>
+                                        
+                                            <div class="react-select__option " id="react-select-3-option-2" tabindex="-1">2024</div>
+                                            <div class="react-select__option " id="react-select-3-option-2" tabindex="-1">2023</div>
+                                            <div class="react-select__option " id="react-select-3-option-2" tabindex="-1">2022</div>
+                                            <div class="react-select__option " id="react-select-3-option-2" tabindex="-1">2021</div>
                                             <div class="react-select__option " id="react-select-3-option-2" tabindex="-1">2020</div>
-                                            <div class="react-select__option" id="react-select-3-option-3" tabindex="-1">2021</div>
-                                            <div class="react-select__option" id="react-select-3-option-4" tabindex="-1">2022</div>
-                                            <div class="react-select__option" id="react-select-3-option-5" tabindex="-1">2023</div>
-                                            <div class="react-select__option" id="react-select-3-option-6" tabindex="-1">2024</div>
+                                            <div class="react-select__option " id="react-select-3-option-2" tabindex="-1">2019</div>
+                                            <div class="react-select__option " id="react-select-3-option-2" tabindex="-1">2018</div>
+                                            <div class="react-select__option" id="react-select-3-option-3" tabindex="-1">2017</div>
+                                            <div class="react-select__option" id="react-select-3-option-4" tabindex="-1">2016</div>
+                                            <div class="react-select__option" id="react-select-3-option-5" tabindex="-1">2015</div>
+                                            <div class="react-select__option" id="react-select-3-option-6" tabindex="-1">2014</div>
                                         </div>
                                     </div>
                                 </div>
@@ -380,14 +384,26 @@
                             <div class="Filters_mb">
                                 <div class="Filters_auditorWrap">
                                     <p class="Filters_filterTitle">Аудиторские заключения</p>
-                                    <div><button aria-describedby="popup-295"
+                                    <div class="question-btn dropdown-button"><button aria-describedby="popup-295"
                                             style="background: none; border: none;"><svg
                                                 xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="none"
                                                 viewBox="0 0 19 19">
                                                 <path fill="#FF3351"
                                                     d="M9.5 19C4.25315 19 0 14.7469 0 9.5C0 4.25315 4.25315 0 9.5 0C14.7469 0 19 4.25315 19 9.5C19 14.7469 14.7469 19 9.5 19ZM9.5 17.1C11.5156 17.1 13.4487 16.2993 14.874 14.874C16.2993 13.4487 17.1 11.5156 17.1 9.5C17.1 7.48435 16.2993 5.55126 14.874 4.12599C13.4487 2.70071 11.5156 1.9 9.5 1.9C7.48435 1.9 5.55126 2.70071 4.12599 4.12599C2.70071 5.55126 1.9 7.48435 1.9 9.5C1.9 11.5156 2.70071 13.4487 4.12599 14.874C5.55126 16.2993 7.48435 17.1 9.5 17.1ZM8.55 12.35H10.45V14.25H8.55V12.35ZM10.45 10.7872V11.4H8.55V9.975C8.55 9.72304 8.65009 9.48141 8.82825 9.30325C9.00641 9.12509 9.24804 9.025 9.5 9.025C9.76987 9.02498 10.0342 8.94833 10.2622 8.80396C10.4902 8.65959 10.6726 8.45345 10.788 8.2095C10.9034 7.96556 10.9472 7.69386 10.9142 7.426C10.8813 7.15815 10.773 6.90516 10.6018 6.69647C10.4307 6.48778 10.2039 6.33197 9.94766 6.24717C9.69145 6.16237 9.41643 6.15207 9.1546 6.21747C8.89277 6.28287 8.65489 6.42127 8.46865 6.61658C8.2824 6.81188 8.15545 7.05606 8.10255 7.3207L6.23865 6.94735C6.3542 6.36983 6.62103 5.83335 7.01187 5.39276C7.40271 4.95216 7.90354 4.62325 8.46316 4.43965C9.02278 4.25605 9.62111 4.22435 10.197 4.34778C10.7729 4.47122 11.3057 4.74536 11.7409 5.14218C12.1761 5.53901 12.4981 6.04429 12.6741 6.60636C12.85 7.16843 12.8735 7.76715 12.7422 8.34129C12.6109 8.91544 12.3295 9.44442 11.9268 9.87417C11.5241 10.3039 11.0144 10.619 10.45 10.7872Z">
                                                 </path>
-                                            </svg></button></div>
+                                            </svg>
+                                        </button>
+                                        <div id="popup-root">
+                                            <div class="popup-content " role="tooltip" id="popup-350">
+                                                <div
+                                                    style="height: 8px; width: 16px; position: absolute; background: transparent; color: rgb(255, 255, 255); z-index: -1; transform: rotate(0deg) translateY(-100%) translateX(-50%); top: 0%; left: 50%;">
+                                                    <svg data-testid="arrow" class="popup-arrow " viewBox="0 0 32 16" style="position: absolute;">
+                                                        <path d="M16 0l16 16H0z" fill="currentcolor"></path>
+                                                    </svg></div>
+                                                <p style="font-weight: 600; text-align: center; font-size: 13px;">свидетельство надежности Фонда</p>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div>
                                     <div class="Filters_type">
@@ -409,14 +425,11 @@
                                 </div>
                             </div><button
                                 class=" Generic_buttonRoot Generic_medium  Filters_btnApply">ПРИМЕНИТЬ</button>
-                            <div class="Filters_buttonWrap"><button class=" Generic_iconRoot Generic_gray "><svg
-                                        xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none"
-                                        viewBox="0 0 40 40" class="Generic_icon">
-                                        <path fill="var(--primary)" class="Generic_iconPath"
-                                            d="M33.833 22.383a1.667 1.667 0 00-2.083 1.084 11.9 11.9 0 01-11.45 8.2A11.833 11.833 0 018.333 20 11.833 11.833 0 0120.3 8.333a12.1 12.1 0 017.75 2.784l-3.617-.6a1.668 1.668 0 00-1.894 2.035 1.666 1.666 0 001.361 1.265l7.067 1.166h.283c.193 0 .385-.034.567-.1a.55.55 0 00.166-.1c.12-.044.232-.106.334-.183l.15-.183c0-.084.15-.15.216-.25.067-.1 0-.167.084-.234.046-.097.085-.197.116-.3l1.25-6.666a1.695 1.695 0 00-2.62-1.72 1.696 1.696 0 00-.713 1.086l-.45 2.417A15.35 15.35 0 0020.3 5 15.167 15.167 0 005 20a15.166 15.166 0 0015.3 15A15.2 15.2 0 0035 24.467a1.667 1.667 0 00-1.167-2.084z">
-                                        </path>
-                                    </svg>
-                                    <p style="text-transform: unset; margin-left: 8px;">сбросить фильтры</p>
+                            <div class="Filters_buttonWrap"><button class="Generic_iconRoot Generic_gray Generic_resetBtn">
+                                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.81302e-06 10.9211C0.0082132 4.88086 4.89454 2.13947e-07 10.9348 4.77974e-07C14.4348 6.30964e-07 17.552 1.64609 19.5535 4.20547L20.866 3.18008C21.0109 3.06797 21.2215 3.17188 21.2188 3.35234L21.1969 7.91875C21.1969 8.06094 21.0629 8.16484 20.9262 8.1293L16.4883 7.04922C16.4483 7.03947 16.4118 7.01862 16.3832 6.98908C16.3545 6.95953 16.3347 6.92249 16.3261 6.88222C16.3176 6.84194 16.3205 6.80007 16.3347 6.7614C16.3489 6.72274 16.3737 6.68887 16.4063 6.66367L17.8309 5.55078C17.6121 5.27188 17.3742 5.00391 17.1199 4.74961C16.3232 3.95013 15.3788 3.31307 14.3391 2.87383C13.2617 2.41719 12.116 2.1875 10.9348 2.1875C9.75352 2.1875 8.60782 2.41719 7.53048 2.87383C6.48868 3.31406 5.55353 3.9457 4.74962 4.74961C3.94571 5.55352 3.31407 6.48867 2.87384 7.53047C2.4172 8.61055 2.18751 9.75625 2.18751 10.9375C2.18751 12.1187 2.4172 13.2645 2.87384 14.3418C3.31407 15.3836 3.94571 16.3187 4.74962 17.1227C5.55352 17.9266 6.48868 18.5582 7.53048 18.9984C8.60782 19.4551 9.75352 19.6848 10.9348 19.6848C12.116 19.6848 13.2617 19.4551 14.3391 18.9984C15.3788 18.5592 16.3232 17.9221 17.1199 17.1227C17.325 16.9176 17.5164 16.7043 17.6996 16.4828C17.7357 16.4384 17.7878 16.4101 17.8446 16.4039C17.9015 16.3978 17.9584 16.4143 18.0031 16.45L19.384 17.5273C19.4797 17.6039 19.4961 17.7434 19.4195 17.8391C17.4125 20.3027 14.3582 21.875 10.9348 21.875C4.88907 21.875 -0.00819358 16.9695 9.81302e-06 10.9211Z" fill="#B4B4B4"/>
+                                </svg>
+                                    <p>Сбросить фильтры</p>
                                 </button></div>
                         </div>
                         <div class="FiltersWrap_mobile"><button
@@ -436,8 +449,7 @@
                         <div class="Catalog_fullWidth"></div>
                         <div class="Catalog_lines">
                             <div class="Catalog_item">
-                                <div class="ReportCard_card"
-                                    style="background-image: url(&quot;/assets/bg_grid_0.png&quot;);">
+                                <div class="ReportCard_card bg-0">
                                     <div class="ReportCard_header"><span
                                             class="ReportCard_chip ReportCard_chipPrimary">Аудиторские
                                             заключения</span><span
@@ -498,8 +510,7 @@
                                  </div>
                             </div>
                             <div class="Catalog_item">
-                                <div class="ReportCard_card"
-                                    style="background-image: url(&quot;/assets/bg_grid_1.png&quot;);">
+                                <div class="ReportCard_card bg-1">
                                     <div class="ReportCard_header"><span
                                             class="ReportCard_chip ReportCard_chipPrimary">Аудиторские
                                             заключения</span><span
@@ -511,8 +522,7 @@
                                 </div>
                             </div>
                             <div class="Catalog_item">
-                                <div class="ReportCard_card"
-                                    style="background-image: url(&quot;/assets/bg_grid_2.png&quot;);">
+                                <div class="ReportCard_card bg-2">
                                     <div class="ReportCard_header"><span
                                             class="ReportCard_chip ReportCard_chipPrimary">Аудиторские
                                             заключения</span><span
@@ -524,8 +534,7 @@
                                 </div>
                             </div>
                             <div class="Catalog_item">
-                                <div class="ReportCard_card"
-                                    style="background-image: url(&quot;/assets/bg_grid_0.png&quot;);">
+                                <div class="ReportCard_card bg-0">
                                     <div class="ReportCard_header"><span
                                             class="ReportCard_chip ReportCard_chipPrimary">Аудиторские
                                             заключения</span><span
@@ -537,8 +546,7 @@
                                 </div>
                             </div>
                             <div class="Catalog_item">
-                                <div class="ReportCard_card"
-                                    style="background-image: url(&quot;/assets/bg_grid_1.png&quot;);">
+                                <div class="ReportCard_card bg-1">
                                     <div class="ReportCard_header"><span
                                             class="ReportCard_chip ReportCard_chipPrimary">Аудиторские
                                             заключения</span><span
@@ -550,8 +558,7 @@
                                 </div>
                             </div>
                             <div class="Catalog_item">
-                                <div class="ReportCard_card"
-                                    style="background-image: url(&quot;/assets/bg_grid_2.png&quot;);">
+                                <div class="ReportCard_card bg-2">
                                     <div class="ReportCard_header"><span
                                             class="ReportCard_chip ReportCard_chipPrimary">Аудиторские
                                             заключения</span><span
@@ -563,8 +570,7 @@
                                 </div>
                             </div>
                             <div class="Catalog_item">
-                                <div class="ReportCard_card"
-                                    style="background-image: url(&quot;/assets/bg_grid_0.png&quot;);">
+                                <div class="ReportCard_card bg-0">
                                     <div class="ReportCard_header"><span
                                             class="ReportCard_chip ReportCard_chipPrimary">Аудиторские
                                             заключения</span><span
@@ -576,8 +582,7 @@
                                 </div>
                             </div>
                             <div class="Catalog_item">
-                                <div class="ReportCard_card"
-                                    style="background-image: url(&quot;/assets/bg_grid_1.png&quot;);">
+                                <div class="ReportCard_card bg-1">
                                     <div class="ReportCard_header"><span
                                             class="ReportCard_chip ReportCard_chipPrimary">Аудиторские
                                             заключения</span><span
@@ -589,8 +594,7 @@
                                 </div>
                             </div>
                             <div class="Catalog_item">
-                                <div class="ReportCard_card"
-                                    style="background-image: url(&quot;/assets/bg_grid_2.png&quot;);">
+                                <div class="ReportCard_card bg-2">
                                     <div class="ReportCard_header"><span
                                             class="ReportCard_chip ReportCard_chipPrimary">Аудиторские
                                             заключения</span><span
@@ -665,6 +669,8 @@
         <script src="../../scripts/checkbox.js"></script>
         <script src="../../scripts/select.js"></script>
         <script src="../../scripts/popup.js"></script>
+        <script src="../../scripts/header.js"></script>
+        <script src="../../scripts/dropdown.js"></script>
 </body>
 
 </html>
