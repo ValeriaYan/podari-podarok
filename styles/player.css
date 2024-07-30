@@ -3081,18 +3081,20 @@ li.slick-active {
     overflow-y   : scroll;
     top: 100%;
     background-color: rgb(255, 255, 255);
-    border-radius: 4px;
+    border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 0px 1px, rgba(0, 0, 0, 0.1) 0px 4px 11px;
     margin-bottom: 8px;
     margin-top: 8px;
     position: absolute;
     width: 100%;
+    max-height: 390px;
     z-index: 1;
     box-sizing: border-box;
 }
 
 .react-select__menu-list {
     display: none;
+    padding: 5px 0;
 }
 
 .react-select__menu-list._active {
@@ -3111,14 +3113,13 @@ li.slick-active {
     box-sizing: border-box;
 } */
 
-.react-select__menu,
 .react-select__option {
     cursor       : pointer;
-    border-radius: 8px !important
+    border-radius: 8px !important;
 }
 
 .react-select__option {
-    font-size     : 14px;
+    font-size     : 14px !important;
     font-style    : normal;
     font-weight   : 700;
     line-height   : 20px;
@@ -3130,7 +3131,7 @@ li.slick-active {
     color: inherit;
     display: block;
     font-size: inherit;
-    padding: 8px 12px;
+    padding: 8px 18px;
     width: 100%;
     user-select: none;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -3142,12 +3143,7 @@ li.slick-active {
 }
 
 .react-select__option--is-selected {
-    background-color: var(--secondary) !important;
-    color: var(--white) !important;
-}
-
-.react-select__option--is-selected:hover {
-    background-color: var(--secondary) !important
+    color: var(--primary) !important;
 }
 
 .react-select-red__control {
