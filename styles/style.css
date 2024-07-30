@@ -764,6 +764,16 @@
     }
 }
 
+.headroom {
+    position: fixed; 
+    top: 0px; 
+    left: 0px; 
+    right: 0px; 
+    z-index: 1000; 
+    transform: translate3d(0px, 0px, 0px);
+    transition: all 0.2s ease-in-out 0s;;
+}
+
 .Generic_buttonRoot {
     display        : block;
     justify-content: center;
