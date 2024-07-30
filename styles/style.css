@@ -1322,6 +1322,23 @@
     border-radius       : 99999px
 }
 
+.Filters_buttonWrap .Generic_resetBtn {
+    margin: 0;
+}
+
+.Generic_resetBtn {
+    margin-top: 50px;
+    margin-left: 64px;
+}
+
+.Generic_resetBtn p{
+    text-transform: none; 
+    margin-left: 8px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+}
+
 .Default_defaultContainer {
     max-width    : 1920px;
     padding-left : 160px;
