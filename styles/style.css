@@ -6420,7 +6420,19 @@
     height             : 380px;
     display            : flex;
     flex-direction     : column;
-    cursor             : pointer
+    cursor             : pointer;
+}
+
+.ReportCard_card.bg-0 {
+    background-image: url('../assets/bg_grid_0.png');
+}
+
+.ReportCard_card.bg-1 {
+    background-image: url('../assets/bg_grid_1.png');
+}
+
+.ReportCard_card.bg-2 {
+    background-image: url('../assets/bg_grid_2.png');
 }
 
 .ReportCard_card .ReportCard_header {
