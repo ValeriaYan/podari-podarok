@@ -6649,11 +6649,23 @@
 }
 
 .question-btn .popup-content {
-    top: 30px;
+    top: -60px;
     left: 50%;
     transform: translate(-50%);
-    width: 260px;
+    width: 200px;
     z-index: 99;
+}
+
+.popup-content .arrow-wrap {
+    height: 8px; 
+    width: 16px; 
+    position: absolute; 
+    background: transparent; 
+    color: rgb(255, 255, 255); 
+    z-index: -1; 
+    transform: rotate(180deg) translateY(-100%) translateX(50%); 
+    bottom: 0%; 
+    left: 50%
 }
 
 .Filters_mb {
