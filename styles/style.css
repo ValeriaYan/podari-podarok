@@ -4734,6 +4734,11 @@
     justify-content: center;
 }
 
+.LoginTemplate_title {
+    margin-bottom: 33px;
+    color: var(--primary) !important;
+}
+
 .LoginTemplate_logoBlock {
     text-align   : center;
     display      : block;
