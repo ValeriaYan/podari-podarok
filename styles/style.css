@@ -5576,7 +5576,7 @@
 
 @media(max-width:450px) {
     .Donate_form {
-        padding      : 40px 5px;
+        padding      : 40px 15px;
         width        : 100%;
         background   : var(--white);
         border-radius: 16px
@@ -7545,11 +7545,11 @@
     display     : -o-flex;
     display     : flex;
     flex-wrap   : wrap;
-    margin-left : -10px;
-    margin-right: -10px
+    /* margin-left : -10px;
+    margin-right: -10px */
 }
 
-.Sberbank_row .Sberbank_col {
+.Sberbank_col {
     padding: 0 10px
 }
 
@@ -7632,7 +7632,14 @@
 
 .Sberbank_sberbank .Sberbank_sberbank_link,
 .Sberbank_sberbank a {
-    color: #ff3351
+    color: #ff3351;
+    text-decoration: underline;
+    text-decoration-thickness:2px ;
+}
+
+.Sberbank_sberbank .Sberbank_sberbank_link:hover,
+.Sberbank_sberbank a:hover {
+
 }
 
 .Sberbank_sberbank .Sberbank_sberbank_qr {

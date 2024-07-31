@@ -2788,6 +2788,26 @@ filter: brightness(0) invert(1);
 }
 
 
+.Dialog_dialogRoot_wrap {
+    position: absolute; 
+    right: 0px; 
+    bottom: 5px;
+}
+
+@media (min-width: 476px) {
+    .InfoPage_slide .Dialog_dialogRoot_wrap {
+        right: 0px; 
+        bottom: -50px;
+    }
+}
+
+
+@media (min-width: 476px) {
+    .InfoPage_infoHeadCarousel .slick-list {
+        padding-bottom: 50px;
+    }
+}
+
 .Dialog_dialogRoot {
     position: relative;
     width   : 100%;
@@ -2816,6 +2836,12 @@ filter: brightness(0) invert(1);
     margin       : 0 40px 10px 40px;
     transition   : all .3s ease-in-out;
     padding      : 25px 25px 60px 30px
+}
+
+
+.Dialog_dialogBloop:not(:has(.Dialog_button)) {
+    padding-bottom: 25px;
+    padding-right: 45px;
 }
 
 .About_topCarousel 

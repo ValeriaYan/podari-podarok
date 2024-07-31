@@ -384,8 +384,8 @@
                             </div>
                                 <div class="form_qr">
                                     <div class="Input_inputBlock  " value="500"
-                                        style="margin-bottom: 24px;"><label for="input_ikipl">сумма пожертвования</label><input
-                                            id="input_ikipl" class="Input_input">
+                                        style="margin-bottom: 24px;"><label for="input_qr_sum">сумма пожертвования</label><input
+                                            id="input_qr_sum" class="Input_input">
                                             <svg xmlns="http://www.w3.org/2000/svg"
                                             width="40" height="40" fill="none" viewBox="0 0 40 40" class="Input_icon Input_icon-success">
                                             <path fill="var(--state-success)"
@@ -400,7 +400,7 @@
                                             </svg>
                                         <span class="Input_errorMessage"></span></div>
                                     <div class="Input_inputBlock " style="margin-bottom: 24px;"><label
-                                            for="input_f35oo">email</label><input id="input_f35oo" class="Input_input">
+                                            for="input_f366oo">email</label><input id="input_f366oo" class="Input_input">
                                             <svg xmlns="http://www.w3.org/2000/svg"
                                             width="40" height="40" fill="none" viewBox="0 0 40 40" class="Input_icon Input_icon-success">
                                             <path fill="var(--state-success)"
@@ -414,43 +414,17 @@
                                                 </path>
                                             </svg>
                                         <span class="Input_errorMessage"></span></div>
-                                    <p class="CreditCard_headerDescription">Даже небольшое регулярное пожертвование
-                                        поможет нам лучше планировать свою финансовую деятельность, а это значит, лучше помогать
-                                        семьям</p>
-                                    <div class="Toggle_toggleRoot  "><button
-                                            class="Toggle_toggle  Toggle_selected">ежемесячно</button><button
-                                            class="Toggle_toggle  ">разово</button></div>
-                                    <div class="CreditCard_checkbox">
-                                        <div><label class="" style="display: flex; align-items: center;"><span>
-                                                    <div class="checkbox"
-                                                        style="height: 24px; width: 24px; border-width: 2px; border-style: solid; border-radius: 8px; display: flex; align-items: center; justify-content: center;">
-                                                        <svg  xmlns="http://www.w3.org/2000/svg"  width="40" height="40" fill="none" viewBox="0 0 40 40"><path fill="#FF3351" d="M16.433 30a1.669 1.669 0 01-1.216-.533l-8.1-8.617a1.669 1.669 0 012.433-2.283l6.867 7.316L30.433 10.55a1.667 1.667 0 112.467 2.233L17.667 29.45a1.665 1.665 0 01-1.217.55h-.017z"></path></svg>
-                                                        <input type="checkbox" name="" hidden="" value="">
-                                                    </div>
-                                                </span></label></div>
-                                        <p class="CreditCard_oferta">Соглашаюсь с <a
-                                                href="/Политика_в_области_перс_данных_Подари_подарок.pdf"
-                                                target="_blank">политикой обработки персональных данных</a></p>
-                                    </div>
-                                    <div class="CreditCard_checkbox">
-                                        <div><label class="" style="display: flex; align-items: center;"><span>
-                                                    <div class="checkbox"
-                                                        style="height: 24px; width: 24px; border-width: 2px;  border-style: solid; border-radius: 8px; display: flex; align-items: center; justify-content: center;">
-                                                        <svg  xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="none" viewBox="0 0 40 40"><path fill="#FF3351" d="M16.433 30a1.669 1.669 0 01-1.216-.533l-8.1-8.617a1.669 1.669 0 012.433-2.283l6.867 7.316L30.433 10.55a1.667 1.667 0 112.467 2.233L17.667 29.45a1.665 1.665 0 01-1.217.55h-.017z"></path></svg>
-                                                        <input type="checkbox" name="" hidden="" value="">
-                                                    </div>
-                                                </span></label></div>
-                                        <p class="CreditCard_oferta">Соглашаюсь с условиями <a
-                                                href="https://storage.yandexcloud.net/pp-prod/oferta_a77d41b8c2.pdf"
-                                                target="_blank">договора-оферты</a></p>
-                                    </div>
+                                        
+                                        
                                     <div style="margin-top: 24px;"><button
-                                            class="Simple_simpleButtonRoot Simple_large Simple_red  Simple_responsive"
-                                            onclick="(function(){ document.querySelector('.form_qr').classList.add('hide'); document.querySelector('.Sberbank_sberbank').classList.add('show');})()"">помочь</button></div>
+                                        class="Simple_simpleButtonRoot Simple_large Simple_red  Simple_responsive"
+                                        onclick="(function(){ document.querySelector('.form_qr').classList.add('hide'); document.querySelector('.Sberbank_sberbank').classList.add('show');})()"">помочь</button></div>
+                                        
+                                        
                                     
                                 </div><!-- /form_qr  -->
                             <div class="Sberbank_sberbank">
-                                <div class="Sberbank_tiny_petal Sberbank_petal_right_top">
+                                <!-- <div class="Sberbank_tiny_petal Sberbank_petal_right_top">
                                     <div class="Sberbank_sberbank_qr"><img src="../assets/QRCode.png" alt=""
                                             style="object-fit: contain; width: 100%;"></div>
                                 </div>
@@ -458,16 +432,9 @@
                                     <p class="Sberbank_sberbank_qr_text">Отсканируйте этот код в <a
                                             href="#" class="Sberbank_sberbank_link">мобильном
                                             приложении</a> Сбербанка и реквизиты будут заполнены автоматически.</p>
-                                </div>
-                                <!-- <div class="Sberbank_row Sberbank_sberbank_steps">
+                                </div> -->
+                                <div class="Sberbank_row Sberbank_sberbank_steps">
                                     <div class="Sberbank_col">
-                                        <div class="Sberbank_btn_more_wraper Sberbank_mobile_only"><a
-                                                href="https://platiqr.ru/?uuid=1000043788"
-                                                class="Sberbank_btn_more Sberbank_red">Оплатить через
-                                                Сбербанк онлайн</a></div>
-                                        <p class="Sberbank_sberbank_text Sberbank_mobile_only">Если у вас
-                                            установлено мобильное приложение, реквизиты будут заполнены автоматически,
-                                            останется указать только сумму.</p>
                                         <p class="Sberbank_sberbank_title">Как оплатить</p>
                                         <p class="Sberbank_sberbank_step">01.</p>
                                         <p class="Sberbank_sberbank_text"><a href="#"
@@ -481,7 +448,7 @@
                                         <p class="Sberbank_sberbank_step">04.</p>
                                         <p class="Sberbank_sberbank_text">БФ ПОДАРИ ПОДАРОК</p>
                                     </div>
-                                    <div class="Sberbank_col Sberbank_sberbank_steps_right Sberbank_mobile_hide">
+                                    <div class="Sberbank_col Sberbank_sberbank_steps_right ">
                                         <div class="Sberbank_tiny_petal Sberbank_petal_right_top">
                                             <div class="Sberbank_sberbank_qr"><img src="../assets/QRCode.png" alt=""
                                                     style="object-fit: contain; width: 100%;"></div>
@@ -489,15 +456,12 @@
                                         <div class="Sberbank_little_petal Sberbank_petal_left_bottom">
                                             <p class="Sberbank_sberbank_qr_text">Отсканируйте этот код в <a
                                                     href="#" class="Sberbank_sberbank_link">мобильном
-                                                    приложении</a> Сбербанка и реквизиты будут заполнены автоматически,
-                                                останется ввести только сумму.</p>
+                                                    приложении</a> Сбербанка и реквизиты будут заполнены автоматически.</p>
                                         </div>
                                     </div>
-                                </div> -->
+                                </div>
                                 
                             </div>
-                            <p class="CreditCard_reports" style="margin-top: 24px;"><a href="./feedback/reports.html">Отчеты</a> и <a href="./feedback/feedback.html">отзывы</a> о проделанной
-                                работе можно посмотреть тут</p>
                         </div>
                     </div>
                     <div class="Donate_rightSide">
