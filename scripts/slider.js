@@ -64,12 +64,12 @@ multiSliders.forEach((item, key) => {
               }
             },
             {
-                breakpoint: 800,
+                breakpoint: 767,
                 settings: {
-                  slidesToShow: 1,
+                  slidesToShow: 2,
                   slidesToScroll: 1,
                 }
-              },
+              }
           ]
     })
 })

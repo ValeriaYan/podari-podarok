@@ -2181,6 +2181,7 @@
     height            : -moz-max-content;
     height            : max-content;
     width             : 552px;
+    width: calc(100% - 40px);
     left              : 62px;
     top               : 4631px;
     border-radius     : 16px;
@@ -2188,7 +2189,7 @@
     margin            : 0 auto;
     overflow          : hidden
 }
-
+/* 
 .media-reviews .Carousel_carouselRoot {
     padding: 0 120px;
 }
@@ -2206,7 +2207,7 @@
     padding: 0 20px;
 }
 
-}
+} */
 
 .MediaReview_head {
     padding: 48px 40px 0
@@ -2314,7 +2315,15 @@
     margin-top     : 40px;
     display        : flex;
     width          : 100%;
-    justify-content: space-between
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+@media (max-width: 590px) {
+    .UserGuilde_rootUserGuide {
+    margin-bottom: 0px;
+    }
+    
 }
 
 .UserGuilde_blockUserGuide {
@@ -2364,7 +2373,7 @@
     font-weight   : 600;
     line-height   : 29px;
     letter-spacing: 0;
-    text-align    : left;
+    text-align    : center;
     color         : var(--primary);
     transition    : all .3s ease-in-out
 }
@@ -3176,7 +3185,8 @@
     font-size  : 60px;
     line-height: 70px;
     text-align : center;
-    color      : var(--text-black)
+    color      : var(--text-black);
+    margin-bottom: 60px
 }
 
 .About_section_divider {
@@ -3370,7 +3380,6 @@
     .About_section h1 {
         font-size    : 55px;
         line-height  : 65px;
-        margin-bottom: 60px
     }
 
     .About_partnerImage {
@@ -3994,7 +4003,8 @@
     font-size  : 60px;
     line-height: 70px;
     text-align : center;
-    color      : var(--text-black)
+    color      : var(--text-black);
+    margin-bottom: 60px
 }
 
 .IndexPage_bg {
@@ -4074,7 +4084,6 @@
     .IndexPage_section h1 {
         font-size    : 55px;
         line-height  : 65px;
-        margin-bottom: 60px
     }
 
     .IndexPage_partnerImage {

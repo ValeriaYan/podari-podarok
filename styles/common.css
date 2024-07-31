@@ -590,15 +590,17 @@ filter: brightness(0) invert(1);
     line-height   : 150%;
     text-transform: uppercase;
     color         : var(--text-white);
-    transition    : all .3s ease-out
+    transition    : all .3s ease-out;
+    position: relative;
 }
 
 .Footer_footerLink:hover {
-    color: var(--text-gray)
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
 }
 
 .Footer_designedBy {
-    display: block;
+    display: none;
     margin : auto 0 0 auto
 }
 
@@ -1442,15 +1444,15 @@ filter: brightness(0) invert(1);
     -webkit-mask-image: -webkit-radial-gradient(#fff, #000);
     position          : relative;
     max-width         : 780px;
-    height            : 612px;
+    /* height            : 612px; */
     width             : 100%;
     border-radius     : 16px;
-    overflow          : hidden;
+    /* overflow          : hidden; */
     transition        : all .2s ease
 }
 
 .Family_rootCard.Family_mini {
-    height   : 513px;
+    /* height   : 513px; */
     max-width: 370px
 }
 
@@ -1459,16 +1461,17 @@ filter: brightness(0) invert(1);
     object-fit        : cover;
     -o-object-position: top;
     object-position   : top;
-    z-index           : 9
+    z-index           : 9;
+    display: block;
 }
 
 .Family_cardImage,
 .Family_overlay {
-    position: absolute;
+    /* position: absolute; */
     top     : 0;
     left    : 0;
     width   : 100%;
-    height  : 100%
+    /* height  : 100% */
 }
 
 .Family_overlay {
@@ -1477,13 +1480,13 @@ filter: brightness(0) invert(1);
 }
 
 .Family_slider {
-    position       : relative;
+    /* position       : relative; */
     display        : flex;
     top            : 0;
-    transform      : translateY(320px);
+    /* transform      : translateY(320px); */
     justify-content: flex-end;
     flex-direction : column;
-    height         : 100%;
+    /* height         : 100%; */
     width          : 100%;
     z-index        : 100;
     transition     : all .2s ease-in-out
@@ -1517,12 +1520,12 @@ filter: brightness(0) invert(1);
 }
 
 .Family_mini .Family_slider {
-    position       : absolute;
+    /* position       : absolute; */
     top            : 0;
-    transform      : translateY(222px);
+    /* transform      : translateY(222px); */
     display        : flex;
     justify-content: flex-end;
-    height         : 100%;
+    /* height         : 100%; */
     width          : 100%;
     flex-direction : column;
     transition     : all .3s ease-in-out
@@ -1599,7 +1602,7 @@ filter: brightness(0) invert(1);
 }
 
 .Family_mini .Family_cardHeading p:first-child {
-    font-size  : 16.Toggle_togglepx;
+    font-size  : 16px;
     font-weight: 700;
     line-height: 130%;
     white-space: nowrap
@@ -2452,6 +2455,12 @@ filter: brightness(0) invert(1);
 
 }
 
+.ImageTextLink_slideRoot .Dialog_dialogButton {
+    right: 0;
+    bottom: 0;
+}
+
+
 .About_topCarousel .slick-slide,.IndexPage_topCarousel .slick-slide {
     padding-bottom: 30px;
 }
@@ -2659,7 +2668,7 @@ filter: brightness(0) invert(1);
     min-height        : 547px;
     height            : -moz-max-content;
     height            : max-content;
-    width             : 370px;
+    width             : calc(100% - 40px);
     background        : var(--white);
     border-radius     : 10px;
     border            : 4px solid var(--gray-20);
@@ -2669,6 +2678,7 @@ filter: brightness(0) invert(1);
 
 .Friend_image {
     width              : 370px;
+    width               : 100%;
     height             : 280px;
     -o-object-fit      : contain;
     object-fit         : contain;
@@ -2717,7 +2727,8 @@ filter: brightness(0) invert(1);
 .ImgCard_cardRoot {
     -webkit-mask-image: -webkit-radial-gradient(#fff, #000);
     height            : 547px;
-    width             : 370px;
+    width             : calc(100% - 40px);
+    max-width: 494px;
     background        : var(--white);
     border-radius     : 10px;
     border            : 4px solid var(--gray-20);
@@ -3832,4 +3843,23 @@ filter: brightness(0) invert(1);
 
 .checkbox._active{
     border-color: var(--primary);
+}
+
+
+
+.full-height-slide .slick-track{
+    display: flex !important;
+}
+
+.full-height-slide .slick-track .slick-slide {
+    height: auto !important;
+}
+
+.full-height-slide .slick-track .slick-slide > div {
+    height: 100% !important;
+}
+
+
+.full-height-slide .slick-track .slick-slide > div > div {
+    height: 100% !important;
 }
