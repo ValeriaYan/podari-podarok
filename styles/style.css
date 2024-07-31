@@ -4357,15 +4357,17 @@
 }
 
 .Cart_checkout {
-    background    : var(--background-light);
+    background: linear-gradient(156.35deg, rgba(175, 182, 186, 0.12) 0%, rgba(175, 182, 186, 0.21) 100%);
     display       : flex;
     flex-direction: column;
     padding       : 30px;
     margin-left   : auto;
     max-width     : 336px;
     width         : 100%;
-    border-radius : 16px
+    border-radius : 16px;
+    border: 1px solid #AFB6BA80;
 }
+
 
 .Cart_checkout span {
     font-size     : 18px;
@@ -4380,7 +4382,7 @@
 .Cart_checkout .Cart_txt {
     display        : flex;
     justify-content: space-between;
-    margin-bottom  : 16px
+    margin-bottom  : 10px
 }
 
 .Cart_checkout .Cart_txt p {
@@ -4510,6 +4512,13 @@
         text-align : center;
         line-height: 150%
     }
+
+    .Generic_iconRoot.CartUser_btn {
+        margin-bottom: 20px;
+        margin-left: 0;
+        width: 100%;
+        max-width: none;
+    }
 }
 
 @media (max-width:768px) {
@@ -4522,6 +4531,7 @@
         font-size  : 24px;
         line-height: 150%
     }
+
 }
 
 @media (max-width:500px) {
@@ -4540,6 +4550,41 @@
 
     .Cart_loginModalDesc {
         font-size: 18px
+    }
+
+    .Cart_root h1 {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+
+    .CartNeeds_needTitle {
+        font-size: 18px !important;
+    }
+
+    .CartNeeds_description {
+        font-size: 12px !important;
+    }
+
+    .CartNeeds_need .CartNeeds_count {
+        font-size: 12px !important;
+    }
+
+    .CartNeeds_subtitle {
+        flex-direction: column;
+        align-items: flex-start !important;
+    }
+
+    .CartNeeds_card a {
+        margin-left: 0 !important;
+    }
+
+    .CartNeeds_card .Generic_iconRoot p {
+        font-size: 12px !important;
+
+    }
+    
+    .CartNeeds_needTitle {
+        margin-bottom: 10px;
     }
 }
 
