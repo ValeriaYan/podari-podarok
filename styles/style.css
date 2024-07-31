@@ -6749,8 +6749,13 @@
     width          : 740px;
     min-height     : 500px;
     display        : flex;
+    flex-direction: column;
     justify-content: center;
     align-items    : center
+}
+
+.Reports_viewerWrap img {
+    width: 100%;
 }
 
 .Reports_viewerHeader {
