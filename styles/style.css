@@ -4715,17 +4715,23 @@
     background-position: 0
 }
 
+
+
 .LoginTemplate_rightSide {
     max-width     : calc(100% * (2 / 5));
     min-width     : 540px;
     width         : 100%;
     height        : 100vh;
     display       : flex;
-    justify-content: center;
     z-index       : 22;
     background    : var(--background-light);
     flex-direction: column;
-    padding       : 10px 0 0
+    padding       : 10px 0 0;
+    overflow-y: auto;
+}
+
+.Login_rightSide {
+    justify-content: center;
 }
 
 .LoginTemplate_logoBlock {
@@ -4852,8 +4858,9 @@
     width    : 100% !important;
     max-width: 440px !important;
     margin   : 0 auto !important;
-    padding: 21px 0;
+    padding: 20px 0;
     font-size: 14px;
+    line-height: 17px;
 }
 
 .LoginPage_loader {
