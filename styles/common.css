@@ -2064,6 +2064,10 @@ filter: brightness(0) invert(1);
     position     : relative
 }
 
+.CartNeeds_card:first-child {
+    margin-top: 0;
+}
+
 .CartNeeds_card .CartNeeds_familyCode {
     font-size     : 18px;
     font-style    : normal;
@@ -2107,9 +2111,9 @@ filter: brightness(0) invert(1);
 .CartNeeds_needTitleWrap {
     display: flex; 
     flex-direction: column;
-
     justify-content: center;
     margin-top: 8px;
+    flex: 0 1 420px;
 }
 
 .CartNeeds_subtitle {
@@ -2224,19 +2228,41 @@ filter: brightness(0) invert(1);
     margin-left: auto;
 }
 
+.CartNeeds_description span {
+    font-weight: 600;
+    font-size: 15px;
+    vertical-align: middle;
+    margin-right: 14px;
+}
+
+.CartNeeds_description a {
+    display: inline-flex;
+    vertical-align: middle;
+}
+
+@media (max-width:1550px) {
+    .CartNeeds_needTitleWrap {
+        flex-basis: 250px;
+    }
+}
+
 @media (max-width:1275px) {
     .CartNeeds_icon {
         order: 1;
     }
 
+
+
     .CartNeeds_needTitleWrap {
         order: 2;
-        flex: 1 1 auto;
     }
 
     .CartNeeds_trash {
         order: 3;
-        flex: 0 0 auto;
+        flex: 1 1 auto;
+        display: flex;
+        justify-content: flex-end;
+        margin: 5px 0 auto auto !important;
     }
 
     .CartNeeds_row {
@@ -2254,6 +2280,12 @@ filter: brightness(0) invert(1);
     }
 }
 
+@media (max-width:1275px) {
+    .CartNeeds_needTitleWrap {
+        flex: 0 0 400px;
+    }
+}
+
 @media (max-width:768px) {
     .CartNeeds_card a {
         font-size  : 24px;
@@ -2261,10 +2293,72 @@ filter: brightness(0) invert(1);
     }
 }
 
+@media (max-width:630px) {
+    .CartNeeds_needTitleWrap {
+        flex: 0 0 250px;
+    }
+}
+
 @media (max-width:500px) {
+
+    .CartNeeds_needTitleWrap {
+        flex: 0 0 214px;
+        margin-top: 0;
+    }
+
     .CartNeeds_card a {
         font-size  : 16px;
         line-height: 150%
+    }
+
+    .CartNeeds_card {
+        padding: 30px 20px 0;
+    }
+
+    .CartNeeds_card .CartNeeds_familyCode {
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    .CartNeeds_card .CartNeeds_heading a  {
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    .CartNeeds_need {
+        padding: 20px 0;
+        align-items: flex-start;
+    }
+
+    .CartNeeds_description span {
+        font-size: 12px;
+    }
+
+    .CartNeeds_need .Generic_small.Generic_iconRoot .Generic_icon {
+        width: 12px !important;
+        height: 12px !important;
+    }
+
+    .CartNeeds_need .CartNeeds_trash {
+        margin-top: 0 !important;
+    }
+
+    .CartNeeds_trash svg {
+        width: 20px;
+        height: 20px
+    }
+
+    .CartNeeds_need .CartNeeds_icon {
+        width: 48px;
+        height: 48px
+    }
+
+    .Counter_input {
+        padding: 15px 0;
+    }
+
+    .Counter_btn {
+        padding: 15px 18px;
     }
 }
 
