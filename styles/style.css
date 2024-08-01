@@ -4498,6 +4498,21 @@
     text-transform: none !important
 }
 
+.Cart_container .Icon_iconButtonRoot.Icon_textButton.Icon_small.Icon_black {
+    border: none;
+}
+
+.Cart_howBtn {
+    margin: 40px 0px 0px 20px;
+}
+
+@media(max-width:1240px) {
+    .Cart_howBtn {
+        margin: 40px 0px 0px 0;
+    }
+
+}
+
 @media(max-width:1024px) {
     .Cart_flex {
         justify-content: flex-start;
@@ -4544,6 +4559,10 @@
 }
 
 @media (max-width:500px) {
+    .Default_defaultContainer.Cart_container {
+        padding-top: 0 !important;
+    }
+
     .Cart_card a {
         font-size  : 16px;
         line-height: 150%
@@ -4564,6 +4583,7 @@
     .Cart_root h1 {
         font-size: 30px;
         margin-bottom: 20px;
+        text-align: left;
     }
 
     .CartNeeds_needTitle {
