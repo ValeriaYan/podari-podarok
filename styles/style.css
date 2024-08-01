@@ -8500,11 +8500,13 @@
     color: var(--white)
 }
 
-.popup {
+.popup,
+.feedback-popup {
     display: none;
 }
 
-.popup._active {
+.popup._active,
+.feedback-popup._active {
     display: block;
 }
 
