@@ -17,3 +17,6 @@ popups.forEach((popup) => {
     })
 
 })
+
+
+const players = Plyr.setup('.js-player');
