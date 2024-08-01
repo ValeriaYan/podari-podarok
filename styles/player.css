@@ -3059,18 +3059,104 @@ li.slick-active {
     position: relative;
 }
 
-/* .css-26l3qy-menu {
+
+
+.hidden {
+    display: none;
+ }
+.custom-select {
+    cursor:pointer;
+    display: flex;
+    justify-content: space-between;
+    background: var(--white) ;
+    border-radius: 8px ;
+    border-width: 0 ;
+    border-color: transparent;
+    box-shadow: none ;
+ }
+ .select-styled {
+    padding: 14px 16px 14px 24px ;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+flex-grow: 1;
+    font-family: var(--font-family) ;
+    font-size: 14px ;
+    font-style: normal ;
+    font-weight: 700 ;
+    line-height: 20px ;
+    letter-spacing: 0 ;
+    text-align: left ;
+    color: var(--text-black) ;
+    text-transform: uppercase ;
+    margin: 0 ;
+ }
+ .select-styled:before {
+    content:"";
+    width:40px;
+    height:100%;
+     background:  url("data:image/svg+xml,%3Csvg width='16' height='9' viewBox='0 0 16 9' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L8 7L15 1' stroke='%23FF3351' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E%0A") 50% 50% no-repeat;
+    position:absolute;
+    top:0;
+    right:4px;
+    transition-duration: .3s;
+    transform: rotate(0deg);
+ }
+ .select-styled.active:before {
+     transform: rotate(180deg);
+     
+ }
+ 
+ .select-options {
+    display:none;
+    margin-top   : 4px ;
+    margin-bottom: 0 ;
+    padding      : 0 4px ;
+    background   : var(--white) ;
+    box-shadow   : 0 40px 64px rgba(0, 0, 0, .06), 0 20px 24px rgba(0, 0, 0, .04), 0 12px 16px rgba(0, 0, 0, .04), 0 8px 8px rgba(0, 0, 0, .04), 0 4px 4px rgba(0, 0, 0, .04), 0 2px 2px rgba(0, 0, 0, .02) !important;
+    overflow-y   : scroll;
     top: 100%;
     background-color: rgb(255, 255, 255);
-    border-radius: 4px;
+    border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 0px 1px, rgba(0, 0, 0, 0.1) 0px 4px 11px;
     margin-bottom: 8px;
     margin-top: 8px;
     position: absolute;
     width: 100%;
+    max-height: 290px;
     z-index: 1;
     box-sizing: border-box;
-} */
+ }
+
+ .select-options.active {
+    display: block;
+ }
+ .select-options li {
+
+    font-size: 14px !important;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0;
+    text-align: left;
+    color: var(--text-black);
+    text-transform: uppercase;
+    background-color: transparent;
+    color: inherit;
+    display: block;
+    font-size: inherit;
+    padding: 8px 18px;
+    width: 100%;
+    user-select: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    box-sizing: border-box;
+ }
+ .select-options li.active-option {
+     color: var(--primary);
+ }
+ 
+ 
 
 .react-select__menu {
     margin-top   : 4px !important;
