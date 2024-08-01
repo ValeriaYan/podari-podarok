@@ -4019,7 +4019,7 @@ filter: brightness(0) invert(1);
 }
 
 .checkbox._active{
-    border-color: var(--primary);
+    border-color: var(--primary) !important;
 }
 
 

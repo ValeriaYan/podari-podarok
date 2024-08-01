@@ -3,6 +3,7 @@ const selectContainers = document.querySelectorAll('.react-select-container');
 function setActiveOption(options, option, placeholder) {
     option.classList.add('react-select__option--is-selected');
     placeholder.textContent = option.textContent;
+    console.log(options)
     options.forEach((o) => {
         if(o !== option) {
             o.classList.remove('react-select__option--is-selected');
