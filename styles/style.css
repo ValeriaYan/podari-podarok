@@ -6104,14 +6104,14 @@
 }
 
 .MiniFeedback_badge {
-    font-size     : 16px;
+    font-size     : 14px;
     font-style    : normal;
     font-weight   : 800;
     line-height   : 26px;
     letter-spacing: 0;
     text-align    : center;
     color         : var(--text-white);
-    padding       : 4px 28px;
+    padding       : 4px 30px;
     position      : absolute;
     right         : 0;
     bottom        : 0;
