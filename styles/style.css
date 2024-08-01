@@ -1946,7 +1946,7 @@
     border-color: var(--gray-40);
     background  : transparent
 }
-/* 
+
 @media screen and (max-width:768px) {
     .Tabs_tab {
         height     : 64px;
@@ -1954,7 +1954,7 @@
         line-height: 21px;
         color      : var(--gray-100)
     }
-} */
+}
 
 .Helps_helps {
     height : -moz-max-content;
@@ -4841,10 +4841,10 @@
         min-height: 100vh
     }
 
-    .LoginTemplate_body,
+    /* .LoginTemplate_body,
     .LoginTemplate_buttons {
         margin-top: 40px
-    }
+    } */
 }
 
 @media(max-width:380px) {
@@ -5803,6 +5803,14 @@
     display  : grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap      : 45px
+}
+
+@media (max-width: 1339px) {
+    .Catalog_lines {
+
+        gap      : 30px
+    }
+    
 }
 
 .Catalog_item {
