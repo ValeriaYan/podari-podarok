@@ -138,6 +138,16 @@
     stroke-width: 3px;
 }
 
+.headroom-wrapper {
+    height: 110px;
+}
+@media (max-width: 476px) {
+    
+.headroom-wrapper {
+    height: 80px;
+}
+}
+
 .Header_headerLinkArrowButton:hover .popup-content {
     display: block;
 }
