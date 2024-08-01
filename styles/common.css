@@ -1829,6 +1829,10 @@ filter: brightness(0) invert(1);
     background-color: transparent
 }
 
+.Counter_btn:hover rect {
+    fill: var(--primary);
+}
+
 .Counter_btn:disabled {
     opacity: .3
 }
@@ -2053,6 +2057,10 @@ filter: brightness(0) invert(1);
     opacity: .3
 }
 
+.Counter_btn:disabled rect{
+    fill: #292929;
+}
+
 .CartNeeds_card {
     padding      : 30px 30px 0;
     width        : 100%;
@@ -2129,7 +2137,6 @@ filter: brightness(0) invert(1);
     display        : flex;
     justify-content: left;
     align-items    : center;
-    cursor         : pointer;
     flex-wrap      : wrap;
     padding        : 24px 0 30px;
     border-top     : 2px solid #edf1f3
@@ -2161,7 +2168,8 @@ filter: brightness(0) invert(1);
 .CartNeeds_need .CartNeeds_trash {
     margin: auto 0 auto 40px;
     height: -moz-min-content;
-    height: min-content
+    height: min-content;
+    cursor: pointer;
 }
 
 .CartNeeds_need .CartNeeds_cancel,

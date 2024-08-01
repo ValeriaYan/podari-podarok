@@ -2986,6 +2986,12 @@ li.slick-active {
     white-space: nowrap;
 }
 
+.react-select__control.css-yk16xz-control.cart-select_control {
+    padding: 13px 20px 13px 15px !important;
+    border: 1px solid var(--primary) !important;
+    cursor: pointer;
+}
+
 .react-select-container-red {
     cursor: pointer;
     position: relative;
@@ -3011,6 +3017,13 @@ li.slick-active {
 
 .select-error .react-select__control:hover {
     border-color: var(--primary)
+}
+
+.cart-select_control .react-select__placeholder {
+    text-transform: none !important;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 
 .react-select__placeholder,

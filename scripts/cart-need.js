@@ -8,11 +8,18 @@ needs.forEach((need) => {
 
     plusBtn.addEventListener('click', () => {
         input.value = +input.value + 1;
+        if(input.value > 1) {
+            minusBtn.disabled = false;
+        }
     })
 
     minusBtn.addEventListener('click', () => {
         if(input.value > 1) {
             input.value = +input.value - 1;
+        }
+
+        if(input.value == 1) {
+            minusBtn.disabled = true;
         }
     })
 

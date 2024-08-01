@@ -4414,13 +4414,12 @@
 }
 
 .Cart_selectPlaceholder {
-    font-size    : 14px;
+    font-size    : 15px;
     font-weight  : 700;
     line-height  : 20px;
-    max-width    : calc(100% - 27px);
     overflow     : hidden;
-    text-overflow: ellipsis;
-    white-space  : nowrap
+    color: var(--primary);
+    text-transform: none;
 }
 
 .Cart_selectError .Cart_react-select__control {
