@@ -6685,11 +6685,13 @@
 }
 
 .ReportCard_card .ReportCard_header {
-    display      : flex;
+    display      : grid;
+    grid-template-columns: auto 62px;
     align-items  : center;
     gap          : 10px;
     margin-bottom: 16px
 }
+
 
 .ReportCard_card .ReportCard_chip {
     font-weight  : 700;
@@ -6701,14 +6703,15 @@
 }
 
 .ReportCard_card .ReportCard_chipPrimary {
+    display: inline-block;
     background   : var(--primary);
     overflow     : hidden;
     text-overflow: ellipsis;
-    white-space  : nowrap
+    white-space  : nowrap;
 }
 
 .ReportCard_card .ReportCard_chipTertiary {
-    background: var(--tertiary)
+    background: var(--tertiary);
 }
 
 .ReportCard_card .ReportCard_title {
@@ -6727,6 +6730,8 @@
 .ReportCard_previewWrap {
     margin-top: auto;
     height    : 170px;
+    position: relative;
+    width: 130px;
 }
 
 .ReportCard_previewWrap img {
@@ -8843,6 +8848,16 @@
     max-height: 260px;
 }
 
+@media(max-width: 1400px) {
+    .ReportsHero_withReadMore {
+        font-size: 18px;
+    }
+    
+    .ReportsHero_block {
+        bottom: 50px;
+    }
+}
+
 @media(max-width: 1300px) {
     .ReportsHero_block {
         display: none;
@@ -8855,6 +8870,7 @@
         width: 50%;
         height: 70%;
     }
+
 }
 
 @media(max-width: 768px) {
