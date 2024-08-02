@@ -612,3 +612,6 @@ toggleBtns?.forEach((btn) => {
         btn.classList.add('Toggle_selected');
     })
 })
+
+// Videos 
+const players = Plyr.setup('.js-player')
