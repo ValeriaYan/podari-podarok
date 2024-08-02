@@ -613,4 +613,5 @@ toggleBtns?.forEach((btn) => {
     })
 })
 
-const players = Plyr.setup('.js-player');
+// Videos 
+const players = Plyr.setup('.js-player')
