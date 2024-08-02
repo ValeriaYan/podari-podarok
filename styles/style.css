@@ -6808,14 +6808,16 @@
     position: relative;
     margin-right: 15px;
     cursor: pointer;
+    margin-bottom: 10px;
 }
 
 .question-btn .popup-content {
-    top: -60px;
-    left: 50%;
+    top: -70px;
+    left: 51%;
     transform: translate(-50%);
     width: 200px;
     z-index: 99;
+    padding: 13px 9px !important;
 }
 
 .popup-content .arrow-wrap {
