@@ -8757,3 +8757,129 @@
 .Family_needsList._active {
     display: flex;
 }
+
+.Icon_counter {
+    left: 16%;
+    top: 5%;
+    padding: 0 6px;
+    background: var(--primary);
+    border-radius: 15px;
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 20px;
+    color: var(--white)
+}
+
+.Icon_counter,.Icon_counter:after {
+    position: absolute;
+    transition: all .2s ease-in-out
+}
+
+.Icon_counter:after {
+    left: -1px;
+    top: -1px;
+    content: "";
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgba(var(--primary-rgb),.4);
+    border-radius: 15px;
+    z-index: -1
+}
+
+.Icon_buttonWithCounterRoot {
+    position: relative;
+    width: -moz-min-content;
+    width: min-content
+}
+
+.ReportsHero_wrapper {
+    height: 420px;
+    position: relative;
+    background-image: url(../assets/reports-bg/bg.png);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+
+.ReportsHero_wrapper::before {
+    content: '';
+    background-image: url(../assets/reports-bg/new-year.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: absolute;
+    left: 22%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 35%;
+    height: 70%;
+}
+
+.ReportsHero_wrapper::after {
+    content: url(../assets/reports-bg/title.png);
+    position: absolute;
+    left: 60px;
+    top: 60px;
+}
+
+.ReportsHero_block {
+    position: absolute;
+    right: 25px;
+    max-width: 520px;
+}
+
+.ReportsHero_text {
+    color: white;
+    line-height: 27px;
+}
+
+.ReportsHero_withReadMore {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 8;
+    max-height: 260px;
+}
+
+@media(max-width: 1300px) {
+    .ReportsHero_block {
+        display: none;
+    }
+
+    .ReportsHero_wrapper::before {
+        left: 100%;
+        top: 50%;
+        transform: translate(-100%, -50%);
+        width: 50%;
+        height: 70%;
+    }
+}
+
+@media(max-width: 768px) {
+    .ReportsHero_wrapper {
+        height: 230px;
+    }
+
+    .ReportsHero_wrapper::after {
+        content: '';
+        background-image: url(../assets/reports-bg/title.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        position: absolute;
+        left: 30px;
+        top: 30px;
+        width: 60%;
+        height: 80%;
+    }
+
+    .ReportsHero_wrapper::before {
+        width: 60%;
+    }
+
+    .ReportsHero_wrapper {
+        background-position: left center;
+        background-size: cover;
+    }
+}
