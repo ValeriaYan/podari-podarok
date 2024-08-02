@@ -612,3 +612,5 @@ toggleBtns?.forEach((btn) => {
         btn.classList.add('Toggle_selected');
     })
 })
+
+const players = Plyr.setup('.js-player');
