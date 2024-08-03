@@ -6730,8 +6730,6 @@
 .ReportCard_previewWrap {
     margin-top: auto;
     height    : 170px;
-    position: relative;
-    width: 130px;
 }
 
 .ReportCard_previewWrap img {
