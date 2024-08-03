@@ -7,7 +7,7 @@
 
 .Page_root {
     background-color: var(--background-light);
-    overflow: hidden;
+    overflow: clip;
 }
 
 .Page_white {
@@ -4092,6 +4092,54 @@
     margin    : auto 0
 }
 
+.IndexPage_topCarousel button.prev,.IndexPage_topCarousel button.next,
+.About_topCarousel button.prev,.About_topCarousel button.next
+ {
+    position: absolute; z-index: 999; top: calc(50% - 88px/2); left: 0px
+}
+.IndexPage_topCarousel button.next,
+.About_topCarousel button.next {
+    left: auto;
+    right: 0;
+}
+
+
+.About_topCarousel button.prev,.About_topCarousel button.next
+ {
+    position: absolute; z-index: 999; top: calc(50% - 88px/2 - 40px); left: -44px
+}
+.About_topCarousel button.next {
+    left: auto;
+    right: -44px;
+}
+
+@media (max-width: 1339px) {
+    .About_topCarousel button.prev
+ { left: 0
+}
+.About_topCarousel button.next {
+    right: 0;
+}
+}
+
+.IndexPage_topCarousel .ImageTextLink_slideRoot .Dialog_dialogButton {
+
+    right: 1px;
+    bottom: -44px;
+}
+@media (max-width: 920px) {
+    .About_topCarousel .ImageTextLink_slideRoot .Dialog_dialogButton {
+        right: 24px;
+        bottom: 12px;
+    }
+.IndexPage_topCarousel .ImageTextLink_slideRoot .Dialog_dialogButton {
+
+    right: 24px;
+    bottom: -26px;
+}
+}
+
+
 .IndexPage_hideOnDesktop {
     display: none
 }
@@ -5821,7 +5869,7 @@
     gap      : 45px
 }
 
-@media (max-width: 1339px) {
+@media (max-width: 1539px) {
     .Catalog_lines {
 
         gap      : 30px

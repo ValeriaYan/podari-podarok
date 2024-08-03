@@ -3039,7 +3039,7 @@ filter: brightness(0) invert(1);
 
 .About_topCarousel 
 .Dialog_dialogBloop {
-    top:50px;
+    bottom: 40px;
 }
 .About_topCarousel  .slick-list {
     padding-bottom: 50px;
