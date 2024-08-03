@@ -6193,6 +6193,8 @@
 
     .Review_titleBlock {
         background-image : url(../assets/title_back-small.png);
+        left: 50%;
+        transform: translate(-50%);
     }
 
     .Review_blockImg.Review_insideImage {
@@ -6204,7 +6206,8 @@
         top: 0;
     
     }
-    
+
+   
 }
 
 @media (max-width:500px) {
@@ -6213,6 +6216,10 @@
     .Review_blockImg img,
     .Review_block {
         padding: 0;
+    }
+
+    .Review_blockImg {
+        padding-left: 20px;
     }
 
     .Review_wrapper .Generic_iconRoot p {
@@ -6225,9 +6232,34 @@
         width: 355px;
         height: 90px;
     }
-    
-    
 }
+
+@media (max-width:413px) {
+    .Review_titleBlock {
+        bottom: -20px;
+        width: 300px;
+        height: 90px;
+        background-size: contain;
+    }
+    
+    .Review_title {
+        font-size: 24px;
+        padding-bottom: 20px;
+    }
+
+    .Review_blockImg {
+        padding-left: 0;
+    }
+
+    .Review_mask {
+        width: 280px;
+        height: 280px;
+    }
+
+    .Review_insideImage {
+        height: auto !important;
+    }
+} 
 
 .MiniFeedback_root {
     background    : var(--background-white);
@@ -6794,8 +6826,6 @@
 .ReportCard_previewWrap {
     margin-top: auto;
     height    : 170px;
-    position: relative;
-    width: 130px;
 }
 
 .ReportCard_previewWrap img {
