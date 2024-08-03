@@ -1,5 +1,3 @@
-const deadline = '2024-08-05 12:00:00 GMT+03:00';
-
 function getTimeRemaining(deadline){  
     const t = Date.parse(deadline) - Date.parse(new Date());  
     const seconds = Math.floor( (t/1000) % 60 );  
@@ -17,8 +15,10 @@ function getTimeRemaining(deadline){
 }
 
 
-function initializeClock(id, deadline) {
+function initializeClock(id) {
     const timer = document.getElementById(id);
+    const deadline = timer.dataset.deadline;
+    
     const days = timer.querySelector('.Timer_days');
     const hours = timer.querySelector('.Timer_hours');
     const minutes = timer.querySelector('.Timer_minutes');
@@ -48,4 +48,4 @@ function initializeClock(id, deadline) {
 }
 
 
-initializeClock('timer', deadline);
+initializeClock('timer');
