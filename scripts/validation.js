@@ -129,7 +129,6 @@ window.formValidate = formValidate;
 function enableButton(form) {
     const requiredFields = form.find('input[required]');
     const requiredCheckboxes = form.find('[type="checkbox"][required]');
-    console.log(requiredCheckboxes[0].checked)
 
     for(let i = 0; i < requiredFields.length; i++) {
         if(requiredFields[i].value === '' && requiredFields[i].type !== 'checkbox') {
@@ -146,6 +145,8 @@ function enableButton(form) {
 
     if(form.valid()) {
         form.find('.disabled-button').prop('disabled', false);
+    } else {
+        form.find('.disabled-button').prop('disabled', true);
     }
 
 }
@@ -159,9 +160,8 @@ checkboxes.forEach(btn => {
 
 document.querySelectorAll('.Input_inputBlock input').forEach((input) => {
     input.addEventListener('input', () => {
-        if(jQuery(input).valid()) {
-            enableButton(form);
-        } 
+        jQuery(input).valid()
+        enableButton(form);
     });
 })
 })
