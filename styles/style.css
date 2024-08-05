@@ -8994,3 +8994,86 @@
         background-size: cover;
     }
 }
+
+
+
+.Footer_form .InputButton_inputBlock {
+    padding: 16px 250px 16px 40px;
+}
+
+.Footer_form .InputButton_inputButton {
+    padding: 16px 48px;
+    font-size: 14px;
+}
+.Footer_form {
+    position: relative;
+}
+
+.Footer_form .Input_errorMessage {
+    position: absolute;
+    left: 0;
+    bottom: -30px;
+    color: var(--white);
+    font-weight: 600;
+}
+
+@media(max-width: 832px) {
+    .Footer_topRight {
+        max-width: none;
+    }
+
+    .Footer_topRight .InputButton_inputBlock {
+        font-size: 14px;
+    }
+
+}
+
+@media(max-width: 1016px) {
+
+    .Footer_form .Input_errorMessage {
+        font-size: 14px;
+    }
+
+}
+
+.form-popup .PopUp_modal{
+    width: 620px;
+    height: 350px;
+}
+
+.Popup_body {
+    width: 100%;
+    height: 100%;
+}
+
+.form-popup .Header_popUp {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 40px 60px 10px 60px;
+}
+
+.Popup_h2 {
+    font-size: 32px !important;
+    color: var(--primary) !important;
+    text-transform: none !important;
+}
+
+.Popup_subtitle {
+    font-size: 22px !important;
+    font-weight: 600 !important;
+}
+
+.form-popup .Generic_buttonRoot {
+    width: 100%;
+    font-size: 14px;
+    padding: 15px;
+    color: var(--white);
+}
+
+.non-visible {
+    display: none;
+}

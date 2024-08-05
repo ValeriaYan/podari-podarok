@@ -228,17 +228,78 @@
                     </button></div>
                 <div class="Donate_donateRoot">
                     <div class="Donate_leftSide">
-                        <div class="Donate_form _active" data-payment-type="visa">
+                        <form class="Donate_form _active  js-form" data-payment-type="visa" action="#">
                             <div><button id="pay" style="display:none" onclick="pay()"></button></div><button
                                 id="success" style="display: none;"></button><button id="fail"
                                 style="display: none;"></button>
                             <div class="CreditCard_header">
                                 <p class="CreditCard_headerText">Оплата банковской картой</p>
                             </div>
-                            <div class="Input_inputBlock Input_selected Input_inputSum" value="500"
+                            <div class="Input_inputBlock Input_selected Input_inputSum Input_success" value="500"
                                 style="margin-bottom: 24px;">
-                                <label for="input_ikipl">сумма пожертвования</label><input
-                                    id="input_ikipl" class="Input_input" value="500">
+                                <label for="input_ikipl">сумма пожертвования</label>
+                                <input id="input_ikipl" class="Input_input Input_number" value="500" name="amount" required data-msg="Сумма пожертвований не может быть пустой" >
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                    width="40" height="40" fill="none" viewBox="0 0 40 40" class="Input_icon Input_icon-success">
+                                    <path fill="var(--state-success)"
+                                        d="M20 3.333a16.667 16.667 0 100 33.334 16.667 16.667 0 000-33.334zm7.167 12.684l-7.617 10a1.667 1.667 0 01-2.048.485 1.667 1.667 0 01-.585-.469L12.85 20.85a1.67 1.67 0 012.633-2.05l2.717 3.467 6.3-8.334a1.676 1.676 0 012.667 2.034v.05z">
+                                    </path>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="none" viewBox="0 0 40 40"
+                                        class="Input_icon Input_icon-error">
+                                        <path fill="var(--state-error)"
+                                            d="M20 3.333a16.667 16.667 0 100 33.334 16.667 16.667 0 000-33.334zm0 25a1.666 1.666 0 110-3.332 1.666 1.666 0 010 3.332zm1.667-6.666a1.667 1.667 0 01-3.334 0v-8.334a1.667 1.667 0 013.334 0v8.334z">
+                                        </path>
+                                    </svg></div>
+                            <div class="Input_inputBlock" style="margin-bottom: 24px;">
+                                <label for="input_f35oo">email</label>
+                                <input id="input_f35oo" class="Input_input" type="email" name="email">
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                    width="40" height="40" fill="none" viewBox="0 0 40 40" class="Input_icon Input_icon-success">
+                                    <path fill="var(--state-success)"
+                                        d="M20 3.333a16.667 16.667 0 100 33.334 16.667 16.667 0 000-33.334zm7.167 12.684l-7.617 10a1.667 1.667 0 01-2.048.485 1.667 1.667 0 01-.585-.469L12.85 20.85a1.67 1.67 0 012.633-2.05l2.717 3.467 6.3-8.334a1.676 1.676 0 012.667 2.034v.05z">
+                                    </path>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="none" viewBox="0 0 40 40"
+                                        class="Input_icon Input_icon-error">
+                                        <path fill="var(--state-error)"
+                                            d="M20 3.333a16.667 16.667 0 100 33.334 16.667 16.667 0 000-33.334zm0 25a1.666 1.666 0 110-3.332 1.666 1.666 0 010 3.332zm1.667-6.666a1.667 1.667 0 01-3.334 0v-8.334a1.667 1.667 0 013.334 0v8.334z">
+                                        </path>
+                                    </svg></div>
+                            <div class="Input_inputBlock" style="margin-bottom: 24px;">
+                                <label for="input_hcwey">телефон</label>
+                                <input type='tel' id="input_hcwey" name='phone' class="Input_input Input_phone Input_number" data-mask='+7(999)999-99-99'>
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                    width="40" height="40" fill="none" viewBox="0 0 40 40" class="Input_icon Input_icon-success">
+                                    <path fill="var(--state-success)"
+                                        d="M20 3.333a16.667 16.667 0 100 33.334 16.667 16.667 0 000-33.334zm7.167 12.684l-7.617 10a1.667 1.667 0 01-2.048.485 1.667 1.667 0 01-.585-.469L12.85 20.85a1.67 1.67 0 012.633-2.05l2.717 3.467 6.3-8.334a1.676 1.676 0 012.667 2.034v.05z">
+                                    </path>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="none" viewBox="0 0 40 40"
+                                        class="Input_icon Input_icon-error">
+                                        <path fill="var(--state-error)"
+                                            d="M20 3.333a16.667 16.667 0 100 33.334 16.667 16.667 0 000-33.334zm0 25a1.666 1.666 0 110-3.332 1.666 1.666 0 010 3.332zm1.667-6.666a1.667 1.667 0 01-3.334 0v-8.334a1.667 1.667 0 013.334 0v8.334z">
+                                        </path>
+                                    </svg></div>
+                            <div class="Input_inputBlock" style="margin-bottom: 24px;">
+                                <label for="input_x2g2w">имя</label>
+                                <input id="input_x2g2w" class="Input_input" name='name' required data-msg="Имя не может быть пустым" >
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    width="40" height="40" fill="none" viewBox="0 0 40 40" class="Input_icon Input_icon-success">
+                                    <path fill="var(--state-success)"
+                                        d="M20 3.333a16.667 16.667 0 100 33.334 16.667 16.667 0 000-33.334zm7.167 12.684l-7.617 10a1.667 1.667 0 01-2.048.485 1.667 1.667 0 01-.585-.469L12.85 20.85a1.67 1.67 0 012.633-2.05l2.717 3.467 6.3-8.334a1.676 1.676 0 012.667 2.034v.05z">
+                                    </path>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="none" viewBox="0 0 40 40"
+                                        class="Input_icon Input_icon-error">
+                                        <path fill="var(--state-error)"
+                                            d="M20 3.333a16.667 16.667 0 100 33.334 16.667 16.667 0 000-33.334zm0 25a1.666 1.666 0 110-3.332 1.666 1.666 0 010 3.332zm1.667-6.666a1.667 1.667 0 01-3.334 0v-8.334a1.667 1.667 0 013.334 0v8.334z">
+                                        </path>
+                                    </svg>
+                            </div>
+                            <div class="Input_inputBlock" style="margin-bottom: 24px;">
+                                <label for="input_vwfwe">фамилия</label>
+                                <input id="input_vwfwe" class="Input_input" name="surname" required data-msg="Фамилия не может быть пустой">
                                     <svg xmlns="http://www.w3.org/2000/svg"
                                     width="40" height="40" fill="none" viewBox="0 0 40 40" class="Input_icon Input_icon-success">
                                     <path fill="var(--state-success)"
@@ -251,9 +312,10 @@
                                             d="M20 3.333a16.667 16.667 0 100 33.334 16.667 16.667 0 000-33.334zm0 25a1.666 1.666 0 110-3.332 1.666 1.666 0 010 3.332zm1.667-6.666a1.667 1.667 0 01-3.334 0v-8.334a1.667 1.667 0 013.334 0v8.334z">
                                         </path>
                                     </svg>
-                                <span class="Input_errorMessage"></span></div>
-                            <div class="Input_inputBlock " style="margin-bottom: 24px;"><label
-                                    for="input_f35oo">email</label><input id="input_f35oo" class="Input_input">
+                            </div>
+                            <div class="Input_inputBlock" style="margin-bottom: 24px;">
+                                <label for="input_16q39">откуда узнали о нас?</label>
+                                <input id="input_16q39" class="Input_input" name="find out from">
                                     <svg xmlns="http://www.w3.org/2000/svg"
                                     width="40" height="40" fill="none" viewBox="0 0 40 40" class="Input_icon Input_icon-success">
                                     <path fill="var(--state-success)"
@@ -265,10 +327,10 @@
                                         <path fill="var(--state-error)"
                                             d="M20 3.333a16.667 16.667 0 100 33.334 16.667 16.667 0 000-33.334zm0 25a1.666 1.666 0 110-3.332 1.666 1.666 0 010 3.332zm1.667-6.666a1.667 1.667 0 01-3.334 0v-8.334a1.667 1.667 0 013.334 0v8.334z">
                                         </path>
-                                    </svg>
-                                <span class="Input_errorMessage"></span></div>
-                            <div class="Input_inputBlock   " style="margin-bottom: 24px;"><label
-                                    for="input_hcwey">телефон</label><input id="input_hcwey" class="Input_input">
+                                    </svg></div>
+                            <div class="Input_inputBlock" style="margin-bottom: 24px;">
+                                <label for="input_w3w7e">комментарий</label>
+                                <input id="input_w3w7e" class="Input_input" name="comment">
                                     <svg xmlns="http://www.w3.org/2000/svg"
                                     width="40" height="40" fill="none" viewBox="0 0 40 40" class="Input_icon Input_icon-success">
                                     <path fill="var(--state-success)"
@@ -280,75 +342,26 @@
                                         <path fill="var(--state-error)"
                                             d="M20 3.333a16.667 16.667 0 100 33.334 16.667 16.667 0 000-33.334zm0 25a1.666 1.666 0 110-3.332 1.666 1.666 0 010 3.332zm1.667-6.666a1.667 1.667 0 01-3.334 0v-8.334a1.667 1.667 0 013.334 0v8.334z">
                                         </path>
-                                    </svg>
-                                <span class="Input_errorMessage"></span></div>
-                            <div class="Input_inputBlock   " style="margin-bottom: 24px;"><label
-                                    for="input_x2g2w">имя</label><input id="input_x2g2w" class="Input_input"><svg
-                                    xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="none"
-                                    viewBox="0 0 40 40" class="Input_icon">
-                                    <path fill="var(--state-success)"
-                                        d="M20 3.333a16.667 16.667 0 100 33.334 16.667 16.667 0 000-33.334zm7.167 12.684l-7.617 10a1.667 1.667 0 01-2.048.485 1.667 1.667 0 01-.585-.469L12.85 20.85a1.67 1.67 0 012.633-2.05l2.717 3.467 6.3-8.334a1.676 1.676 0 012.667 2.034v.05z">
-                                    </path>
-                                </svg><span class="Input_errorMessage"></span></div>
-                            <div class="Input_inputBlock   " style="margin-bottom: 24px;"><label
-                                    for="input_vwfwe">фамилия</label><input id="input_vwfwe" class="Input_input">
-                                    <svg xmlns="http://www.w3.org/2000/svg"
-                                    width="40" height="40" fill="none" viewBox="0 0 40 40" class="Input_icon Input_icon-success">
-                                    <path fill="var(--state-success)"
-                                        d="M20 3.333a16.667 16.667 0 100 33.334 16.667 16.667 0 000-33.334zm7.167 12.684l-7.617 10a1.667 1.667 0 01-2.048.485 1.667 1.667 0 01-.585-.469L12.85 20.85a1.67 1.67 0 012.633-2.05l2.717 3.467 6.3-8.334a1.676 1.676 0 012.667 2.034v.05z">
-                                    </path>
-                                    </svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="none" viewBox="0 0 40 40"
-                                        class="Input_icon Input_icon-error">
-                                        <path fill="var(--state-error)"
-                                            d="M20 3.333a16.667 16.667 0 100 33.334 16.667 16.667 0 000-33.334zm0 25a1.666 1.666 0 110-3.332 1.666 1.666 0 010 3.332zm1.667-6.666a1.667 1.667 0 01-3.334 0v-8.334a1.667 1.667 0 013.334 0v8.334z">
-                                        </path>
-                                    </svg>
-                                <span class="Input_errorMessage"></span></div>
-                            <div class="Input_inputBlock   " style="margin-bottom: 24px;"><label
-                                    for="input_16q39">откуда узнали о нас?</label><input id="input_16q39"
-                                    class="Input_input">
-                                    <svg xmlns="http://www.w3.org/2000/svg"
-                                    width="40" height="40" fill="none" viewBox="0 0 40 40" class="Input_icon Input_icon-success">
-                                    <path fill="var(--state-success)"
-                                        d="M20 3.333a16.667 16.667 0 100 33.334 16.667 16.667 0 000-33.334zm7.167 12.684l-7.617 10a1.667 1.667 0 01-2.048.485 1.667 1.667 0 01-.585-.469L12.85 20.85a1.67 1.67 0 012.633-2.05l2.717 3.467 6.3-8.334a1.676 1.676 0 012.667 2.034v.05z">
-                                    </path>
-                                    </svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="none" viewBox="0 0 40 40"
-                                        class="Input_icon Input_icon-error">
-                                        <path fill="var(--state-error)"
-                                            d="M20 3.333a16.667 16.667 0 100 33.334 16.667 16.667 0 000-33.334zm0 25a1.666 1.666 0 110-3.332 1.666 1.666 0 010 3.332zm1.667-6.666a1.667 1.667 0 01-3.334 0v-8.334a1.667 1.667 0 013.334 0v8.334z">
-                                        </path>
-                                    </svg>
-                                <span class="Input_errorMessage"></span></div>
-                            <div class="Input_inputBlock   " style="margin-bottom: 24px;"><label
-                                    for="input_w3w7e">комментарий</label><input id="input_w3w7e"
-                                    class="Input_input">
-                                    <svg xmlns="http://www.w3.org/2000/svg"
-                                    width="40" height="40" fill="none" viewBox="0 0 40 40" class="Input_icon Input_icon-success">
-                                    <path fill="var(--state-success)"
-                                        d="M20 3.333a16.667 16.667 0 100 33.334 16.667 16.667 0 000-33.334zm7.167 12.684l-7.617 10a1.667 1.667 0 01-2.048.485 1.667 1.667 0 01-.585-.469L12.85 20.85a1.67 1.67 0 012.633-2.05l2.717 3.467 6.3-8.334a1.676 1.676 0 012.667 2.034v.05z">
-                                    </path>
-                                    </svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="none" viewBox="0 0 40 40"
-                                        class="Input_icon Input_icon-error">
-                                        <path fill="var(--state-error)"
-                                            d="M20 3.333a16.667 16.667 0 100 33.334 16.667 16.667 0 000-33.334zm0 25a1.666 1.666 0 110-3.332 1.666 1.666 0 010 3.332zm1.667-6.666a1.667 1.667 0 01-3.334 0v-8.334a1.667 1.667 0 013.334 0v8.334z">
-                                        </path>
-                                    </svg>
-                                <span class="Input_errorMessage"></span></div>
+                                    </svg></div>
                             <p class="CreditCard_headerDescription">Даже небольшое регулярное пожертвование
                                 поможет нам лучше планировать свою финансовую деятельность, а это значит, лучше помогать
                                 семьям</p>
-                            <div class="Toggle_toggleRoot  "><button
-                                    class="Toggle_toggle  Toggle_selected">ежемесячно</button><button
-                                    class="Toggle_toggle  ">разово</button></div>
+                            <div class="Toggle_toggleRoot">
+                                <div class="Toggle_toggle Toggle_selected">
+                                    <input class='Input_radio non-visible' name="period" type="radio" value="monthly" checked>
+                                    ежемесячно
+                                </div>
+                                <div class="Toggle_toggle">
+                                    <input class='Input_radio non-visible' name="period" type="radio" value="one">
+                                    разово
+                                </div>
+                            </div>
                             <div class="CreditCard_checkbox">
                                 <div><label class="" style="display: flex; align-items: center;"><span>
                                             <div class="checkbox"
                                                 style="height: 24px; width: 24px; border-width: 2px; border-style: solid; border-radius: 8px; display: flex; align-items: center; justify-content: center;">
                                                 <svg  xmlns="http://www.w3.org/2000/svg"  width="40" height="40" fill="none" viewBox="0 0 40 40"><path fill="#FF3351" d="M16.433 30a1.669 1.669 0 01-1.216-.533l-8.1-8.617a1.669 1.669 0 012.433-2.283l6.867 7.316L30.433 10.55a1.667 1.667 0 112.467 2.233L17.667 29.45a1.665 1.665 0 01-1.217.55h-.017z"></path></svg>
-                                                <input type="checkbox" name="" hidden="" value="">
+                                                <input type="checkbox" name="" hidden="" value="" required>
                                             </div>
                                         </span></label></div>
                                 <p class="CreditCard_oferta">Соглашаюсь с <a
@@ -360,20 +373,22 @@
                                             <div class="checkbox"
                                                 style="height: 24px; width: 24px; border-width: 2px;  border-style: solid; border-radius: 8px; display: flex; align-items: center; justify-content: center;">
                                                 <svg  xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="none" viewBox="0 0 40 40"><path fill="#FF3351" d="M16.433 30a1.669 1.669 0 01-1.216-.533l-8.1-8.617a1.669 1.669 0 012.433-2.283l6.867 7.316L30.433 10.55a1.667 1.667 0 112.467 2.233L17.667 29.45a1.665 1.665 0 01-1.217.55h-.017z"></path></svg>
-                                                <input type="checkbox" name="" hidden="" value="">
+                                                <input type="checkbox" name="" hidden="" value="" required>
                                             </div>
                                         </span></label></div>
                                 <p class="CreditCard_oferta">Соглашаюсь с условиями <a
                                         href="https://storage.yandexcloud.net/pp-prod/oferta_a77d41b8c2.pdf"
                                         target="_blank">договора-оферты</a></p>
                             </div>
-                            <div style="margin-top: 24px;"><button
-                                    class="Simple_simpleButtonRoot Simple_large Simple_red  Simple_responsive"
-                                    disabled="">помочь</button></div>
+                            <div style="margin-top: 24px;">
+                                <button type='submit' class="Simple_simpleButtonRoot Simple_large Simple_red Simple_responsive disabled-button" disabled>
+                                    помочь
+                                </button>
+                            </div>
                             <p class="CreditCard_reports" style="margin-top: 24px;"><a
                                     href="./feedback/reports.html">Отчеты</a> и <a href="./feedback/feedback.html">отзывы</a> о проделанной
                                 работе можно посмотреть тут</p>
-                        </div>
+                        </form>
                         <div class="Donate_form" data-payment-type="sber">
 
                             <div><button id="pay" style="display:none" onclick="pay()"></button></div><button
@@ -398,7 +413,8 @@
                                                     d="M20 3.333a16.667 16.667 0 100 33.334 16.667 16.667 0 000-33.334zm0 25a1.666 1.666 0 110-3.332 1.666 1.666 0 010 3.332zm1.667-6.666a1.667 1.667 0 01-3.334 0v-8.334a1.667 1.667 0 013.334 0v8.334z">
                                                 </path>
                                             </svg>
-                                        <span class="Input_errorMessage"></span></div>
+                                        <span class="Input_errorMessage"></span>
+                                    </div>
                                     <div class="Input_inputBlock " style="margin-bottom: 24px;"><label
                                             for="input_f366oo">email</label><input id="input_f366oo" class="Input_input">
                                             <svg xmlns="http://www.w3.org/2000/svg"
@@ -413,7 +429,7 @@
                                                     d="M20 3.333a16.667 16.667 0 100 33.334 16.667 16.667 0 000-33.334zm0 25a1.666 1.666 0 110-3.332 1.666 1.666 0 010 3.332zm1.667-6.666a1.667 1.667 0 01-3.334 0v-8.334a1.667 1.667 0 013.334 0v8.334z">
                                                 </path>
                                             </svg>
-                                        <span class="Input_errorMessage"></span></div>
+    </div>
                                         
                                         
                                     <div style="margin-top: 24px;"><button
@@ -543,7 +559,11 @@
             </div>
         </footer>
     </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+    <script src="../scripts/jquery.mask.min.js"></script>
     <script src="../scripts/scripts.js"></script>
+    <script src="../scripts/validation.js"></script>
 </body>
 
 </html>
