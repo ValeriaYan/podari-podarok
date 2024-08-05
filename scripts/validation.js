@@ -126,37 +126,42 @@ formValidate();
 
 window.formValidate = formValidate;
 
-// function enableButton(form) {
-//     const requiredFields = form.find('input[required]');
-//     const requiredCheckboxes = requiredFields.find('input[type="checkbox"]');
-//     console.log(requiredFields)
+function enableButton(form) {
+    const requiredFields = form.find('input[required]');
+    const requiredCheckboxes = form.find('[type="checkbox"][required]');
 
-//     for(let i = 0; i < requiredFields.length; i++) {
-//         if(requiredFields[i].value === '') {
-//             console.log(requiredFields[i].value)
-//             form.find('.disabled-button').prop('disabled', true);
-//         }
-//     } 
-//     for(let i = 0; i < requiredCheckboxes.length; i++) {
-//         if(requiredCheckboxes[i].checked = false) {
-//             form.find('.disabled-button').prop('disabled', true)
-//         }
-//     }
+    for(let i = 0; i < requiredFields.length; i++) {
+        if(requiredFields[i].value === '' && requiredFields[i].type !== 'checkbox') {
+            form.find('.disabled-button').prop('disabled', true);
+            return;
+        }
+    } 
+    for(let i = 0; i < requiredCheckboxes.length; i++) {
+        if(requiredCheckboxes[i].checked === false) {
+            form.find('.disabled-button').prop('disabled', true);
+            return;
+        }
+    }
 
-//     form.find('.disabled-button').prop('disabled', false);
-// }
+    if(form.valid()) {
+        form.find('.disabled-button').prop('disabled', false);
+    } else {
+        form.find('.disabled-button').prop('disabled', true);
+    }
 
-// const checkboxes = document.querySelectorAll('.CreditCard_checkbox .checkbox');
-// checkboxes.forEach(btn => {
-//     btn.addEventListener('click', () => {
-//         enableButton(checkboxes, form);
-//     })
-// })
+}
+
+const checkboxes = document.querySelectorAll('.CreditCard_checkbox .checkbox');
+checkboxes.forEach(btn => {
+    btn.addEventListener('click', () => {
+        enableButton(form);
+    })
+})
 
 document.querySelectorAll('.Input_inputBlock input').forEach((input) => {
     input.addEventListener('input', () => {
-        jQuery(input).valid(); 
-        // enableButton(form);
+        jQuery(input).valid()
+        enableButton(form);
     });
 })
 })
