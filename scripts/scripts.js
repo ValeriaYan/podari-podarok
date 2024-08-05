@@ -359,12 +359,16 @@ const popups = document.querySelectorAll('.popup');
 popups?.forEach((popup) => {
     const link = popup.previousElementSibling;
     link.addEventListener('click', () => {
-        popup.classList.add('_active');
+        if(!popup.classList.contains('form-popup')) {
+            popup.classList.add('_active');
+        }
     });
-    const closeBtn = popup.querySelector('.react-responsive-modal-closeButton');
+    const closeBtns = popup.querySelectorAll('[data-testid="close-button"]');
     const overlay = popup.querySelector('.PopUp_container');
-    closeBtn.addEventListener('click', () => {
-        popup.classList.remove('_active');
+    closeBtns.forEach((btn) => {
+        btn.addEventListener('click', () => {
+            popup.classList.remove('_active');
+        })
     })
     overlay.addEventListener('click', (e) => {
         if(!e.target.closest('.PopUp_modal')) {
@@ -529,6 +533,7 @@ flowerRadios?.forEach((radio) => {
         label.classList.add('Flower_checked');
         inputBlock.value = radio.value;
         input.value = inputBlock.value;
+        inputBlock.classList.add('Input_selected');
         checkedFlower.classList.remove('Flower_checked');
         checkedFlower = label;
     })
@@ -607,9 +612,12 @@ const toggleBtns = document.querySelectorAll('.Toggle_toggle');
 toggleBtns?.forEach((btn) => {
     btn.addEventListener('click', () => {
         for(let i = 0; i < toggleBtns.length; i++) {
-            toggleBtns[i].classList.remove('Toggle_selected')
+            toggleBtns[i].classList.remove('Toggle_selected');
+            toggleBtns[i].firstElementChild.checked = false;
         }
         btn.classList.add('Toggle_selected');
+        btn.firstElementChild.checked = true;
+        console.log(btn.firstElementChild.checked)
     })
 })
 

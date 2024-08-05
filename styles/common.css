@@ -998,7 +998,8 @@ filter: brightness(0) invert(1);
 .InputButton_miniButton {
     display : none;
     position: absolute;
-    top     : 4px;
+    top     : 50%;
+    transform: translateY(-50%);
     right   : 12px
 }
 

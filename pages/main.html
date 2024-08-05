@@ -1362,19 +1362,47 @@
                                 class="Footer_footerLink" id="13" href="./giver.html">дарителям</a><a
                                 class="Footer_footerLink" id="14" href="./family.html">семьям</a>
                                 <a href="https://old.podaripodarok.org" target="_blank" class="Footer_footerLink" id="44">На старый сайт</a></div>
-                        <div class="Footer_topRight">
+                        <form class="Footer_topRight Footer_form js-form">
                             <p style="margin-bottom: 32px;">Подписаться на рассылку фонда</p>
-                            <div class="InputButton_inputButtonRoot  InputButton_white"><input
-                                    class="InputButton_inputBlock" placeholder="ваш email"><button
-                                    class="InputButton_inputButton">подписаться</button>
-                                <div class="InputButton_miniButton"><svg xmlns="http://www.w3.org/2000/svg" width="32px"
+                            <div class="InputButton_inputButtonRoot InputButton_white form-field">
+                                <input type="email"
+                                    class="InputButton_inputBlock" placeholder="ваш email" name="email" required>
+                                <button class="InputButton_inputButton" type="submit">помочь</button>
+                                <button class="InputButton_miniButton"><svg xmlns="http://www.w3.org/2000/svg" width="32px"
                                         height="32px" fill="none" viewBox="0 0 40 40">
                                         <path fill="#FF3351" class="InputButton_miniButtonPath"
                                             d="M8.333 21.667H28.1l-6.05 7.266a1.668 1.668 0 102.567 2.134l8.333-10c.056-.08.106-.163.15-.25 0-.084.083-.134.117-.217.075-.191.115-.395.116-.6a1.666 1.666 0 00-.116-.6c0-.083-.084-.133-.117-.217a1.996 1.996 0 00-.15-.25l-8.333-10a1.666 1.666 0 00-1.284-.6 1.667 1.667 0 00-1.283 2.734l6.05 7.266H8.333a1.667 1.667 0 100 3.334z">
                                         </path>
-                                    </svg></div>
+                                    </svg>
+                                </button>
                             </div>
-                        </div>
+                            <div class="popup form-popup">
+                                <div class="react-responsive-modal-root PopUp_popUp" data-testid="root">
+                                    <div class="react-responsive-modal-overlay PopUp_overlay" data-testid="overlay" aria-hidden="true"
+                                        style="animation: 300ms ease 0s 1 normal none running react-responsive-modal-overlay-in;"></div>
+                                    <div class="react-responsive-modal-container react-responsive-modal-containerCenter PopUp_container"
+                                        data-testid="modal-container">
+                                        <div class="react-responsive-modal-modal PopUp_modal" role="dialog" aria-modal="true"
+                                            data-testid="modal" tabindex="-1"
+                                            style="animation: 300ms ease 0s 1 normal none running react-responsive-modal-modal-in; background: var(--white); box-shadow: rgba(0, 0, 0, 0.08) 0px 0px 64px, rgba(0, 0, 0, 0.06) 0px 0px 20px, rgba(0, 0, 0, 0.06) 0px 0px 8px, rgba(0, 0, 0, 0.04) 0px 0px 4px; border-radius: 24px;">
+                                            <div class="Popup_body">
+                                                <p class="PopUp_title"></p>
+                                                <div class="Header_popUp">
+                                                    <h2 class="Popup_h2">Подписка</h2>
+                                                    <p class="Popup_subtitle">Вы успешно подписались!</p>
+                                                    <div class="Generic_responsive Generic_buttonRoot" data-testid="close-button">Ок</div>
+                                                </div>
+                                            </div><div class="react-responsive-modal-closeButton" data-testid="close-button"><svg width="28"
+                                                    height="28" viewBox="0 0 36 36" data-testid="close-icon">
+                                                    <path
+                                                        d="M28.5 9.62L26.38 7.5 18 15.88 9.62 7.5 7.5 9.62 15.88 18 7.5 26.38l2.12 2.12L18 20.12l8.38 8.38 2.12-2.12L20.12 18z">
+                                                    </path>
+                                                </svg></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
                     </div>
                     <div class="Footer_bot">
                         <div class="Footer_botLeft">
@@ -1399,10 +1427,12 @@
         </footer>
     </div>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
     <script src="../scripts/slick.min.js"></script>
     <script src="https://cdn.plyr.io/3.7.8/plyr.js"></script>
     <script src="../scripts/scripts.js"></script>
     <script src="../scripts/timer.js"></script>
+    <script src="../scripts/validation.js"></script>
 
 </body>
 
