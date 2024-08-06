@@ -9087,3 +9087,18 @@ div.LoginPage_loginButton[data-disabled='false'] {
 .LoginPage_toggleBlock._active {
     display: block;
 }
+
+.LoginTemplate_body > p {
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 0;
+    text-align: center;
+    color: var(--text-black);
+    margin-bottom: 50px;
+}
+
+.LoginTemplate_logoBlock {
+    margin-bottom: 0;
+}
