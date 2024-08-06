@@ -3,13 +3,17 @@
     width: 100%
 }
 
+.multi-slider {
+    margin-left: -20px;
+    margin-right: -20px;
+}
 .multi-next, .multi-prev {
     
-    position: absolute; z-index: 999; top: 50%; right: 20px; transform: translateY(-50%)
+    position: absolute; z-index: 999; top: 50%; right: 0; transform: translateY(-50%)
 }
 
 .multi-prev {
-    left: 20px;
+    left: -25px;
     right: auto;
 }
 
@@ -1467,13 +1471,24 @@ filter: brightness(0) invert(1);
     max-width: 370px
 }
 
+.IndexPage_family {
+    display: flex;
+    flex-direction: column;
+}
+.IndexPage_family .Family_slider {
+    flex-grow: 1;
+    justify-content: flex-start;
+}
+
+.IndexPage_family .Family_cardContent {
+    flex-grow: 1;
+}
 .Family_cardImage {
-    -o-object-fit     : cover;
     object-fit        : cover;
-    -o-object-position: top;
     object-position   : top;
     z-index           : 9;
     display: block;
+    aspect-ratio: 1 / 1;
 }
 
 .Family_cardImage,
@@ -1528,6 +1543,23 @@ filter: brightness(0) invert(1);
     transition: all .2s ease;
     padding   : 26px 23px 0;
     background: var(--white)
+}
+
+@media (max-width: 590px) {
+    .Family_tags {
+        flex-direction: column;
+        gap:2px;align-items: flex-start
+    }
+    .Family_tags .Family_tag {
+        text-align: left;
+        display: inline-flex;
+        margin-right: 0;
+        font-size: 14px;
+        line-height: 130%;
+        border-bottom-width: 1px;
+        
+
+    }
 }
 
 .Family_mini .Family_slider {
@@ -3008,7 +3040,7 @@ filter: brightness(0) invert(1);
 
 .About_topCarousel 
 .Dialog_dialogBloop {
-    top:50px;
+    bottom: 40px;
 }
 .About_topCarousel  .slick-list {
     padding-bottom: 50px;
