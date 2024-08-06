@@ -605,6 +605,30 @@ mobileMenus?.forEach((menu) => {
     })
 })
 
+// Toggle blocks
+
+const toggles = document.querySelectorAll('[data-toggle]');
+const toggleBlocks = document.querySelectorAll('[data-toggle-block]');
+
+function setActiveToggle(toggleName) {
+    console.log(toggleName)
+    for(let i = 0; i < toggleBlocks.length; i++) {
+        console.log(toggleBlocks[i])
+        if(toggleBlocks[i].dataset.toggleBlock == toggleName) {
+            toggleBlocks[i].classList.add('_active');
+        } else {
+            toggleBlocks[i].classList.remove('_active');
+        }
+    }
+}
+
+toggles?.forEach((toggle) => {
+    toggle.addEventListener('click', () => {
+       setActiveToggle(toggle.dataset.toggle);
+    })
+})
+
+
 // Toggle buttons
 
 const toggleBtns = document.querySelectorAll('.Toggle_toggle');
@@ -617,8 +641,65 @@ toggleBtns?.forEach((btn) => {
         }
         btn.classList.add('Toggle_selected');
         btn.firstElementChild.checked = true;
-        console.log(btn.firstElementChild.checked)
     })
+})
+
+
+// Register sections
+
+function enableSectionBtn(requiredFields, requiredCheckboxes, btn) {
+    for(let i = 0; i < requiredFields.length; i++) {
+        if(requiredFields[i].value === '' && requiredFields[i].type !== 'checkbox') {
+            btn.dataset.disabled = 'true';
+            return;
+        }
+    } 
+    for(let i = 0; i < requiredCheckboxes.length; i++) {
+        if(requiredCheckboxes[i].checked === 'false') {
+            console.log(requiredCheckboxes[i])
+            btn.dataset.disabled = 'true';
+            return;
+        }
+    }
+
+    btn.dataset.disabled = 'false';
+}
+
+const sections = document.querySelectorAll('.form-section');
+sections?.forEach((section) => {
+    const requiredFields = section.querySelectorAll('input[required]');
+    const requiredCheckboxes = section.querySelectorAll('[type="checkbox"][required]');
+
+    const btn = section.querySelector('.section-btn');
+    const backBtn = section.querySelector('.section-back-btn');
+
+    if(btn) {
+        requiredFields.forEach((field) => {
+            field.addEventListener('input', () => {
+                enableSectionBtn(requiredFields, requiredCheckboxes, btn);
+            })
+        })
+    
+        requiredCheckboxes.forEach(checkbox => {
+            checkbox.addEventListener('click', () => {
+                enableSectionBtn(requiredFields, requiredCheckboxes, btn);
+            })
+        })
+    
+        enableSectionBtn(requiredFields, requiredCheckboxes, btn);
+        btn.addEventListener('click', () => {
+            if(btn.dataset.disabled === 'false') {
+                section.classList.remove('_active');
+                section.nextElementSibling.classList.add('_active');
+            }
+        })
+    }
+
+    backBtn?.addEventListener('click', () => {
+        section.classList.remove('_active');
+        section.previousElementSibling.classList.add('_active');
+    })
+
 })
 
 const players = Plyr.setup('.js-player');

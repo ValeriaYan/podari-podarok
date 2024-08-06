@@ -151,7 +151,8 @@ function enableButton(form) {
 
 }
 
-const checkboxes = document.querySelectorAll('.CreditCard_checkbox .checkbox');
+
+const checkboxes = document.querySelectorAll('.checkbox');
 checkboxes.forEach(btn => {
     btn.addEventListener('click', () => {
         enableButton(form);

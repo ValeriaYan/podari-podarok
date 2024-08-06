@@ -4871,7 +4871,8 @@
     font-weight: 400;
 }
 
-.LoginPage_input label {
+.LoginPage_input label,
+.LoginPage_input.Input_selected label {
     top: -50px;
     left: -30px;
     background-color: transparent;
@@ -4879,6 +4880,21 @@
     color: #999B9F;
     font-weight: 400;
     font-size: 12px;
+    transform: none;
+}
+
+.LoginPage_input.Input_inputBlock.Input_selectedTextArea label, 
+.LoginPage_input.Input_inputBlock.Input_selected label {
+    padding: 24px 40px;
+}
+
+.LoginPage_input .Input_icon {
+    top: 50%;
+    transform: translateY(-80%);
+}
+
+.LoginPage_input.Input_success .Input_icon {
+    transform: translateY(-50%);
 }
 
 .LoginPage_botLinks {
@@ -4900,6 +4916,12 @@
     padding: 20px 0;
     font-size: 14px;
     line-height: 17px;
+}
+
+.LoginPage_loginButtonLight {
+    background-color: transparent;
+    border: transparent;
+    color: var(--text-black)
 }
 
 .LoginPage_loader {
@@ -9011,4 +9033,57 @@
 
 .non-visible {
     display: none;
+}
+
+.form-section {
+    display: none;
+}
+
+.form-section._active {
+    display: block;
+}
+
+.LoginPage_checkboxes {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.LoginPage_text {
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+.LoginPage_successLetter {
+    padding: 19px 25px;
+    background-color: white;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.LoginPage_loginButton {
+    margin-bottom: 30px !important;
+}
+
+div.LoginPage_loginButton[data-disabled='true'] {
+    background: var(--gray-40);
+    border-color: var(--gray-40);
+    pointer-events: none;
+}
+
+div.LoginPage_loginButton[data-disabled='false'] {
+    background-color: var(--primary);
+    color: white;
+    pointer-events:all;
+}
+
+.LoginPage_toggleBlock {
+    display: none;
+}
+
+.LoginPage_toggleBlock._active {
+    display: block;
 }
