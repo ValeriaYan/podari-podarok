@@ -8968,6 +8968,18 @@
     max-height: 260px;
 }
 
+@media(max-width: 1500px) {
+    .ReportsHero_withReadMore {
+        font-size: 18px;
+        -webkit-line-clamp: 6;
+    }
+
+    .ReportsHero_block {
+        max-width: 450px;
+    }
+    
+}
+
 @media(max-width: 1400px) {
     .ReportsHero_withReadMore {
         font-size: 18px;
