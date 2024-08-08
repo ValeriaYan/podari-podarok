@@ -54,6 +54,10 @@ let formValidate = function() {
                     required: true,
                     email: true,
                 },
+                password: {
+                    required: true,
+                    minlength: 6,
+                }
             },
             messages: {
                 phone: {
@@ -63,6 +67,10 @@ let formValidate = function() {
                 email: {
                     required: "Email не может быть пустым",
                     email: "Email заполнен неверно",
+                },
+                password: {
+                    required: 'Пароль не может быть пустым',
+                    minlength: 'Пароль не может быть меньше 6 символов'
                 }
             },
 
@@ -75,11 +83,11 @@ let formValidate = function() {
                 // }
                 
             
-                // event.preventDefault();
+                event.preventDefault();
 
-                // let data = new FormData(),
-                //     formParams = thisForm.serializeArray();
-                //     console.log(formParams)
+                let data = new FormData(),
+                    formParams = thisForm.serializeArray();
+                    console.log(formParams)
 
                 // $.each(thisForm.find('.js-input-file'), function (i, tag) {
                 //     $.each($(tag)[0].files, function (i, file) {

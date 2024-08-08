@@ -70,32 +70,50 @@ burgerIcon?.addEventListener('click', () => {
     }
 })
 
-// Cart need controls
-
-const needs = document.querySelectorAll('.CartNeeds_need');
-
-needs?.forEach((need) => {
-    const plusBtn = need.querySelector('.Counter_plus');
-    const minusBtn = need.querySelector('.Counter_minus');
-    const input = need.querySelector('.Counter_input');
-    const trash = need.querySelector('.CartNeeds_trash');
-
-    plusBtn.addEventListener('click', () => {
+// Counter
+function counter(operation, btnMinus, input) {
+    if(operation === 'plus') {
         input.value = +input.value + 1;
         if(input.value > 1) {
-            minusBtn.disabled = false;
+            btnMinus.disabled = false;
         }
-    })
-
-    minusBtn.addEventListener('click', () => {
+    } 
+    
+    if(operation === 'minus') {
         if(input.value > 1) {
             input.value = +input.value - 1;
         }
 
         if(input.value == 1) {
-            minusBtn.disabled = true;
+            btnMinus.disabled = true;
         }
+    }
+
+}
+
+const counters = document.querySelectorAll('.Counter_wrap');
+
+counters?.forEach((c) => {
+    const plusBtn = c.querySelector('.Counter_plus');
+    const minusBtn = c.querySelector('.Counter_minus');
+    const inputCounter = c.querySelector('.Counter_input');
+
+    plusBtn.addEventListener('click', () => {
+        counter('plus', minusBtn, inputCounter);
     })
+    
+    minusBtn.addEventListener('click', () => {
+        counter('minus', minusBtn, inputCounter);
+    })
+
+})
+
+// Cart need controls
+
+const needs = document.querySelectorAll('.CartNeeds_need');
+
+needs?.forEach((need) => {
+    const trash = need.querySelector('.CartNeeds_trash');
 
     trash.addEventListener('click', () => {
         if(!need.nextElementSibling.classList.contains('CartNeeds_need') && !need.previousElementSibling.classList.contains('CartNeeds_need')) {
@@ -655,8 +673,7 @@ function enableSectionBtn(requiredFields, requiredCheckboxes, btn) {
         }
     } 
     for(let i = 0; i < requiredCheckboxes.length; i++) {
-        if(requiredCheckboxes[i].checked === 'false') {
-            console.log(requiredCheckboxes[i])
+        if(requiredCheckboxes[i].checked === false) {
             btn.dataset.disabled = 'true';
             return;
         }

@@ -23,8 +23,9 @@ function initializeClock(id) {
     const hours = timer.querySelector('.Timer_hours');
     const minutes = timer.querySelector('.Timer_minutes');
     
+    const t = getTimeRemaining(deadline);
+
     function updateClock() {
-        const t = getTimeRemaining(deadline);
         const stringDays = ('0' + t.days).slice(-2);
         const stringHours = ('0' + t.hours).slice(-2);
         const stringMinutes = ('0' + t.minutes).slice(-2);
@@ -37,14 +38,27 @@ function initializeClock(id) {
     
         minutes.firstElementChild.textContent = stringMinutes[0]
         minutes.lastElementChild.textContent = stringMinutes[1];
+
+    }
+
+    function clearClock() {
+        clearInterval(timeInterval); 
+        days.firstElementChild.textContent = '0';
+        days.lastElementChild.textContent = '0';
     
-        if(t.total<=0){  
-            clearInterval(timeInterval);  
-        } 
+        hours.firstElementChild.textContent = '0';
+        hours.lastElementChild.textContent = '0';
+    
+        minutes.firstElementChild.textContent = '0';
+        minutes.lastElementChild.textContent = '0';
     }
 
     updateClock();
     const timeInterval = setInterval(updateClock, 1000);
+
+    if(t.total<=0){  
+        clearClock();
+    } 
 }
 
 

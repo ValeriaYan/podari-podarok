@@ -54,7 +54,7 @@
                     <div class="form-section _active" data-section='1'>
                         <div class="LoginTemplate_body">
                             <p>Присоединяйтесь к сообществу <br> неравнодушных людей, помогайте и <br> принимайте помощь</p>
-                            <div style="display: unset;">
+                            <div class="LoginTemplate_inputs">
                                 <div class="Input_inputBlock LoginPage_input ">
                                    <label for="input_vfa83">email</label>
                                    <input placeholder="Введите Ваш email" id="input_vfa83" class="Input_input" name='email' required>
@@ -134,7 +134,7 @@
                                             <div class="checkbox"
                                                 style="height: 24px; width: 24px; border-width: 2px; border-style: solid; border-radius: 8px; display: flex; align-items: center; justify-content: center;">
                                                 <svg  xmlns="http://www.w3.org/2000/svg"  width="40" height="40" fill="none" viewBox="0 0 40 40"><path fill="#FF3351" d="M16.433 30a1.669 1.669 0 01-1.216-.533l-8.1-8.617a1.669 1.669 0 012.433-2.283l6.867 7.316L30.433 10.55a1.667 1.667 0 112.467 2.233L17.667 29.45a1.665 1.665 0 01-1.217.55h-.017z"></path></svg>
-                                                <input type="checkbox" name="" hidden="" value="" required></div>
+                                                <input type="checkbox" name="agreement" hidden="" value="true" required></div>
                                         </span>
                                    </label>
                                </div>
@@ -145,60 +145,60 @@
                         </div>
                     </div>
                     <div class="form-section" data-section="2">
-                        <div class="LoginPage_rolePartial">
-                           <p class="LoginPage_rolePartialTitle">Моя роль в Фонде</p>
-                           <div class="LoginPage_roleSelector">
-                            <div class="LoginPage_roleSelectorBtn Toggle_selected Toggle_toggle" data-toggle="want-help">
-                                <input class="Input_radio non-visible" type="radio" name="role" value="want help" checked>
-                                Хочу помочь</div>
-                            <div class="LoginPage_roleSelectorBtn Toggle_toggle" toggle="need-help" data-toggle="need help">
-                                <input class="Input_radio non-visible" type="radio" name="role" value="need help">
-                                Нужна помощь</div>
-                            </div>
-                            <div class="LoginPage_toggleBlock _active" data-toggle-block="want-help">
-                                <div>
-                                    <p class="LoginPage_roleDesc">Помогаем людям так, чтобы они сами начинали помогать
-                                        другим</p>
+                        <div class="LoginPage_rolePartial LoginTemplate_body">
+                            <p class="LoginPage_rolePartialTitle">Моя роль в Фонде</p>
+                            <div class="LoginPage_roleSelector">
+                                <div class="LoginPage_roleSelectorBtn Toggle_selected Toggle_toggle" data-toggle="want-help">
+                                    <input class="Input_radio non-visible" type="radio" name="role" value="want help" checked>
+                                    Хочу помочь</div>
+                                <div class="LoginPage_roleSelectorBtn Toggle_toggle" toggle="need-help" data-toggle="need help">
+                                    <input class="Input_radio non-visible" type="radio" name="role" value="need help">
+                                    Нужна помощь</div>
                                 </div>
-                                <div class="LoginPage_checkboxes">
-                                    <div class="LoginPage_checkbox">
-                                     <div>
-                                        <label class="" style="display: flex; align-items: center;">
-                                            <span>
-                                                 <div class="checkbox _active"
-                                                     style="height: 24px; width: 24px; border-width: 2px; border-style: solid; border-radius: 8px; display: flex; align-items: center; justify-content: center;">
-                                                     <svg  xmlns="http://www.w3.org/2000/svg"  width="40" height="40" fill="none" viewBox="0 0 40 40"><path fill="#FF3351" d="M16.433 30a1.669 1.669 0 01-1.216-.533l-8.1-8.617a1.669 1.669 0 012.433-2.283l6.867 7.316L30.433 10.55a1.667 1.667 0 112.467 2.233L17.667 29.45a1.665 1.665 0 01-1.217.55h-.017z"></path></svg>
-                                                     <input type="checkbox" name="helper role" hidden="" value="giver" checked></div>
-                                             </span>
-                                        </label>
+                                <div class="LoginPage_toggleBlock _active" data-toggle-block="want-help">
+                                    <div>
+                                        <p class="LoginPage_roleDesc">Помогаем людям так, чтобы они сами начинали помогать
+                                            другим</p>
                                     </div>
-                                     <p class="LoginPage_checkboxText">Даритель</p>
-                                     </div>
-                                    <div class="LoginPage_checkbox">
-                                     <div>
-                                        <label class="" style="display: flex; align-items: center;">
-                                            <span>
-                                                 <div class="checkbox"
-                                                     style="height: 24px; width: 24px; border-width: 2px; border-style: solid; border-radius: 8px; display: flex; align-items: center; justify-content: center;">
-                                                     <svg  xmlns="http://www.w3.org/2000/svg"  width="40" height="40" fill="none" viewBox="0 0 40 40"><path fill="#FF3351" d="M16.433 30a1.669 1.669 0 01-1.216-.533l-8.1-8.617a1.669 1.669 0 012.433-2.283l6.867 7.316L30.433 10.55a1.667 1.667 0 112.467 2.233L17.667 29.45a1.665 1.665 0 01-1.217.55h-.017z"></path></svg>
-                                                     <input type="checkbox" name="helper role" hidden="" value="volunteer"></div>
-                                             </span>
-                                        </label>
+                                    <div class="LoginPage_checkboxes">
+                                        <div class="LoginPage_checkbox">
+                                        <div>
+                                            <label class="" style="display: flex; align-items: center;">
+                                                <span>
+                                                    <div class="checkbox _active"
+                                                        style="height: 24px; width: 24px; border-width: 2px; border-style: solid; border-radius: 8px; display: flex; align-items: center; justify-content: center;">
+                                                        <svg  xmlns="http://www.w3.org/2000/svg"  width="40" height="40" fill="none" viewBox="0 0 40 40"><path fill="#FF3351" d="M16.433 30a1.669 1.669 0 01-1.216-.533l-8.1-8.617a1.669 1.669 0 012.433-2.283l6.867 7.316L30.433 10.55a1.667 1.667 0 112.467 2.233L17.667 29.45a1.665 1.665 0 01-1.217.55h-.017z"></path></svg>
+                                                        <input type="checkbox" name="helper role" hidden="" value="giver" checked></div>
+                                                </span>
+                                            </label>
+                                        </div>
+                                        <p class="LoginPage_checkboxText">Даритель</p>
+                                        </div>
+                                        <div class="LoginPage_checkbox">
+                                        <div>
+                                            <label class="" style="display: flex; align-items: center;">
+                                                <span>
+                                                    <div class="checkbox"
+                                                        style="height: 24px; width: 24px; border-width: 2px; border-style: solid; border-radius: 8px; display: flex; align-items: center; justify-content: center;">
+                                                        <svg  xmlns="http://www.w3.org/2000/svg"  width="40" height="40" fill="none" viewBox="0 0 40 40"><path fill="#FF3351" d="M16.433 30a1.669 1.669 0 01-1.216-.533l-8.1-8.617a1.669 1.669 0 012.433-2.283l6.867 7.316L30.433 10.55a1.667 1.667 0 112.467 2.233L17.667 29.45a1.665 1.665 0 01-1.217.55h-.017z"></path></svg>
+                                                        <input type="checkbox" name="helper role" hidden="" value="volunteer"></div>
+                                                </span>
+                                            </label>
+                                        </div>
+                                        <p class="LoginPage_checkboxText">Волонтер</p>
+                                        </div>
                                     </div>
-                                     <p class="LoginPage_checkboxText">Волонтер</p>
-                                     </div>
+                                    <p class="LoginPage_text">Для регистрации выберите сначала одну роль, а далее вы сможете в личном кабинете подключить и другие</p>
                                 </div>
-                                <p class="LoginPage_text">Для регистрации выберите сначала одну роль, а далее вы сможете в личном кабинете подключить и другие</p>
-                            </div>
-                            <div class="LoginPage_toggleBlock LoginPage_text" data-toggle-block="need help">Заполните анкету в личном кабинете после регистрации для получения помощи</div>
-                       </div>
-                       <div class="LoginTemplate_buttons">
-                        <button class="Generic_responsive Generic_buttonRoot LoginPage_loginButton disabled-button section-btn" data-disabled="true" disabled>Далее</button>
-                        <div class="Generic_responsive Generic_buttonRoot LoginPage_loginButton LoginPage_loginButtonLight section-back-btn">Предыдущий шаг</div>
-                     </div>
+                                <div class="LoginPage_toggleBlock LoginPage_text" data-toggle-block="need help">Заполните анкету в личном кабинете после регистрации для получения помощи</div>
+                        </div>
+                        <div class="LoginTemplate_buttons">
+                            <button class="Generic_responsive Generic_buttonRoot LoginPage_loginButton disabled-button section-btn" data-disabled="true" disabled>Далее</button>
+                            <div class="Generic_responsive Generic_buttonRoot LoginPage_loginButton LoginPage_loginButtonLight section-back-btn">Предыдущий шаг</div>
+                        </div>
                     </div>
                     <div class="form-section" data-section="3">
-                        <div class="LoginPage_rolePartial">
+                        <div class="LoginPage_rolePartial LoginTemplate_body">
                            <p class="LoginPage_rolePartialTitle">Присоединяйтесь к сообществу неравнодушных людей, помогайте и принимайте помощь</p>
                            <p class="LoginPage_successLetter">Письмо с подтверждением регистрации отправлено на вашу почту! После подтверждения вам станут доступны вход и функции личного кабинета.</p>
                        </div>
