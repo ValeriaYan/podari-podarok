@@ -5860,7 +5860,6 @@
     max-width     : 1200px;
     display       : flex;
     flex-direction: column;
-    gap           : 40px;
     flex-grow     : 1
 }
 
@@ -5885,19 +5884,25 @@
 .Catalog_fullWidth {
     width : 100%;
     height: -moz-min-content;
-    height: min-content
+    height: min-content;
+    margin-bottom: 45px;
 }
 
 .Catalog_lines {
     display  : grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap      : 45px
+    gap      : 45px;
+    margin-bottom: 45px;
 }
 
 @media (max-width: 1539px) {
     .Catalog_lines {
+        gap      : 30px;
+        margin-bottom: 30px;
+    }
 
-        gap      : 30px
+    .Catalog_fullWidth {
+        margin-bottom: 30px;
     }
     
 }
