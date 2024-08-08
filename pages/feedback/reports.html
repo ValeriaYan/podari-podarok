@@ -390,7 +390,7 @@
                                 <div class="Review_block ReportsHero_block">
                                     <div style="display: flex; align-items: flex-start;">
                                         <p class="Review_text Review_withReadMore ReportsHero_text ReportsHero_withReadMore">Уважаемый благотворительный фонд! Я искренне благодарен Ольге и Ларисе, как представителям Фонда, за оказанную юридическую, психологическую и материальную поддержку. Мне была оказага юридическая помощь, которая помогла...  </p>
-                                    </div><button class=" Generic_iconRoot Review_btn Feedback_btn " style="margin: 40px 0px 0px 60px;">
+                                    </div><button class=" Generic_iconRoot Review_btn" style="margin: 40px 0px 0px 60px;">
                                         <p style="margin-right: 8px; text-transform: unset;">ПОДРОБНЕЕ</p><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none" viewBox="0 0 40 40" class="Generic_icon">
                                             <path fill="var(--primary)" class="Generic_iconPath" d="M8.333 21.667H28.1l-6.05 7.266a1.668 1.668 0 102.567 2.134l8.333-10c.056-.08.106-.163.15-.25 0-.084.083-.134.117-.217.075-.191.115-.395.116-.6a1.666 1.666 0 00-.116-.6c0-.083-.084-.133-.117-.217a1.996 1.996 0 00-.15-.25l-8.333-10a1.666 1.666 0 00-1.284-.6 1.667 1.667 0 00-1.283 2.734l6.05 7.266H8.333a1.667 1.667 0 100 3.334z">
                                             </path>
@@ -414,43 +414,30 @@
                                             alt=""></div>
                                 </div>
                                 <div class="popup">
-                                    <div class="react-responsive-modal-root" data-testid="root">
-                                        <div class="react-responsive-modal-overlay PopUpFull_overlay PopUp_container" data-testid="overlay" aria-hidden="true"
-                                            style="animation: 300ms ease 0s 1 normal none running react-responsive-modal-overlay-in;"></div>
-                                        <div class="react-responsive-modal-container react-responsive-modal-containerCenter"
-                                            data-testid="modal-container">
-                                            <div class="react-responsive-modal-modal PopUpFull_modal PopUp_modal" role="dialog" aria-modal="true"
-                                                data-testid="modal" tabindex="-1"
-                                                style="animation: 300ms ease 0s 1 normal none running react-responsive-modal-modal-in;">
-                                                <div class="Reports_viewerHeader">
-                                                    <button class="Reports_btn Reports_btnDisabled"><svg xmlns="http://www.w3.org/2000/svg"
-                                                            width="11" height="20" fill="none" viewBox="0 0 11 18">
-                                                            <path d="M9 2L2 9L9 16" stroke="#000000" stroke-width="3" stroke-linecap="round"
-                                                                stroke-linejoin="round"></path>
-                                                        </svg></button><button class="Reports_btn"><svg xmlns="http://www.w3.org/2000/svg"
-                                                            width="11" height="20" fill="none" viewBox="0 0 11 18">
-                                                            <path d="M2 2L9 9L2 16" stroke="#000000" stroke-width="3" stroke-linecap="round"
-                                                                stroke-linejoin="round"></path>
-                                                        </svg></button><button class="Reports_btnClose react-responsive-modal-closeButton"><svg xmlns="http://www.w3.org/2000/svg"
-                                                            width="30" height="30" fill="none" viewBox="0 0 28 28">
-                                                            <path fill="#000000"
-                                                                d="M15.645 14l5.017-5.004a1.171 1.171 0 10-1.657-1.657L14 12.356 8.995 7.339a1.171 1.171 0 10-1.657 1.657L12.355 14l-5.017 5.005a1.167 1.167 0 000 1.657 1.166 1.166 0 001.657 0L14 15.646l5.005 5.017a1.166 1.166 0 001.657 0 1.169 1.169 0 000-1.657L15.645 14z">
-                                                            </path>
-                                                        </svg></button>
+                                    <div class="react-responsive-modal-root PopUp_popUp" data-testid="root">
+                                        <div class="react-responsive-modal-overlay PopUp_overlay" data-testid="overlay" aria-hidden="true" style="animation: 300ms ease 0s 1 normal none running react-responsive-modal-overlay-in;"></div>
+                                        <div class="react-responsive-modal-container react-responsive-modal-containerCenter PopUp_container" data-testid="modal-container">
+                                            <div class="react-responsive-modal-modal PopUp_modal" role="dialog" aria-modal="true" data-testid="modal" tabindex="-1" style="animation: 300ms ease 0s 1 normal none running react-responsive-modal-modal-in; background: var(--white); box-shadow: rgba(0, 0, 0, 0.08) 0px 0px 64px, rgba(0, 0, 0, 0.06) 0px 0px 20px, rgba(0, 0, 0, 0.06) 0px 0px 8px, rgba(0, 0, 0, 0.04) 0px 0px 4px; border-radius: 24px;">
+                                                <div>
+                                                    <div class="Reports_viewerWrap">
+                                                        <img src="../../assets/report.jpg" alt="">
+                                                        <img src="../../assets/report.jpg" alt="">
+                                                        <img src="../../assets/report.jpg" alt="">
+                                                        <img src="../../assets/report.jpg" alt="">
+                                                        <img src="../../assets/report.jpg" alt="">
+                                                        <img src="../../assets/report.jpg" alt="">
+                                                        <img src="../../assets/report.jpg" alt="">
+                                                    </div>
                                                 </div>
-                                                <div class="Reports_viewerWrap">
-                                                    <img src="../../assets/report.jpg" alt="">
-                                                    <img src="../../assets/report.jpg" alt="">
-                                                    <img src="../../assets/report.jpg" alt="">
-                                                    <img src="../../assets/report.jpg" alt="">
-                                                    <img src="../../assets/report.jpg" alt="">
-                                                    <img src="../../assets/report.jpg" alt="">
-                                                    <img src="../../assets/report.jpg" alt="">
-                                                </div>
+                                                <button class="react-responsive-modal-closeButton" data-testid="close-button"><svg width="28" height="28" viewBox="0 0 36 36" data-testid="close-icon">
+                                                        <path d="M28.5 9.62L26.38 7.5 18 15.88 9.62 7.5 7.5 9.62 15.88 18 7.5 26.38l2.12 2.12L18 20.12l8.38 8.38 2.12-2.12L20.12 18z">
+                                                        </path>
+                                                    </svg>
+                                                </button>
                                             </div>
                                         </div>
                                     </div>
-                                 </div>
+                                </div>
                             </div>
                             <div class="Catalog_item">
                                 <div class="ReportCard_card bg-1">
