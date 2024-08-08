@@ -4826,6 +4826,7 @@
     flex-direction: column;
     padding       : 10px 0 0;
     overflow-y: auto;
+    justify-content: center;
 }
 
 .Login_rightSide {
@@ -4937,7 +4938,7 @@
 
 .LoginPage_input label,
 .LoginPage_input.Input_selected label {
-    top: -50px;
+    top: -40px;
     left: -30px;
     background-color: transparent;
     text-transform:capitalize;
@@ -4945,11 +4946,13 @@
     font-weight: 400;
     font-size: 12px;
     transform: none;
+    height: auto;
+    padding: 10px 40px 24px;
 }
 
 .LoginPage_input.Input_inputBlock.Input_selectedTextArea label, 
 .LoginPage_input.Input_inputBlock.Input_selected label {
-    padding: 24px 40px;
+    padding: 10px 40px 24px;
 }
 
 .LoginPage_input .Input_icon {
@@ -9120,15 +9123,6 @@
     margin-bottom: 30px;
 }
 
-.LoginPage_successLetter {
-    padding: 19px 25px;
-    background-color: white;
-    font-size: 14px;
-    font-weight: 500;
-    border-radius: 10px;
-    margin-bottom: 30px;
-}
-
 .LoginPage_loginButton {
     margin-bottom: 30px !important;
 }
@@ -9161,7 +9155,22 @@ div.LoginPage_loginButton[data-disabled='false'] {
     letter-spacing: 0;
     text-align: center;
     color: var(--text-black);
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+}
+
+.LoginTemplate_body .LoginPage_successLetter {
+    padding: 19px 25px;
+    background-color: white;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 500;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.LoginTemplate_inputs {
+    padding-top: 20px;
 }
 
 .LoginTemplate_logoBlock {

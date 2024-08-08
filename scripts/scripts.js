@@ -655,8 +655,7 @@ function enableSectionBtn(requiredFields, requiredCheckboxes, btn) {
         }
     } 
     for(let i = 0; i < requiredCheckboxes.length; i++) {
-        if(requiredCheckboxes[i].checked === 'false') {
-            console.log(requiredCheckboxes[i])
+        if(requiredCheckboxes[i].checked === false) {
             btn.dataset.disabled = 'true';
             return;
         }

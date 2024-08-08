@@ -55,53 +55,64 @@
                         src="https://storage.yandexcloud.net/pp-prod/logo_dc02902ab3.svg" alt="logo"
                         class="LoginTemplate_logo">
                     <p class="LoginTemplate_title">Авторизация</p>
-                    <p>Помогаем людям так, чтобы они сами <br> начинали помогать другим</p>
                 </div>
-                <div class="LoginTemplate_body">
-                    <div class="Input_inputBlock  LoginPage_input "><label
-                            for="input_4hey8">e-mail</label><input placeholder="Введите Ваш email" id="input_4hey8" class="Input_input">
-                            <svg xmlns="http://www.w3.org/2000/svg"
-                            width="40" height="40" fill="none" viewBox="0 0 40 40" class="Input_icon Input_icon-success">
-                            <path fill="var(--state-success)"
-                                d="M20 3.333a16.667 16.667 0 100 33.334 16.667 16.667 0 000-33.334zm7.167 12.684l-7.617 10a1.667 1.667 0 01-2.048.485 1.667 1.667 0 01-.585-.469L12.85 20.85a1.67 1.67 0 012.633-2.05l2.717 3.467 6.3-8.334a1.676 1.676 0 012.667 2.034v.05z">
-                            </path>
-                            </svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="none" viewBox="0 0 40 40"
-                                class="Input_icon Input_icon-error">
-                                <path fill="var(--state-error)"
-                                    d="M20 3.333a16.667 16.667 0 100 33.334 16.667 16.667 0 000-33.334zm0 25a1.666 1.666 0 110-3.332 1.666 1.666 0 010 3.332zm1.667-6.666a1.667 1.667 0 01-3.334 0v-8.334a1.667 1.667 0 013.334 0v8.334z">
-                                </path>
-                            </svg>
-                        <span class="Input_errorMessage"></span></div>
-                    <div class="Input_inputBlock  LoginPage_input "><label
-                            for="input_dgi03">пароль</label><input placeholder="Введите Ваш пароль" id="input_dgi03" class="Input_input"
-                            type="password">
-                            <svg xmlns="http://www.w3.org/2000/svg"
-                            width="40" height="40" fill="none" viewBox="0 0 40 40" class="Input_icon Input_icon-success">
-                            <path fill="var(--state-success)"
-                                d="M20 3.333a16.667 16.667 0 100 33.334 16.667 16.667 0 000-33.334zm7.167 12.684l-7.617 10a1.667 1.667 0 01-2.048.485 1.667 1.667 0 01-.585-.469L12.85 20.85a1.67 1.67 0 012.633-2.05l2.717 3.467 6.3-8.334a1.676 1.676 0 012.667 2.034v.05z">
-                            </path>
-                            </svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="none" viewBox="0 0 40 40"
-                                class="Input_icon Input_icon-error">
-                                <path fill="var(--state-error)"
-                                    d="M20 3.333a16.667 16.667 0 100 33.334 16.667 16.667 0 000-33.334zm0 25a1.666 1.666 0 110-3.332 1.666 1.666 0 010 3.332zm1.667-6.666a1.667 1.667 0 01-3.334 0v-8.334a1.667 1.667 0 013.334 0v8.334z">
-                                </path>
-                            </svg>
-                            <span class="Input_errorMessage"></span></div>
-                </div>
-                <div class="LoginTemplate_buttons"><button
-                        class="Generic_responsive Generic_buttonRoot  LoginPage_loginButton"
-                        disabled="">Войти</button>
-                    <div class="LoginPage_botLinks"><a
-                            class=" Generic_textRoot Generic_primary LoginPage_link"
-                            href="./register.html">Создать аккаунт</a><a
-                            class=" Generic_textRoot LoginPage_link"
-                            href="./forgot.html">Забыли пароль?</a></div>
-                </div>
+                <form class="js-form">
+                    <div class="LoginTemplate_body">
+                        <p>Помогаем людям так, чтобы они сами <br> начинали помогать другим</p>
+                        <div class="LoginTemplate_inputs">
+                            <div class="Input_inputBlock LoginPage_input">
+                                <label for="input_4hey8">e-mail</label>
+                                <input placeholder="Введите Ваш email" type="email" id="input_4hey8" class="Input_input" name="email" required>
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                    width="40" height="40" fill="none" viewBox="0 0 40 40" class="Input_icon Input_icon-success">
+                                    <path fill="var(--state-success)"
+                                        d="M20 3.333a16.667 16.667 0 100 33.334 16.667 16.667 0 000-33.334zm7.167 12.684l-7.617 10a1.667 1.667 0 01-2.048.485 1.667 1.667 0 01-.585-.469L12.85 20.85a1.67 1.67 0 012.633-2.05l2.717 3.467 6.3-8.334a1.676 1.676 0 012.667 2.034v.05z">
+                                    </path>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="none" viewBox="0 0 40 40"
+                                        class="Input_icon Input_icon-error">
+                                        <path fill="var(--state-error)"
+                                            d="M20 3.333a16.667 16.667 0 100 33.334 16.667 16.667 0 000-33.334zm0 25a1.666 1.666 0 110-3.332 1.666 1.666 0 010 3.332zm1.667-6.666a1.667 1.667 0 01-3.334 0v-8.334a1.667 1.667 0 013.334 0v8.334z">
+                                        </path>
+                                    </svg>
+                            </div>
+                            <div class="Input_inputBlock LoginPage_input">
+                                <label for="input_dgi03">пароль</label>
+                                <input placeholder="Введите Ваш пароль" id="input_dgi03" class="Input_input" type="password" name="password" required>
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                    width="40" height="40" fill="none" viewBox="0 0 40 40" class="Input_icon Input_icon-success">
+                                    <path fill="var(--state-success)"
+                                        d="M20 3.333a16.667 16.667 0 100 33.334 16.667 16.667 0 000-33.334zm7.167 12.684l-7.617 10a1.667 1.667 0 01-2.048.485 1.667 1.667 0 01-.585-.469L12.85 20.85a1.67 1.67 0 012.633-2.05l2.717 3.467 6.3-8.334a1.676 1.676 0 012.667 2.034v.05z">
+                                    </path>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="none" viewBox="0 0 40 40"
+                                        class="Input_icon Input_icon-error">
+                                        <path fill="var(--state-error)"
+                                            d="M20 3.333a16.667 16.667 0 100 33.334 16.667 16.667 0 000-33.334zm0 25a1.666 1.666 0 110-3.332 1.666 1.666 0 010 3.332zm1.667-6.666a1.667 1.667 0 01-3.334 0v-8.334a1.667 1.667 0 013.334 0v8.334z">
+                                        </path>
+                                    </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="LoginTemplate_buttons">
+                        <button
+                            class="Generic_responsive Generic_buttonRoot LoginPage_loginButton disabled-button"
+                            disabled>Войти
+                        </button>
+                        <div class="LoginPage_botLinks"><a
+                                class=" Generic_textRoot Generic_primary LoginPage_link"
+                                href="./register.html">Создать аккаунт</a><a
+                                class=" Generic_textRoot LoginPage_link"
+                                href="./forgot.html">Забыли пароль?</a>
+                        </div>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
-    <script src="../../scripts/scripts.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+ <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+ <script src="../../scripts/scripts.js"></script>
+ <script src="../../scripts/validation.js"></script>
 </body>
 </html>
