@@ -9167,3 +9167,12 @@ div.LoginPage_loginButton[data-disabled='false'] {
 .LoginTemplate_logoBlock {
     margin-bottom: 0;
 }
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: #ffffff;
+    box-shadow:none;
+}
