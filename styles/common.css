@@ -1891,16 +1891,13 @@ filter: brightness(0) invert(1);
     display        : flex;
     flex-direction : column;
     justify-content: space-between;
-    border         : 4px solid var(--white)
+    border: 4px solid #AFB6BA80;
 }
 
 .NeedCard_root.NeedCard_disabled {
     border: 4px solid var(--state-success)
 }
 
-.NeedCard_flex {
-    justify-content: space-between
-}
 
 .NeedCard_flexDefault,
 .NeedCard_flex {
@@ -1980,7 +1977,7 @@ filter: brightness(0) invert(1);
     color           : var(--white);
     text-transform  : uppercase;
     font-weight     : 600;
-    padding         : 8px 16px !important;
+    padding         : 8px 14px !important;
     border-radius   : 20px
 }
 
@@ -2019,7 +2016,8 @@ filter: brightness(0) invert(1);
 }
 
 .NeedCard_counter {
-    border-radius: 100px !important
+    border-radius: 100px !important;
+    margin-right: 5px;
 }
 
 .NeedCard_counter input {
@@ -2028,7 +2026,16 @@ filter: brightness(0) invert(1);
 }
 
 .NeedCard_counter button {
-    padding: 11px 14px
+    padding: 11px 12px
+}
+
+.NeedCard_link {
+    margin-left: auto;
+}
+
+.NeedCard_link.Generic_small.Generic_iconRoot .Generic_icon {
+    width: 12px !important;
+    height: 12px !important;
 }
 
 @media (max-width:768px) {
