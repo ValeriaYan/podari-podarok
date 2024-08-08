@@ -4572,8 +4572,9 @@
 .Generic_buttonRoot.Generic_medium.Cart_bookBtn {
     margin-top: 16px; 
     width: 100%;
-    border: none !important;
+    border: 2px solid var(--primary);
 }
+
 
 @media(max-width:1240px) {
     .Cart_howBtn {
