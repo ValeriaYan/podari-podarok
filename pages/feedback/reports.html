@@ -362,7 +362,8 @@
                                                     заключения</span></label></div>
                                     </div>
                                 </div>
-                            </div><button
+                            </div>
+                            <button
                                 class=" Generic_buttonRoot Generic_medium  Filters_btnApply">ПРИМЕНИТЬ</button>
                             <div class="Filters_buttonWrap"><button class="Generic_iconRoot Generic_gray Generic_resetBtn">
                                 <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -382,7 +383,224 @@
                                             d="M20 15V18H18V15H16V12H22V15H20ZM4 15V18H2V15H0V12H6V15H4ZM10 3V0H12V3H14V6H8V3H10ZM10 8H12V18H10V8ZM2 10V0H4V10H2ZM18 10V0H20V10H18Z"
                                             fill="#FF3351"></path>
                                     </svg></div>
-                            </button></div>
+                            </button>
+                        </div>
+                        <div class="popup">
+                            <div class="react-responsive-modal-root" data-testid="root">
+                                <div class="react-responsive-modal-overlay PopUpFull_overlay" data-testid="overlay" aria-hidden="true"
+                                    style="animation: 300ms ease 0s 1 normal none running react-responsive-modal-overlay-in;"></div>
+                                <div class="react-responsive-modal-container react-responsive-modal-containerCenter"
+                                    data-testid="modal-container">
+                                    <div class="react-responsive-modal-modal PopUpFull_modal" role="dialog" aria-modal="true"
+                                        data-testid="modal" tabindex="-1"
+                                        style="animation: 300ms ease 0s 1 normal none running react-responsive-modal-modal-in; background: var(--background-light);">
+                                        <div class="FiltersWrap_wrap">
+                                            <div class="FiltersWrap_header">
+                                                <button class="FiltersWrap_btn" data-testid="close-button">
+                                                    <svg
+                                                        xmlns="http://www.w3.org/2000/svg" width="10" height="16" fill="none"
+                                                        viewBox="0 0 11 18">
+                                                        <path d="M9 2L2 9L9 16" stroke="#FF3351" stroke-width="3" stroke-linecap="round"
+                                                            stroke-linejoin="round">
+                                                        </path>
+                                                    </svg>
+                                                </button>
+                                                <span class="FiltersWrap_title">Фильтровать</span></div>
+                                            <p class="Filters_filterTitle">Год отчета</p>
+                                            <div>
+                                                <div class="react-select-container Filters_mb"><span
+                                                    aria-live="polite" aria-atomic="false" aria-relevant="additions text"
+                                                    class="css-7pg0cj-a11yText"></span>
+            
+                                                <select class="custom">
+                                                    <option>За весь период</option>
+                                                    <option>2024</option>
+                                                    <option>2023</option>
+                                                    <option>2022</option>
+                                                    <option>2021</option>
+                                                    <option>2020</option>
+                                                    <option>2019</option>
+                                                    <option>2018</option>
+                                                    <option>2017</option>
+                                                    <option>2016</option>
+                                                    <option>2015</option>
+                                                    <option>2014</option>
+                                                </select>
+                                                
+                                            </div>
+                                            </div>
+                                            <div class="Filters_mb">
+                                                <p class="Filters_filterTitle">Публичные отчёты</p>
+                                                <div>
+                                                    <div class="Filters_type">
+                                                        <div><label class="" style="display: flex; align-items: center;"><span>
+                                                                    <div class="checkbox"
+                                                                        style="height: 24px; width: 24px; border-width: 2px;  border-style: solid; border-radius: 8px; display: flex; align-items: center; justify-content: center;">
+                                                                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"
+                                                                            fill="none" viewBox="0 0 40 40">
+                                                                            <path fill="#FF3351"
+                                                                                d="M16.433 30a1.669 1.669 0 01-1.216-.533l-8.1-8.617a1.669 1.669 0 012.433-2.283l6.867 7.316L30.433 10.55a1.667 1.667 0 112.467 2.233L17.667 29.45a1.665 1.665 0 01-1.217.55h-.017z">
+                                                                            </path>
+                                                                        </svg>
+                                                                        <input type="checkbox" name="" hidden="" value="">
+                                                                    </div>
+                                                                </span><span class=""
+                                                                    style="margin-left: 16px; user-select: none; font-family: var(--fontFamily); font-size: 14px; font-weight: 700; line-height: 20px; letter-spacing: 0px; text-transform: uppercase;">Отчёты
+                                                                    об акциях</span></label></div>
+                                                        <div style="padding-left: 36px;">
+                                                            <div style="margin-top: 10px;"><label class=""
+                                                                    style="display: flex; align-items: center;"><span>
+                                                                        <div class="checkbox"
+                                                                            style="height: 24px; width: 24px; border-width: 2px; border-style: solid; border-radius: 8px; display: flex; align-items: center; justify-content: center;">
+                                                                            <svg xmlns="http://www.w3.org/2000/svg" width="40"
+                                                                                height="40" fill="none" viewBox="0 0 40 40">
+                                                                                <path fill="#FF3351"
+                                                                                    d="M16.433 30a1.669 1.669 0 01-1.216-.533l-8.1-8.617a1.669 1.669 0 012.433-2.283l6.867 7.316L30.433 10.55a1.667 1.667 0 112.467 2.233L17.667 29.45a1.665 1.665 0 01-1.217.55h-.017z">
+                                                                                </path>
+                                                                            </svg>
+                                                                            <input type="checkbox" name="" hidden="" value="">
+                                                                        </div>
+                                                                    </span><span class=""
+                                                                        style="margin-left: 16px; user-select: none; font-family: var(--fontFamily); font-size: 14px; font-weight: 700; line-height: 20px; letter-spacing: 0px; text-transform: uppercase;">Рождественская
+                                                                        акция</span></label></div>
+                                                            <div style="margin-top: 10px;"><label class=""
+                                                                    style="display: flex; align-items: center;"><span>
+                                                                        <div class="checkbox"
+                                                                            style="height: 24px; width: 24px; border-width: 2px; border-style: solid; border-radius: 8px; display: flex; align-items: center; justify-content: center;">
+                                                                            <svg xmlns="http://www.w3.org/2000/svg" width="40"
+                                                                                height="40" fill="none" viewBox="0 0 40 40">
+                                                                                <path fill="#FF3351"
+                                                                                    d="M16.433 30a1.669 1.669 0 01-1.216-.533l-8.1-8.617a1.669 1.669 0 012.433-2.283l6.867 7.316L30.433 10.55a1.667 1.667 0 112.467 2.233L17.667 29.45a1.665 1.665 0 01-1.217.55h-.017z">
+                                                                                </path>
+                                                                            </svg>
+                                                                            <input type="checkbox" name="" hidden="" value="">
+                                                                        </div>
+                                                                    </span><span class=""
+                                                                        style="margin-left: 16px; user-select: none; font-family: var(--fontFamily); font-size: 14px; font-weight: 700; line-height: 20px; letter-spacing: 0px; text-transform: uppercase;">Портфель
+                                                                        доброты</span></label></div>
+                                                            <div style="margin-top: 10px;"><label class=""
+                                                                    style="display: flex; align-items: center;"><span>
+                                                                        <div class="checkbox"
+                                                                            style="height: 24px; width: 24px; border-width: 2px; border-style: solid; border-radius: 8px; display: flex; align-items: center; justify-content: center;">
+                                                                            <svg xmlns="http://www.w3.org/2000/svg" width="40"
+                                                                                height="40" fill="none" viewBox="0 0 40 40">
+                                                                                <path fill="#FF3351"
+                                                                                    d="M16.433 30a1.669 1.669 0 01-1.216-.533l-8.1-8.617a1.669 1.669 0 012.433-2.283l6.867 7.316L30.433 10.55a1.667 1.667 0 112.467 2.233L17.667 29.45a1.665 1.665 0 01-1.217.55h-.017z">
+                                                                                </path>
+                                                                            </svg>
+                                                                            <input type="checkbox" name="" hidden="" value="">
+                                                                        </div>
+                                                                    </span><span class=""
+                                                                        style="margin-left: 16px; user-select: none; font-family: var(--fontFamily); font-size: 14px; font-weight: 700; line-height: 20px; letter-spacing: 0px; text-transform: uppercase;">Весенняя
+                                                                        акция</span></label></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="Filters_type">
+                                                        <div><label class="" style="display: flex; align-items: center;"><span>
+                                                                    <div class="checkbox"
+                                                                        style="height: 24px; width: 24px; border-width: 2px; border-style: solid; border-radius: 8px; display: flex; align-items: center; justify-content: center;">
+                                                                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"
+                                                                            fill="none" viewBox="0 0 40 40">
+                                                                            <path fill="#FF3351"
+                                                                                d="M16.433 30a1.669 1.669 0 01-1.216-.533l-8.1-8.617a1.669 1.669 0 012.433-2.283l6.867 7.316L30.433 10.55a1.667 1.667 0 112.467 2.233L17.667 29.45a1.665 1.665 0 01-1.217.55h-.017z">
+                                                                            </path>
+                                                                        </svg>
+                                                                        <input type="checkbox" name="" hidden="" value="">
+                                                                    </div>
+                                                                </span><span class=""
+                                                                    style="margin-left: 16px; user-select: none; font-family: var(--fontFamily); font-size: 14px; font-weight: 700; line-height: 20px; letter-spacing: 0px; text-transform: uppercase;">Годовой
+                                                                    отчёт</span></label></div>
+                                                    </div>
+                                                    <div class="Filters_type">
+                                                        <div><label class="" style="display: flex; align-items: center;"><span>
+                                                                    <div class="checkbox"
+                                                                        style="height: 24px; width: 24px; border-width: 2px; border-style: solid; border-radius: 8px; display: flex; align-items: center; justify-content: center;">
+                                                                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"
+                                                                            fill="none" viewBox="0 0 40 40">
+                                                                            <path fill="#FF3351"
+                                                                                d="M16.433 30a1.669 1.669 0 01-1.216-.533l-8.1-8.617a1.669 1.669 0 012.433-2.283l6.867 7.316L30.433 10.55a1.667 1.667 0 112.467 2.233L17.667 29.45a1.665 1.665 0 01-1.217.55h-.017z">
+                                                                            </path>
+                                                                        </svg>
+                                                                        <input type="checkbox" name="" hidden="" value="">
+                                                                    </div>
+                                                                </span><span class=""
+                                                                    style="margin-left: 16px; user-select: none; font-family: var(--fontFamily); font-size: 14px; font-weight: 700; line-height: 20px; letter-spacing: 0px; text-transform: uppercase;">Другие
+                                                                    отчёты</span></label></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="Filters_mb">
+                                                <p class="Filters_filterTitle">Официальные отчёты</p>
+                                                <div>
+                                                    <div class="react-select-container Filters_mb css-2b097c-container"><span
+                                                            aria-live="polite" aria-atomic="false" aria-relevant="additions text"
+                                                            class="css-7pg0cj-a11yText"></span>
+                                                        <select class="custom">
+                                                            <option>Выбрать</option>
+                                                            <option>Отчеты в минюст</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="Filters_mb">
+                                                <p class="Filters_filterTitle">Благодарности и дипломы</p>
+                                                <div></div>
+                                            </div>
+                                            <div class="Filters_mb">
+                                                <div class="Filters_auditorWrap">
+                                                    <p class="Filters_filterTitle">Аудиторские заключения</p>
+                                                    <div class="question-btn dropdown-button"><button aria-describedby="popup-295"
+                                                            style="background: none; border: none;"><svg
+                                                                xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="none"
+                                                                viewBox="0 0 19 19">
+                                                                <path fill="#FF3351"
+                                                                    d="M9.5 19C4.25315 19 0 14.7469 0 9.5C0 4.25315 4.25315 0 9.5 0C14.7469 0 19 4.25315 19 9.5C19 14.7469 14.7469 19 9.5 19ZM9.5 17.1C11.5156 17.1 13.4487 16.2993 14.874 14.874C16.2993 13.4487 17.1 11.5156 17.1 9.5C17.1 7.48435 16.2993 5.55126 14.874 4.12599C13.4487 2.70071 11.5156 1.9 9.5 1.9C7.48435 1.9 5.55126 2.70071 4.12599 4.12599C2.70071 5.55126 1.9 7.48435 1.9 9.5C1.9 11.5156 2.70071 13.4487 4.12599 14.874C5.55126 16.2993 7.48435 17.1 9.5 17.1ZM8.55 12.35H10.45V14.25H8.55V12.35ZM10.45 10.7872V11.4H8.55V9.975C8.55 9.72304 8.65009 9.48141 8.82825 9.30325C9.00641 9.12509 9.24804 9.025 9.5 9.025C9.76987 9.02498 10.0342 8.94833 10.2622 8.80396C10.4902 8.65959 10.6726 8.45345 10.788 8.2095C10.9034 7.96556 10.9472 7.69386 10.9142 7.426C10.8813 7.15815 10.773 6.90516 10.6018 6.69647C10.4307 6.48778 10.2039 6.33197 9.94766 6.24717C9.69145 6.16237 9.41643 6.15207 9.1546 6.21747C8.89277 6.28287 8.65489 6.42127 8.46865 6.61658C8.2824 6.81188 8.15545 7.05606 8.10255 7.3207L6.23865 6.94735C6.3542 6.36983 6.62103 5.83335 7.01187 5.39276C7.40271 4.95216 7.90354 4.62325 8.46316 4.43965C9.02278 4.25605 9.62111 4.22435 10.197 4.34778C10.7729 4.47122 11.3057 4.74536 11.7409 5.14218C12.1761 5.53901 12.4981 6.04429 12.6741 6.60636C12.85 7.16843 12.8735 7.76715 12.7422 8.34129C12.6109 8.91544 12.3295 9.44442 11.9268 9.87417C11.5241 10.3039 11.0144 10.619 10.45 10.7872Z">
+                                                                </path>
+                                                            </svg>
+                                                        </button>
+                                                        <div id="popup-root">
+                                                            <div class="popup-content " role="tooltip" id="popup-350">
+                                                                <div class="arrow-wrap">
+                                                                    <svg data-testid="arrow" class="popup-arrow " viewBox="0 0 32 16" style="position: absolute;" fill="#ffffff">
+                                                                        <path d="M16 0l16 16H0z" fill="#fffff"></path>
+                                                                    </svg></div>
+                                                                <p style="font-weight: 600; text-align: center; font-size: 13px;">свидетельство надежности Фонда</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div class="Filters_type">
+                                                        <div><label class="" style="display: flex; align-items: center;"><span>
+                                                                    <div class="checkbox"
+                                                                        style="height: 24px; width: 24px; border-width: 2px; border-style: solid; border-radius: 8px; display: flex; align-items: center; justify-content: center;">
+                                                                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"
+                                                                            fill="none" viewBox="0 0 40 40">
+                                                                            <path fill="#FF3351"
+                                                                                d="M16.433 30a1.669 1.669 0 01-1.216-.533l-8.1-8.617a1.669 1.669 0 012.433-2.283l6.867 7.316L30.433 10.55a1.667 1.667 0 112.467 2.233L17.667 29.45a1.665 1.665 0 01-1.217.55h-.017z">
+                                                                            </path>
+                                                                        </svg>
+                                                                        <input type="checkbox" name="" hidden="" value="">
+                                                                    </div>
+                                                                </span><span class=""
+                                                                    style="margin-left: 16px; user-select: none; font-family: var(--fontFamily); font-size: 14px; font-weight: 700; line-height: 20px; letter-spacing: 0px; text-transform: uppercase;">Аудиторские
+                                                                    заключения</span></label></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <button
+                                                class=" Generic_buttonRoot undefined Generic_medium  Filters_btnApply">ПРИМЕНИТЬ</button>
+                                                <div class="Filters_buttonWrap"><button class="Generic_iconRoot Generic_gray Generic_resetBtn">
+                                                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M9.81302e-06 10.9211C0.0082132 4.88086 4.89454 2.13947e-07 10.9348 4.77974e-07C14.4348 6.30964e-07 17.552 1.64609 19.5535 4.20547L20.866 3.18008C21.0109 3.06797 21.2215 3.17188 21.2188 3.35234L21.1969 7.91875C21.1969 8.06094 21.0629 8.16484 20.9262 8.1293L16.4883 7.04922C16.4483 7.03947 16.4118 7.01862 16.3832 6.98908C16.3545 6.95953 16.3347 6.92249 16.3261 6.88222C16.3176 6.84194 16.3205 6.80007 16.3347 6.7614C16.3489 6.72274 16.3737 6.68887 16.4063 6.66367L17.8309 5.55078C17.6121 5.27188 17.3742 5.00391 17.1199 4.74961C16.3232 3.95013 15.3788 3.31307 14.3391 2.87383C13.2617 2.41719 12.116 2.1875 10.9348 2.1875C9.75352 2.1875 8.60782 2.41719 7.53048 2.87383C6.48868 3.31406 5.55353 3.9457 4.74962 4.74961C3.94571 5.55352 3.31407 6.48867 2.87384 7.53047C2.4172 8.61055 2.18751 9.75625 2.18751 10.9375C2.18751 12.1187 2.4172 13.2645 2.87384 14.3418C3.31407 15.3836 3.94571 16.3187 4.74962 17.1227C5.55352 17.9266 6.48868 18.5582 7.53048 18.9984C8.60782 19.4551 9.75352 19.6848 10.9348 19.6848C12.116 19.6848 13.2617 19.4551 14.3391 18.9984C15.3788 18.5592 16.3232 17.9221 17.1199 17.1227C17.325 16.9176 17.5164 16.7043 17.6996 16.4828C17.7357 16.4384 17.7878 16.4101 17.8446 16.4039C17.9015 16.3978 17.9584 16.4143 18.0031 16.45L19.384 17.5273C19.4797 17.6039 19.4961 17.7434 19.4195 17.8391C17.4125 20.3027 14.3582 21.875 10.9348 21.875C4.88907 21.875 -0.00819358 16.9695 9.81302e-06 10.9211Z" fill="#B4B4B4"/>
+                                                    </svg>
+                                                        <p>Сбросить фильтры</p>
+                                                    </button></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="Catalog_rightSide">
                         <div class="Catalog_fullWidth">
