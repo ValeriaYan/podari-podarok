@@ -9223,3 +9223,19 @@ input:-webkit-autofill:active{
     -webkit-text-fill-color: #ffffff;
     box-shadow:none;
 }
+
+.ReviewCarousel_btn {
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+}
+
+.ReviewCarousel_btn.prev {
+    left: 0;
+    transform: translate(-20%, -50%);
+}
+
+.ReviewCarousel_btn.next {
+    left: 100%;
+    transform: translate(-80%, -50%);
+}
