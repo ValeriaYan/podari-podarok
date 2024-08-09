@@ -2449,36 +2449,6 @@
     width   : min-content
 }
 
-.Icon_counter {
-    left         : 16%;
-    top          : 5%;
-    padding      : 0 6px;
-    background   : var(--primary);
-    border-radius: 15px;
-    font-family  : var(--font-family);
-    font-style   : normal;
-    font-weight  : 700;
-    font-size    : 11px;
-    line-height  : 20px;
-    color        : var(--white)
-}
-
-.Icon_counter,
-.Icon_counter:after {
-    position  : absolute;
-    transition: all .2s ease-in-out
-}
-
-.Icon_counter:after {
-    left         : -1px;
-    top          : -1px;
-    content      : "";
-    width        : 100%;
-    height       : 100%;
-    border       : 1px solid rgba(var(--primary-rgb), .4);
-    border-radius: 15px;
-    z-index      : -1
-}
 
 .Icon_iconPath {
     transition: all .2s ease-in-out
@@ -8939,9 +8909,14 @@
 }
 
 .Icon_counter {
-    left: 16%;
-    top: 5%;
-    padding: 0 6px;
+    left: 90%;
+    transform: translate(-50%);
+    top: 0;
+    width: 18px;
+    height: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: var(--primary);
     border-radius: 15px;
     font-family: var(--font-family);
@@ -8949,23 +8924,19 @@
     font-weight: 700;
     font-size: 11px;
     line-height: 20px;
-    color: var(--white)
+    color: var(--white);
+    border: none;
 }
 
-.Icon_counter,.Icon_counter:after {
+.Icon_counterLeft {
+    left: 35%;
+    top: 10px;
+    border: 2px solid white;
+}
+
+.Icon_counter {
     position: absolute;
     transition: all .2s ease-in-out
-}
-
-.Icon_counter:after {
-    left: -1px;
-    top: -1px;
-    content: "";
-    width: 100%;
-    height: 100%;
-    border: 1px solid rgba(var(--primary-rgb),.4);
-    border-radius: 15px;
-    z-index: -1
 }
 
 .Icon_buttonWithCounterRoot {
@@ -9251,4 +9222,20 @@ input:-webkit-autofill:active{
     -webkit-background-clip: text;
     -webkit-text-fill-color: #ffffff;
     box-shadow:none;
+}
+
+.ReviewCarousel_btn {
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+}
+
+.ReviewCarousel_btn.prev {
+    left: 0;
+    transform: translate(-20%, -50%);
+}
+
+.ReviewCarousel_btn.next {
+    left: 100%;
+    transform: translate(-80%, -50%);
 }
