@@ -505,12 +505,6 @@ filter: brightness(0) invert(1);
     margin-bottom: 0
 }
 
-@media screen and (max-width:1620px) {
-    .Header_headerLogo {
-        margin       : auto 16px auto 0;
-        padding-right: 16px
-    }
-}
 
 @media screen and (max-width:1600px) {
     .Header_notificationButton {

@@ -9215,13 +9215,21 @@ div.LoginPage_loginButton[data-disabled='false'] {
     margin-bottom: 0;
 }
 
+input {
+    -webkit-appearance: none !important;
+    -moz-appearance:    none !important;
+    appearance: none !important;
+}
 input:-webkit-autofill,
 input:-webkit-autofill:hover, 
 input:-webkit-autofill:focus, 
-input:-webkit-autofill:active{
+input:-webkit-autofill:active
+    {
     -webkit-background-clip: text;
-    -webkit-text-fill-color: #ffffff;
-    box-shadow:none;
+    /* -webkit-text-fill-color: #ffffff; */
+    box-shadow:none;    
+    background-color: inherit !important;
+    appearance: none !important;
 }
 
 .ReviewCarousel_btn {
