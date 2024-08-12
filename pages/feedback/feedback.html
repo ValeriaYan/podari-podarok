@@ -43,6 +43,11 @@
     <meta property="og:url" content="https://podaripodarok.org//feedback">
     <link rel="canonical" href="https://podaripodarok.org//feedback">
     <meta name="next-head-count" content="42">
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+    />
     <link rel="stylesheet" href="../../styles/common.css">
     <link rel="stylesheet" href="../../styles/player.css">
     <link rel="stylesheet" href="../../styles/style.css">
@@ -678,14 +683,14 @@
                                 вас всех Господь!</div>
                         </div>
                         <div class="FeedbackView_medias">
-                            <div id="media-0" class="FeedbackView_media"><img
-                                    src="https://storage.yandexcloud.net/pp-prod/Whats_App_Image_2024_07_18_at_08_53_13_6c86da4b12.webp">
-                                <div class="FeedbackView_shadow"></div>
-                            </div>
-                            <div id="media-1" class="FeedbackView_media">
+                            <a href="https://storage.yandexcloud.net/pp-prod/Whats_App_Image_2024_07_18_at_08_53_13_6c86da4b12.webp" id="media-0" class="FeedbackView_media" data-fancybox="gallery">
+                                <img src="https://storage.yandexcloud.net/pp-prod/Whats_App_Image_2024_07_18_at_08_53_13_6c86da4b12.webp">
+                            </a>
+                            <a href="https://storage.yandexcloud.net/pp-prod/Whats_App_Video_2024_07_18_at_08_53_14_36b341a68f.mp4" id="media-1" class="FeedbackView_media" data-fancybox="gallery">
                                 <div class="FeedbackView_image"
                                     style="background-image: url(&quot;https://storage.yandexcloud.net/pp-prod/Whats_App_Image_2024_07_18_at_08_53_13_6c86da4b12.webp&quot;); background-position: 50% 30%; background-size: 150%; background-repeat: no-repeat; width: 100%; height: 100%; min-width: unset; min-height: unset;">
-                                </div><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="none"
+                                </div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="none"
                                     viewBox="0 0 60 60" class="FeedbackView_playBtn">
                                     <g>
                                         <path fill="#ffffff"
@@ -696,8 +701,7 @@
                                         </path>
                                     </g>
                                 </svg>
-                                <div class="FeedbackView_shadow"></div>
-                            </div>
+                            </a>
                         </div>
                         <div class="FeedbackView_bottom"><a class=" Generic_iconRoot undefined undefined "
                                 href="/donate"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none"
@@ -727,6 +731,9 @@
         </div>
     </div>
 </div>
+<script>
+    Fancybox.bind("[data-fancybox]", {});
+</script>
 <script src="../../scripts/scripts.js"></script>
 <script src="../../scripts/selectnative.js"></script>
 </body>

@@ -388,7 +388,7 @@ popups?.forEach((popup) => {
             popup.classList.remove('_active');
         })
     })
-    overlay.addEventListener('click', (e) => {
+    overlay?.addEventListener('click', (e) => {
         if(!e.target.closest('.PopUp_modal')) {
             popup.classList.remove('_active');
         }
