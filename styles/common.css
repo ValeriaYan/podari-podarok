@@ -17,6 +17,14 @@
     right: auto;
 }
 
+@media (max-width: 920px) {
+    .multi-slider {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+}
+
 .Carousel_imgCarousel {
     max-width    : 575px;
     height       : 575px;
@@ -359,7 +367,11 @@
 } */
 
 .Header_headerLink {
-    margin-right: 60px
+    margin-right: 60px;
+    transition: color .2s linear;
+}
+.Header_headerLink:hover {
+color: var(--primary);
 }
 
 .Header_headerLinkArrowButton {
@@ -1008,7 +1020,9 @@ filter: brightness(0) invert(1);
     position: absolute;
     top     : 50%;
     transform: translateY(-50%);
-    right   : 12px
+    right   : 12px;
+    background: none;
+    border: 0;
 }
 
 .InputButton_miniButtonPath {
@@ -1418,8 +1432,9 @@ filter: brightness(0) invert(1);
     }
 
     .Input_inputBlock.Input_selected label {
-        left     : 32px !important;
-        transform: scale(.7) translateY(-40px)
+        left     : 0 !important;
+        transform: scale(.7) translateY(-40px);
+        padding-left: 10px !important;
     }
 }
 
@@ -2571,6 +2586,7 @@ filter: brightness(0) invert(1);
 
 .Action_rootAction {
     width        : 370px;
+    width: calc(100% - 40px);
     height       : 404px;
     background   : var(--white);
     border-radius: 16px;
@@ -3053,6 +3069,14 @@ filter: brightness(0) invert(1);
 }
 .About_topCarousel  .slick-list {
     padding-bottom: 50px;
+}
+
+@media (max-width: 590px) {
+    .About_topCarousel  .slick-list {
+        padding-bottom: 0;
+    }
+    
+    
 }
 
 .Dialog_mini .Dialog_dialogBloop {
@@ -4091,4 +4115,9 @@ filter: brightness(0) invert(1);
 
 .full-height-slide .slick-track .slick-slide > div > div {
     height: 100% !important;
+}
+
+#how_it_work .Simple_simpleButtonRoot {
+ margin: 0 auto;
+ display: block;
 }
