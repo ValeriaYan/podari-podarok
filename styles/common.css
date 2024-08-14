@@ -2585,7 +2585,6 @@ filter: brightness(0) invert(1);
 }
 
 .Action_rootAction {
-    width        : 370px;
     width: calc(100% - 40px);
     height       : 404px;
     background   : var(--white);
@@ -2594,6 +2593,10 @@ filter: brightness(0) invert(1);
     position     : relative;
     padding      : 34px 40px 0 32px;
     transition   : all .3s ease-in-out
+}
+.Action_rootAction.Category_card {
+    width        : 370px;
+
 }
 
 .Action_bg {
